@@ -152,7 +152,7 @@ async function generateReport(resultsFile: string) {
 }
 
 // 主入口
-if (import.meta.url === `file://${process.argv[1]}`) {
+if (decodeURIComponent(import.meta.url) === `file://${process.argv[1]}`) {
   const command = process.argv[2];
   
   if (command === 'report') {

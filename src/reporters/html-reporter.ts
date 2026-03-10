@@ -31,9 +31,9 @@ export class HTMLReporter {
       timestamp: parsed.timestamp,
       duration: parsed.duration || 0,
       config: {
-        models: [...new Set(parsed.results.map((r: TestResult) => r.modelId))],
-        prompts: [...new Set(parsed.results.map((r: TestResult) => r.promptId))],
-        stories: [...new Set(parsed.results.map((r: TestResult) => r.storyId))]
+        models: [...new Set(parsed.results.map((r: TestResult) => r.modelId))] as string[],
+        prompts: [...new Set(parsed.results.map((r: TestResult) => r.promptId))] as string[],
+        stories: [...new Set(parsed.results.map((r: TestResult) => r.storyId))] as number[]
       },
       scores: this.evaluator.calculateScores(parsed.results, parsed.validations),
       results: parsed.results,
@@ -117,14 +117,6 @@ export class HTMLReporter {
       margin-top: 20px;
     }
     
-    .error-case {
-      background: #1a1a1a;
-      padding: 15px;
-      border-radius: 8px;
-      margin-bottom: 10px;
-      border-left: 3px solid #f87171;
-    }
-    
     .badge {
       display: inline-block;
       padding: 2px 8px;
@@ -136,6 +128,17 @@ export class HTMLReporter {
     .badge-wrong { background: rgba(248, 113, 113, 0.2); color: #f87171; }
     .badge-close { background: rgba(251, 191, 36, 0.2); color: #fbbf24; }
     
+    .best-score { 
+      position: relative;
+      font-weight: bold;
+      text-shadow: 0 0 10px rgba(74, 222, 128, 0.5);
+    }
+    
+    .col-best {
+      background: rgba(74, 222, 128, 0.15);
+      box-shadow: inset 0 0 0 1px rgba(74, 222, 128, 0.3);
+    }
+    
     footer { text-align: center; padding: 40px; color: #666; font-size: 0.85rem; }
   </style>
 </head>
@@ -143,8 +146,7 @@ export class HTMLReporter {
   <div class="container">
     <header>
       <h1>🧪 海龟汤 AI 模型评测报告</h1>
-      <p class="subtitle">SiliconFlow 大模型游戏能力横向评测</p>
-      <p class="meta">生成时间: ${new Date(report.timestamp).toLocaleString('zh-CN')} | 测试时长: ${(report.duration / 1000 / 60).toFixed(1)} 分钟</p>
+      <p style="color: #666; font-size: 0.9rem; margin-top: 8px;">haiguitang-benchmark</p>
     </header>
 
     <div class="card">
@@ -157,9 +159,14 @@ export class HTMLReporter {
       ${this.renderMetricsTable(report.scores)}
     </div>
 
-    <div class="card">
-      <h2 class="card-title">❌ 典型错误案例</h2>
-      ${this.renderErrorCases(report.results, report.validations)}
+    <div class="card" style="background: #0f0f0f; border: 1px solid #1a1a1a;">
+      <h2 class="card-title" style="font-size: 1rem; color: #666;">ℹ️ 指标解释</h2>
+      <div style="color: #666; font-size: 0.8rem; line-height: 1.8;">
+        <p><strong style="color: #888;">一致性</strong>：模型在同一故事内回答的逻辑自洽程度，避免前后矛盾</p>
+        <p><strong style="color: #888;">帮助性</strong>：1 - 无关回答比例，反映对玩家推理的推进程度</p>
+        <p><strong style="color: #888;">容忍度</strong>：对同义表述的接受比例，衡量理解意思相近答案的能力</p>
+        <p><strong style="color: #888;">误判(错/漏)</strong>：错判=错误答案判为正确；漏判=正确答案判为错误</p>
+      </div>
     </div>
 
     <footer>
@@ -168,13 +175,64 @@ export class HTMLReporter {
   </div>
   
   <script>
-    // 简单的交互：点击行展开详情
-    document.querySelectorAll('tr[data-toggle]').forEach(row => {
-      row.style.cursor = 'pointer';
-      row.addEventListener('click', () => {
-        row.classList.toggle('expanded');
+    // 表格排序功能
+    (function() {
+      const table = document.getElementById('metrics-table');
+      if (!table) return;
+      
+      const headers = table.querySelectorAll('th[data-sort]');
+      const tbody = table.querySelector('tbody');
+      let sortDirection = {};
+      
+      headers.forEach(header => {
+        header.addEventListener('click', () => {
+          const sortKey = header.getAttribute('data-sort');
+          const rows = Array.from(tbody.querySelectorAll('tr'));
+          const isAsc = !sortDirection[sortKey];
+          sortDirection[sortKey] = isAsc;
+          
+          rows.sort((a, b) => {
+            let aVal, bVal;
+            
+            switch(sortKey) {
+              case 'model':
+                aVal = a.getAttribute('data-model') || '';
+                bVal = b.getAttribute('data-model') || '';
+                break;
+              case 'prompt':
+                aVal = a.getAttribute('data-prompt') || '';
+                bVal = b.getAttribute('data-prompt') || '';
+                break;
+              case 'consistency':
+              case 'helpfulness':
+              case 'tolerance':
+                aVal = parseFloat(a.getAttribute('data-' + sortKey) || '0');
+                bVal = parseFloat(b.getAttribute('data-' + sortKey) || '0');
+                break;
+              case 'errors':
+                aVal = parseInt(a.getAttribute('data-errors') || '0');
+                bVal = parseInt(b.getAttribute('data-errors') || '0');
+                break;
+              default:
+                return 0;
+            }
+            
+            if (typeof aVal === 'number') {
+              return isAsc ? aVal - bVal : bVal - aVal;
+            }
+            return isAsc ? aVal.localeCompare(bVal) : bVal.localeCompare(aVal);
+          });
+          
+          rows.forEach(row => tbody.appendChild(row));
+          
+          // 更新表头指示
+          headers.forEach(h => {
+            const baseText = h.textContent.replace(/[↑↓↕]/g, '').trim();
+            h.textContent = h === header ? baseText + (isAsc ? ' ↑' : ' ↓') : baseText + ' ↕';
+          });
+        });
       });
-    });
+    })();
   </script>
 </body>
 </html>`;
@@ -183,28 +241,80 @@ export class HTMLReporter {
   private renderRankingTable(scores: ModelScore[]): string {
     if (scores.length === 0) return '<p>暂无数据</p>';
     
+    // 按模型分组，并找出最佳表现用于排序
+    const modelGroups = new Map<string, ModelScore[]>();
+    for (const s of scores) {
+      if (!modelGroups.has(s.modelId)) {
+        modelGroups.set(s.modelId, []);
+      }
+      modelGroups.get(s.modelId)!.push(s);
+    }
+    
+    // 获取所有提示词（作为列）
+    const allPrompts = [...new Set(scores.map(s => s.promptId))].sort();
+    
+    // 计算每个模型的最佳得分，用于排序
+    const modelBestScores = new Map<string, number>();
+    for (const [modelId, modelScores] of modelGroups) {
+      const best = Math.max(...modelScores.map(s => s.overallScore));
+      modelBestScores.set(modelId, best);
+    }
+    
+    // 按最佳得分排序模型
+    const sortedModels = [...modelGroups.entries()]
+      .sort((a, b) => modelBestScores.get(b[0])! - modelBestScores.get(a[0])!);
+    
+    // 简化模型名称显示
+    const shortenModelName = (fullId: string): string => {
+      const parts = fullId.split('/');
+      return parts[parts.length - 1];
+    };
+    
+    // 获取得分颜色样式
+    const getScoreClass = (score: number): string => {
+      if (score >= 0.8) return 'score-high';
+      if (score >= 0.6) return 'score-mid';
+      return 'score-low';
+    };
+    
+    // 计算每列的最大值（用于列高亮）
+    const colMaxScores = new Map<string, number>();
+    for (const promptId of allPrompts) {
+      const colScores = scores.filter(s => s.promptId === promptId).map(s => s.overallScore);
+      colMaxScores.set(promptId, Math.max(...colScores));
+    }
+    
     return `<table>
       <thead>
         <tr>
           <th>排名</th>
           <th>模型</th>
-          <th>提示词</th>
-          <th>问答准确率</th>
-          <th>判定准确率</th>
-          <th>综合得分</th>
+          ${allPrompts.map(p => `<th>${p} prompt</th>`).join('')}
+          <th>最佳得分</th>
         </tr>
       </thead>
       <tbody>
-        ${scores.map((s, i) => {
-          const rankClass = i === 0 ? 'rank-1' : i === 1 ? 'rank-2' : i === 2 ? 'rank-3' : '';
-          const scoreClass = s.overallScore >= 0.8 ? 'score-high' : s.overallScore >= 0.6 ? 'score-mid' : 'score-low';
+        ${sortedModels.map(([modelId, modelScores], index) => {
+          const rankClass = index === 0 ? 'rank-1' : index === 1 ? 'rank-2' : index === 2 ? 'rank-3' : '';
+          const bestScore = modelBestScores.get(modelId)!;
+          const bestPrompt = modelScores.find(s => s.overallScore === bestScore)?.promptId || '-';
+          
+          // 为每个提示词生成单元格
+          const promptCells = allPrompts.map(promptId => {
+            const score = modelScores.find(s => s.promptId === promptId);
+            if (!score) return '<td>-</td>';
+            const scoreClass = getScoreClass(score.overallScore);
+            const isRowBest = score.overallScore === bestScore; // 行最佳，标星星
+            const isColBest = score.overallScore === colMaxScores.get(promptId); // 列最佳，高亮
+            const cellClass = `score ${scoreClass}${isColBest ? ' col-best' : ''}`;
+            return `<td class="${cellClass}">${(score.overallScore * 100).toFixed(1)}${isRowBest ? ' ★' : ''}</td>`;
+          }).join('');
+          
           return `<tr>
-            <td class="${rankClass}">${i + 1}</td>
-            <td>${s.modelId}</td>
-            <td>${s.promptId}</td>
-            <td>${(s.qaAccuracy * 100).toFixed(1)}%</td>
-            <td>${(s.valAccuracy * 100).toFixed(1)}%</td>
-            <td class="score ${scoreClass}">${(s.overallScore * 100).toFixed(1)}</td>
+            <td class="${rankClass}">${index + 1}</td>
+            <td><strong>${shortenModelName(modelId)}</strong><br><span style="font-size:0.75rem;color:#666">${modelId}</span></td>
+            ${promptCells}
+            <td class="score ${getScoreClass(bestScore)}">${(bestScore * 100).toFixed(1)}<br><span style="font-size:0.75rem;color:#888">${bestPrompt}</span></td>
           </tr>`;
         }).join('')}
       </tbody>
@@ -212,27 +322,39 @@ export class HTMLReporter {
   }
 
   private renderMetricsTable(scores: ModelScore[]): string {
-    return `<table>
+    // 简化模型名称显示
+    const shortenModelName = (fullId: string): string => {
+      const parts = fullId.split('/');
+      return parts[parts.length - 1];
+    };
+    
+    // 按模型分组排序：先按模型ID排序，再按prompt排序(v1在前v2在后)
+    const sortedScores = [...scores].sort((a, b) => {
+      if (a.modelId !== b.modelId) {
+        return a.modelId.localeCompare(b.modelId);
+      }
+      return a.promptId.localeCompare(b.promptId);
+    });
+    
+    return `<table id="metrics-table" class="sortable-table">
       <thead>
         <tr>
-          <th>模型</th>
-          <th>一致性</th>
-          <th>帮助性</th>
-          <th>容忍度</th>
-          <th>误判(错/漏)</th>
-          <th>平均延迟</th>
-          <th>总成本</th>
+          <th data-sort="model" style="cursor:pointer; user-select:none;">模型 ↕</th>
+          <th data-sort="prompt" style="cursor:pointer; user-select:none;">Prompt ↕</th>
+          <th data-sort="consistency" style="cursor:pointer; user-select:none;">一致性 ↕</th>
+          <th data-sort="helpfulness" style="cursor:pointer; user-select:none;">帮助性 ↕</th>
+          <th data-sort="tolerance" style="cursor:pointer; user-select:none;">容忍度 ↕</th>
+          <th data-sort="errors" style="cursor:pointer; user-select:none;">误判(错/漏) ↕</th>
         </tr>
       </thead>
       <tbody>
-        ${scores.map(s => `<tr>
-          <td>${s.modelId}</td>
+        ${sortedScores.map(s => `<tr data-model="${s.modelId}" data-prompt="${s.promptId}" data-consistency="${s.qaConsistency}" data-helpfulness="${s.qaHelpfulness}" data-tolerance="${s.valTolerance}" data-errors="${s.valFalsePos + s.valFalseNeg}">
+          <td><strong>${shortenModelName(s.modelId)}</strong><br><span style="font-size:0.75rem;color:#666">${s.modelId}</span></td>
+          <td><span style="color:#888">${s.promptId}</span></td>
           <td>${this.renderMetricBar(s.qaConsistency)}</td>
           <td>${this.renderMetricBar(s.qaHelpfulness)}</td>
           <td>${this.renderMetricBar(s.valTolerance)}</td>
           <td>${s.valFalsePos}/${s.valFalseNeg}</td>
-          <td>${s.avgLatency.toFixed(0)}ms</td>
-          <td>¥${s.totalCost.toFixed(4)}</td>
         </tr>`).join('')}
       </tbody>
     </table>`;
@@ -245,38 +367,6 @@ export class HTMLReporter {
       <span>${pct}%</span>
       <div class="metric-bar"><div class="metric-fill ${cls}" style="width: ${pct}%"></div></div>
     </div>`;
-  }
-
-  private renderErrorCases(results: TestResult[], validations: ValidationResult[]): string {
-    const qaErrors = results.filter(r => !r.correct).slice(0, 5);
-    const valErrors = validations.filter(v => !v.isCorrect).slice(0, 5);
-    
-    let html = '';
-    
-    if (qaErrors.length > 0) {
-      html += '<h3>问答阶段错误</h3>';
-      qaErrors.forEach(e => {
-        html += `<div class="error-case">
-          <p><strong>${e.modelId}</strong> | ${e.question}</p>
-          <p>期望: <span class="badge badge-correct">${e.expected}</span> | 
-             实际: <span class="badge badge-wrong">${e.actual}</span></p>
-        </div>`;
-      });
-    }
-    
-    if (valErrors.length > 0) {
-      html += '<h3>答案判定错误</h3>';
-      valErrors.forEach(e => {
-        html += `<div class="error-case">
-          <p><strong>${e.modelId}</strong></p>
-          <p>答案: ${e.answer.substring(0, 50)}...</p>
-          <p>期望: <span class="badge badge-${e.expected}">${e.expected}</span> | 
-             判定: <span class="badge badge-${e.actual}">${e.actual}</span></p>
-        </div>`;
-      });
-    }
-    
-    return html || '<p>暂无错误记录</p>';
   }
 }
 

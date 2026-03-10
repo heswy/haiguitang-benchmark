@@ -1,0 +1,40 @@
+# Dependencies
+node_modules/
+
+# Environment variables
+.env
+.env.local
+
+# Build output
+dist/
+
+# Results (test outputs)
+results/*.json
+results/*.html
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Agent instructions (private)
+AGENTS.md
+
+# Temporary/backup files
+*.log
+*.tmp
+*.bak
+
+# Test data generation scripts (not needed for users)
+generate-mock-data.js
+generate-mock-data.mjs
+generate-answers.py
+generate-questions.py
+
+# Source data (large)
+turtle-soup.json

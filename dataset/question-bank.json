@@ -1,260 +1,8004 @@
 {
   "questions": [
     {
-      "id": "s01-q01",
+      "id": "s001-q01",
       "storyId": 1,
-      "question": "这个男人和餐厅有仇吗？",
-      "expected": "不是",
+      "question": "这和餐厅的环境有关吗？",
+      "expected": "无关",
       "type": "distractor",
-      "reason": "与餐厅无关"
+      "reason": "测试AI能否区分表面相关和实质相关"
     },
     {
-      "id": "s01-q02",
+      "id": "s001-q02",
       "storyId": 1,
-      "question": "海龟汤本身有毒吗？",
-      "expected": "不是",
-      "type": "distractor",
-      "reason": "汤是正常的"
-    },
-    {
-      "id": "s01-q03",
-      "storyId": 1,
-      "question": "这个男人曾经喝过类似的东西吗？",
-      "expected": "是",
-      "type": "clue",
-      "reason": "指向过去的经历"
-    },
-    {
-      "id": "s01-q04",
-      "storyId": 1,
-      "question": "他自杀是因为发现了什么真相吗？",
+      "question": "真相和死者发现的某个事实有关吗？",
       "expected": "是",
       "type": "direct",
-      "reason": "核心动机"
+      "reason": "指向核心真相"
     },
     {
-      "id": "s01-q05",
+      "id": "s001-q03",
       "storyId": 1,
-      "question": "真相和他以前喝的东西有关吗？",
+      "question": "这是一起谋杀案吗？",
       "expected": "是",
-      "type": "clue",
-      "reason": "关联过去和现在"
+      "type": "distractor",
+      "reason": "常见误解"
     },
     {
-      "id": "s02-q01",
-      "storyId": 2,
-      "question": "运动员是被人谋杀的吗？",
+      "id": "s001-q04",
+      "storyId": 1,
+      "question": "现场物品在这个故事中起关键作用吗？",
+      "expected": "不是",
+      "type": "clue",
+      "reason": "指向关键线索"
+    },
+    {
+      "id": "s001-q05",
+      "storyId": 1,
+      "question": "当事人的过去经历对理解真相很重要吗？",
+      "expected": "是",
+      "type": "clue",
+      "reason": "时间线索"
+    },
+    {
+      "id": "s001-q06",
+      "storyId": 1,
+      "question": "现场有第三者存在吗？",
+      "expected": "是",
+      "type": "trap",
+      "reason": "看似有凶手实则没有，或相反"
+    },
+    {
+      "id": "s001-q07",
+      "storyId": 1,
+      "question": "需要理解字面背后的真实含义吗？",
+      "expected": "不是",
+      "type": "creative",
+      "reason": "双关或隐喻"
+    },
+    {
+      "id": "s001-q08",
+      "storyId": 1,
+      "question": "这是意外事件吗？",
       "expected": "不是",
       "type": "distractor",
-      "reason": "排除他杀"
+      "reason": "类别判断"
     },
     {
-      "id": "s02-q02",
+      "id": "s001-q09",
+      "storyId": 1,
+      "question": "当事人是自杀的吗？",
+      "expected": "是",
+      "type": "direct",
+      "reason": "死亡方式判断"
+    },
+    {
+      "id": "s001-q10",
+      "storyId": 1,
+      "question": "需要打破常规思维方式才能理解真相吗？",
+      "expected": "是",
+      "type": "creative",
+      "reason": "难度指标"
+    },
+    {
+      "id": "s002-q01",
       "storyId": 2,
-      "question": "他身上有外伤吗？",
+      "question": "这和现场的环境有关吗？",
+      "expected": "无关",
+      "type": "distractor",
+      "reason": "测试AI能否区分表面相关和实质相关"
+    },
+    {
+      "id": "s002-q02",
+      "storyId": 2,
+      "question": "真相和死者发现的某个事实有关吗？",
       "expected": "不是",
       "type": "direct",
-      "reason": "谜面已说明无伤口"
+      "reason": "指向核心真相"
     },
     {
-      "id": "s02-q03",
+      "id": "s002-q03",
       "storyId": 2,
-      "question": "出血和死亡有关吗？",
-      "expected": "是",
-      "type": "clue",
-      "reason": "关键线索"
-    },
-    {
-      "id": "s02-q04",
-      "storyId": 2,
-      "question": "他是溺水而死的吗？",
-      "expected": "是",
-      "type": "process",
-      "reason": "死因"
-    },
-    {
-      "id": "s02-q05",
-      "storyId": 2,
-      "question": "出血是身体内部问题导致的吗？",
-      "expected": "是",
-      "type": "clue",
-      "reason": "指向鼻窦破裂"
-    },
-    {
-      "id": "s03-q01",
-      "storyId": 3,
-      "question": "男子和酒保有仇吗？",
+      "question": "这是一起谋杀案吗？",
       "expected": "不是",
       "type": "distractor",
-      "reason": "素不相识"
+      "reason": "常见误解"
     },
     {
-      "id": "s03-q02",
-      "storyId": 3,
-      "question": "男子是生病了吗？",
+      "id": "s002-q04",
+      "storyId": 2,
+      "question": "枪在这个故事中起关键作用吗？",
       "expected": "是",
-      "type": "direct",
-      "reason": "打嗝是生理现象"
+      "type": "clue",
+      "reason": "指向关键线索"
     },
     {
-      "id": "s03-q03",
-      "storyId": 3,
-      "question": "枪是真枪吗？",
+      "id": "s002-q05",
+      "storyId": 2,
+      "question": "死者的过去经历对理解真相很重要吗？",
+      "expected": "不是",
+      "type": "clue",
+      "reason": "时间线索"
+    },
+    {
+      "id": "s002-q06",
+      "storyId": 2,
+      "question": "现场有第三者存在吗？",
       "expected": "不是",
       "type": "trap",
-      "reason": "应该是假枪或玩具枪"
+      "reason": "看似有凶手实则没有，或相反"
     },
     {
-      "id": "s03-q04",
-      "storyId": 3,
-      "question": "枪帮助男子解决了他的问题吗？",
-      "expected": "是",
-      "type": "clue",
-      "reason": "打嗝被吓停了"
+      "id": "s002-q07",
+      "storyId": 2,
+      "question": "需要理解字面背后的真实含义吗？",
+      "expected": "不是",
+      "type": "creative",
+      "reason": "双关或隐喻"
     },
     {
-      "id": "s03-q05",
-      "storyId": 3,
-      "question": "男子的病是打嗝吗？",
-      "expected": "是",
-      "type": "process",
-      "reason": "直接原因"
-    },
-    {
-      "id": "s04-q01",
-      "storyId": 4,
-      "question": "男人杀姐姐是因为恨她吗？",
+      "id": "s002-q08",
+      "storyId": 2,
+      "question": "这是意外事件吗？",
       "expected": "不是",
       "type": "distractor",
-      "reason": "不是因为恨"
+      "reason": "类别判断"
     },
     {
-      "id": "s04-q02",
-      "storyId": 4,
-      "question": "杀姐姐和葬礼有关吗？",
-      "expected": "是",
-      "type": "clue",
-      "reason": "关键关联"
-    },
-    {
-      "id": "s04-q03",
-      "storyId": 4,
-      "question": "他想在葬礼上见到那个女人吗？",
-      "expected": "是",
+      "id": "s002-q09",
+      "storyId": 2,
+      "question": "死者是自杀的吗？",
+      "expected": "不是",
       "type": "direct",
-      "reason": "核心动机"
+      "reason": "死亡方式判断"
     },
     {
-      "id": "s04-q04",
-      "storyId": 4,
-      "question": "那个女人和之前的葬礼有关吗？",
+      "id": "s002-q10",
+      "storyId": 2,
+      "question": "需要打破常规思维方式才能理解真相吗？",
       "expected": "是",
+      "type": "creative",
+      "reason": "难度指标"
+    },
+    {
+      "id": "s003-q01",
+      "storyId": 3,
+      "question": "这和餐厅的环境有关吗？",
+      "expected": "无关",
+      "type": "distractor",
+      "reason": "测试AI能否区分表面相关和实质相关"
+    },
+    {
+      "id": "s003-q02",
+      "storyId": 3,
+      "question": "真相和死者发现的某个事实有关吗？",
+      "expected": "不是",
+      "type": "direct",
+      "reason": "指向核心真相"
+    },
+    {
+      "id": "s003-q03",
+      "storyId": 3,
+      "question": "这是一起谋杀案吗？",
+      "expected": "是",
+      "type": "distractor",
+      "reason": "常见误解"
+    },
+    {
+      "id": "s003-q04",
+      "storyId": 3,
+      "question": "现场物品在这个故事中起关键作用吗？",
+      "expected": "不是",
       "type": "clue",
-      "reason": "在之前的葬礼见过"
+      "reason": "指向关键线索"
     },
     {
-      "id": "s04-q05",
-      "storyId": 4,
-      "question": "男人的母亲已经去世了吗？",
+      "id": "s003-q05",
+      "storyId": 3,
+      "question": "当事人的过去经历对理解真相很重要吗？",
+      "expected": "不是",
+      "type": "clue",
+      "reason": "时间线索"
+    },
+    {
+      "id": "s003-q06",
+      "storyId": 3,
+      "question": "现场有第三者存在吗？",
       "expected": "是",
-      "type": "process",
-      "reason": "背景信息"
+      "type": "trap",
+      "reason": "看似有凶手实则没有，或相反"
     },
     {
-      "id": "s05-q01",
-      "storyId": 5,
-      "question": "他们是被谋杀的么？",
+      "id": "s003-q07",
+      "storyId": 3,
+      "question": "需要理解字面背后的真实含义吗？",
+      "expected": "是",
+      "type": "creative",
+      "reason": "双关或隐喻"
+    },
+    {
+      "id": "s003-q08",
+      "storyId": 3,
+      "question": "这是意外事件吗？",
       "expected": "不是",
       "type": "distractor",
-      "reason": "排除他杀"
+      "reason": "类别判断"
     },
     {
-      "id": "s05-q02",
-      "storyId": 5,
-      "question": "他们是自愿死亡的吗？",
+      "id": "s003-q09",
+      "storyId": 3,
+      "question": "当事人是自杀的吗？",
       "expected": "是",
       "type": "direct",
-      "reason": "有人牺牲"
+      "reason": "死亡方式判断"
     },
     {
-      "id": "s05-q03",
-      "storyId": 5,
-      "question": "他们是乘坐热气球吗？",
+      "id": "s003-q10",
+      "storyId": 3,
+      "question": "需要打破常规思维方式才能理解真相吗？",
+      "expected": "无关",
+      "type": "creative",
+      "reason": "难度指标"
+    },
+    {
+      "id": "s004-q01",
+      "storyId": 4,
+      "question": "这和住所的环境有关吗？",
+      "expected": "无关",
+      "type": "distractor",
+      "reason": "测试AI能否区分表面相关和实质相关"
+    },
+    {
+      "id": "s004-q02",
+      "storyId": 4,
+      "question": "真相和死者发现的某个事实有关吗？",
+      "expected": "不是",
+      "type": "direct",
+      "reason": "指向核心真相"
+    },
+    {
+      "id": "s004-q03",
+      "storyId": 4,
+      "question": "这是一起谋杀案吗？",
       "expected": "是",
+      "type": "distractor",
+      "reason": "常见误解"
+    },
+    {
+      "id": "s004-q04",
+      "storyId": 4,
+      "question": "刀在这个故事中起关键作用吗？",
+      "expected": "不是",
       "type": "clue",
-      "reason": "交通工具"
+      "reason": "指向关键线索"
     },
     {
-      "id": "s05-q04",
-      "storyId": 5,
-      "question": "热气球出了故障吗？",
-      "expected": "是",
-      "type": "process",
-      "reason": "燃料耗尽"
-    },
-    {
-      "id": "s05-q05",
-      "storyId": 5,
-      "question": "有抽签决定谁跳下去吗？",
-      "expected": "是",
+      "id": "s004-q05",
+      "storyId": 4,
+      "question": "死者的过去经历对理解真相很重要吗？",
+      "expected": "不是",
       "type": "clue",
-      "reason": "关键机制"
+      "reason": "时间线索"
     },
     {
-      "id": "s25-q01",
-      "storyId": 25,
-      "question": "床底下真的有人吗？",
+      "id": "s004-q06",
+      "storyId": 4,
+      "question": "现场有第三者存在吗？",
       "expected": "不是",
       "type": "trap",
-      "reason": "是误会"
+      "reason": "看似有凶手实则没有，或相反"
     },
     {
-      "id": "s25-q02",
-      "storyId": 25,
-      "question": "女孩有强迫症吗？",
+      "id": "s004-q07",
+      "storyId": 4,
+      "question": "需要理解字面背后的真实含义吗？",
+      "expected": "是",
+      "type": "creative",
+      "reason": "双关或隐喻"
+    },
+    {
+      "id": "s004-q08",
+      "storyId": 4,
+      "question": "这是意外事件吗？",
+      "expected": "不是",
+      "type": "distractor",
+      "reason": "类别判断"
+    },
+    {
+      "id": "s004-q09",
+      "storyId": 4,
+      "question": "死者是自杀的吗？",
       "expected": "是",
       "type": "direct",
-      "reason": "放鞋的习惯"
+      "reason": "死亡方式判断"
     },
     {
-      "id": "s25-q03",
-      "storyId": 25,
-      "question": "和拖鞋的摆放方式有关吗？",
+      "id": "s004-q10",
+      "storyId": 4,
+      "question": "需要打破常规思维方式才能理解真相吗？",
+      "expected": "无关",
+      "type": "creative",
+      "reason": "难度指标"
+    },
+    {
+      "id": "s005-q01",
+      "storyId": 5,
+      "question": "这和现场的环境有关吗？",
+      "expected": "无关",
+      "type": "distractor",
+      "reason": "测试AI能否区分表面相关和实质相关"
+    },
+    {
+      "id": "s005-q02",
+      "storyId": 5,
+      "question": "真相和死者发现的某个事实有关吗？",
+      "expected": "不是",
+      "type": "direct",
+      "reason": "指向核心真相"
+    },
+    {
+      "id": "s005-q03",
+      "storyId": 5,
+      "question": "这是一起谋杀案吗？",
+      "expected": "不是",
+      "type": "distractor",
+      "reason": "常见误解"
+    },
+    {
+      "id": "s005-q04",
+      "storyId": 5,
+      "question": "现场物品在这个故事中起关键作用吗？",
+      "expected": "不是",
+      "type": "clue",
+      "reason": "指向关键线索"
+    },
+    {
+      "id": "s005-q05",
+      "storyId": 5,
+      "question": "死者的过去经历对理解真相很重要吗？",
+      "expected": "不是",
+      "type": "clue",
+      "reason": "时间线索"
+    },
+    {
+      "id": "s005-q06",
+      "storyId": 5,
+      "question": "现场有第三者存在吗？",
+      "expected": "是",
+      "type": "trap",
+      "reason": "看似有凶手实则没有，或相反"
+    },
+    {
+      "id": "s005-q07",
+      "storyId": 5,
+      "question": "需要理解字面背后的真实含义吗？",
+      "expected": "不是",
+      "type": "creative",
+      "reason": "双关或隐喻"
+    },
+    {
+      "id": "s005-q08",
+      "storyId": 5,
+      "question": "这是意外事件吗？",
+      "expected": "不是",
+      "type": "distractor",
+      "reason": "类别判断"
+    },
+    {
+      "id": "s005-q09",
+      "storyId": 5,
+      "question": "死者是自杀的吗？",
+      "expected": "不是",
+      "type": "direct",
+      "reason": "死亡方式判断"
+    },
+    {
+      "id": "s005-q10",
+      "storyId": 5,
+      "question": "需要打破常规思维方式才能理解真相吗？",
+      "expected": "无关",
+      "type": "creative",
+      "reason": "难度指标"
+    },
+    {
+      "id": "s006-q01",
+      "storyId": 6,
+      "question": "这和现场的环境有关吗？",
+      "expected": "无关",
+      "type": "distractor",
+      "reason": "测试AI能否区分表面相关和实质相关"
+    },
+    {
+      "id": "s006-q02",
+      "storyId": 6,
+      "question": "真相和死者发现的某个事实有关吗？",
+      "expected": "不是",
+      "type": "direct",
+      "reason": "指向核心真相"
+    },
+    {
+      "id": "s006-q03",
+      "storyId": 6,
+      "question": "这是一起谋杀案吗？",
+      "expected": "不是",
+      "type": "distractor",
+      "reason": "常见误解"
+    },
+    {
+      "id": "s006-q04",
+      "storyId": 6,
+      "question": "纸条在这个故事中起关键作用吗？",
+      "expected": "不是",
+      "type": "clue",
+      "reason": "指向关键线索"
+    },
+    {
+      "id": "s006-q05",
+      "storyId": 6,
+      "question": "当事人的过去经历对理解真相很重要吗？",
+      "expected": "不是",
+      "type": "clue",
+      "reason": "时间线索"
+    },
+    {
+      "id": "s006-q06",
+      "storyId": 6,
+      "question": "现场有第三者存在吗？",
+      "expected": "不是",
+      "type": "trap",
+      "reason": "看似有凶手实则没有，或相反"
+    },
+    {
+      "id": "s006-q07",
+      "storyId": 6,
+      "question": "需要理解字面背后的真实含义吗？",
+      "expected": "不是",
+      "type": "creative",
+      "reason": "双关或隐喻"
+    },
+    {
+      "id": "s006-q08",
+      "storyId": 6,
+      "question": "这是意外事件吗？",
+      "expected": "不是",
+      "type": "distractor",
+      "reason": "类别判断"
+    },
+    {
+      "id": "s006-q09",
+      "storyId": 6,
+      "question": "当事人是自杀的吗？",
+      "expected": "是",
+      "type": "direct",
+      "reason": "死亡方式判断"
+    },
+    {
+      "id": "s006-q10",
+      "storyId": 6,
+      "question": "需要打破常规思维方式才能理解真相吗？",
+      "expected": "是",
+      "type": "creative",
+      "reason": "难度指标"
+    },
+    {
+      "id": "s007-q01",
+      "storyId": 7,
+      "question": "这和现场的环境有关吗？",
+      "expected": "无关",
+      "type": "distractor",
+      "reason": "测试AI能否区分表面相关和实质相关"
+    },
+    {
+      "id": "s007-q02",
+      "storyId": 7,
+      "question": "真相和死者发现的某个事实有关吗？",
+      "expected": "不是",
+      "type": "direct",
+      "reason": "指向核心真相"
+    },
+    {
+      "id": "s007-q03",
+      "storyId": 7,
+      "question": "这是一起谋杀案吗？",
+      "expected": "不是",
+      "type": "distractor",
+      "reason": "常见误解"
+    },
+    {
+      "id": "s007-q04",
+      "storyId": 7,
+      "question": "现场物品在这个故事中起关键作用吗？",
+      "expected": "不是",
+      "type": "clue",
+      "reason": "指向关键线索"
+    },
+    {
+      "id": "s007-q05",
+      "storyId": 7,
+      "question": "死者的过去经历对理解真相很重要吗？",
+      "expected": "不是",
+      "type": "clue",
+      "reason": "时间线索"
+    },
+    {
+      "id": "s007-q06",
+      "storyId": 7,
+      "question": "现场有第三者存在吗？",
+      "expected": "是",
+      "type": "trap",
+      "reason": "看似有凶手实则没有，或相反"
+    },
+    {
+      "id": "s007-q07",
+      "storyId": 7,
+      "question": "需要理解字面背后的真实含义吗？",
+      "expected": "不是",
+      "type": "creative",
+      "reason": "双关或隐喻"
+    },
+    {
+      "id": "s007-q08",
+      "storyId": 7,
+      "question": "这是意外事件吗？",
+      "expected": "不是",
+      "type": "distractor",
+      "reason": "类别判断"
+    },
+    {
+      "id": "s007-q09",
+      "storyId": 7,
+      "question": "死者是自杀的吗？",
+      "expected": "不是",
+      "type": "direct",
+      "reason": "死亡方式判断"
+    },
+    {
+      "id": "s007-q10",
+      "storyId": 7,
+      "question": "需要打破常规思维方式才能理解真相吗？",
+      "expected": "无关",
+      "type": "creative",
+      "reason": "难度指标"
+    },
+    {
+      "id": "s008-q01",
+      "storyId": 8,
+      "question": "这和现场的环境有关吗？",
+      "expected": "无关",
+      "type": "distractor",
+      "reason": "测试AI能否区分表面相关和实质相关"
+    },
+    {
+      "id": "s008-q02",
+      "storyId": 8,
+      "question": "真相和死者发现的某个事实有关吗？",
+      "expected": "不是",
+      "type": "direct",
+      "reason": "指向核心真相"
+    },
+    {
+      "id": "s008-q03",
+      "storyId": 8,
+      "question": "这是一起谋杀案吗？",
+      "expected": "是",
+      "type": "distractor",
+      "reason": "常见误解"
+    },
+    {
+      "id": "s008-q04",
+      "storyId": 8,
+      "question": "镜子在这个故事中起关键作用吗？",
       "expected": "是",
       "type": "clue",
-      "reason": "核心线索"
+      "reason": "指向关键线索"
     },
     {
-      "id": "s25-q04",
-      "storyId": 25,
-      "question": "她是看错了吗？",
+      "id": "s008-q05",
+      "storyId": 8,
+      "question": "死者的过去经历对理解真相很重要吗？",
+      "expected": "不是",
+      "type": "clue",
+      "reason": "时间线索"
+    },
+    {
+      "id": "s008-q06",
+      "storyId": 8,
+      "question": "现场有第三者存在吗？",
+      "expected": "不是",
+      "type": "trap",
+      "reason": "看似有凶手实则没有，或相反"
+    },
+    {
+      "id": "s008-q07",
+      "storyId": 8,
+      "question": "需要理解字面背后的真实含义吗？",
+      "expected": "不是",
+      "type": "creative",
+      "reason": "双关或隐喻"
+    },
+    {
+      "id": "s008-q08",
+      "storyId": 8,
+      "question": "这是意外事件吗？",
+      "expected": "不是",
+      "type": "distractor",
+      "reason": "类别判断"
+    },
+    {
+      "id": "s008-q09",
+      "storyId": 8,
+      "question": "死者是自杀的吗？",
       "expected": "是",
       "type": "direct",
-      "reason": "视角问题"
+      "reason": "死亡方式判断"
     },
     {
-      "id": "s29-q01",
-      "storyId": 29,
-      "question": "女人有精神病吗？",
+      "id": "s008-q10",
+      "storyId": 8,
+      "question": "需要打破常规思维方式才能理解真相吗？",
       "expected": "是",
-      "type": "direct",
-      "reason": "精神分裂"
+      "type": "creative",
+      "reason": "难度指标"
     },
     {
-      "id": "s29-q02",
-      "storyId": 29,
-      "question": "镜子里的人是另一个人吗？",
+      "id": "s009-q01",
+      "storyId": 9,
+      "question": "这和现场的环境有关吗？",
+      "expected": "无关",
+      "type": "distractor",
+      "reason": "测试AI能否区分表面相关和实质相关"
+    },
+    {
+      "id": "s009-q02",
+      "storyId": 9,
+      "question": "真相和死者发现的某个事实有关吗？",
+      "expected": "不是",
+      "type": "direct",
+      "reason": "指向核心真相"
+    },
+    {
+      "id": "s009-q03",
+      "storyId": 9,
+      "question": "这是一起谋杀案吗？",
+      "expected": "不是",
+      "type": "distractor",
+      "reason": "常见误解"
+    },
+    {
+      "id": "s009-q04",
+      "storyId": 9,
+      "question": "现场物品在这个故事中起关键作用吗？",
+      "expected": "不是",
+      "type": "clue",
+      "reason": "指向关键线索"
+    },
+    {
+      "id": "s009-q05",
+      "storyId": 9,
+      "question": "死者的过去经历对理解真相很重要吗？",
+      "expected": "不是",
+      "type": "clue",
+      "reason": "时间线索"
+    },
+    {
+      "id": "s009-q06",
+      "storyId": 9,
+      "question": "现场有第三者存在吗？",
+      "expected": "是",
+      "type": "trap",
+      "reason": "看似有凶手实则没有，或相反"
+    },
+    {
+      "id": "s009-q07",
+      "storyId": 9,
+      "question": "需要理解字面背后的真实含义吗？",
+      "expected": "不是",
+      "type": "creative",
+      "reason": "双关或隐喻"
+    },
+    {
+      "id": "s009-q08",
+      "storyId": 9,
+      "question": "这是意外事件吗？",
+      "expected": "不是",
+      "type": "distractor",
+      "reason": "类别判断"
+    },
+    {
+      "id": "s009-q09",
+      "storyId": 9,
+      "question": "死者是自杀的吗？",
+      "expected": "不是",
+      "type": "direct",
+      "reason": "死亡方式判断"
+    },
+    {
+      "id": "s009-q10",
+      "storyId": 9,
+      "question": "需要打破常规思维方式才能理解真相吗？",
+      "expected": "无关",
+      "type": "creative",
+      "reason": "难度指标"
+    },
+    {
+      "id": "s010-q01",
+      "storyId": 10,
+      "question": "这和医院的环境有关吗？",
+      "expected": "无关",
+      "type": "distractor",
+      "reason": "测试AI能否区分表面相关和实质相关"
+    },
+    {
+      "id": "s010-q02",
+      "storyId": 10,
+      "question": "真相和死者发现的某个事实有关吗？",
+      "expected": "不是",
+      "type": "direct",
+      "reason": "指向核心真相"
+    },
+    {
+      "id": "s010-q03",
+      "storyId": 10,
+      "question": "这是一起谋杀案吗？",
+      "expected": "是",
+      "type": "distractor",
+      "reason": "常见误解"
+    },
+    {
+      "id": "s010-q04",
+      "storyId": 10,
+      "question": "现场物品在这个故事中起关键作用吗？",
+      "expected": "不是",
+      "type": "clue",
+      "reason": "指向关键线索"
+    },
+    {
+      "id": "s010-q05",
+      "storyId": 10,
+      "question": "死者的过去经历对理解真相很重要吗？",
+      "expected": "不是",
+      "type": "clue",
+      "reason": "时间线索"
+    },
+    {
+      "id": "s010-q06",
+      "storyId": 10,
+      "question": "现场有第三者存在吗？",
+      "expected": "不是",
+      "type": "trap",
+      "reason": "看似有凶手实则没有，或相反"
+    },
+    {
+      "id": "s010-q07",
+      "storyId": 10,
+      "question": "需要理解字面背后的真实含义吗？",
+      "expected": "不是",
+      "type": "creative",
+      "reason": "双关或隐喻"
+    },
+    {
+      "id": "s010-q08",
+      "storyId": 10,
+      "question": "这是意外事件吗？",
+      "expected": "不是",
+      "type": "distractor",
+      "reason": "类别判断"
+    },
+    {
+      "id": "s010-q09",
+      "storyId": 10,
+      "question": "死者是自杀的吗？",
+      "expected": "不是",
+      "type": "direct",
+      "reason": "死亡方式判断"
+    },
+    {
+      "id": "s010-q10",
+      "storyId": 10,
+      "question": "需要打破常规思维方式才能理解真相吗？",
+      "expected": "是",
+      "type": "creative",
+      "reason": "难度指标"
+    },
+    {
+      "id": "s011-q01",
+      "storyId": 11,
+      "question": "这和现场的环境有关吗？",
+      "expected": "无关",
+      "type": "distractor",
+      "reason": "测试AI能否区分表面相关和实质相关"
+    },
+    {
+      "id": "s011-q02",
+      "storyId": 11,
+      "question": "真相和死者发现的某个事实有关吗？",
+      "expected": "不是",
+      "type": "direct",
+      "reason": "指向核心真相"
+    },
+    {
+      "id": "s011-q03",
+      "storyId": 11,
+      "question": "这是一起谋杀案吗？",
+      "expected": "是",
+      "type": "distractor",
+      "reason": "常见误解"
+    },
+    {
+      "id": "s011-q04",
+      "storyId": 11,
+      "question": "枪在这个故事中起关键作用吗？",
       "expected": "是",
       "type": "clue",
-      "reason": "副人格"
+      "reason": "指向关键线索"
     },
     {
-      "id": "s29-q03",
-      "storyId": 29,
-      "question": "那天副人格没有出现吗？",
+      "id": "s011-q05",
+      "storyId": 11,
+      "question": "死者的过去经历对理解真相很重要吗？",
+      "expected": "不是",
+      "type": "clue",
+      "reason": "时间线索"
+    },
+    {
+      "id": "s011-q06",
+      "storyId": 11,
+      "question": "现场有第三者存在吗？",
+      "expected": "是",
+      "type": "trap",
+      "reason": "看似有凶手实则没有，或相反"
+    },
+    {
+      "id": "s011-q07",
+      "storyId": 11,
+      "question": "需要理解字面背后的真实含义吗？",
+      "expected": "不是",
+      "type": "creative",
+      "reason": "双关或隐喻"
+    },
+    {
+      "id": "s011-q08",
+      "storyId": 11,
+      "question": "这是意外事件吗？",
+      "expected": "不是",
+      "type": "distractor",
+      "reason": "类别判断"
+    },
+    {
+      "id": "s011-q09",
+      "storyId": 11,
+      "question": "死者是自杀的吗？",
+      "expected": "不是",
+      "type": "direct",
+      "reason": "死亡方式判断"
+    },
+    {
+      "id": "s011-q10",
+      "storyId": 11,
+      "question": "需要打破常规思维方式才能理解真相吗？",
+      "expected": "是",
+      "type": "creative",
+      "reason": "难度指标"
+    },
+    {
+      "id": "s012-q01",
+      "storyId": 12,
+      "question": "这和现场的环境有关吗？",
+      "expected": "无关",
+      "type": "distractor",
+      "reason": "测试AI能否区分表面相关和实质相关"
+    },
+    {
+      "id": "s012-q02",
+      "storyId": 12,
+      "question": "真相和死者发现的某个事实有关吗？",
+      "expected": "不是",
+      "type": "direct",
+      "reason": "指向核心真相"
+    },
+    {
+      "id": "s012-q03",
+      "storyId": 12,
+      "question": "这是一起谋杀案吗？",
+      "expected": "是",
+      "type": "distractor",
+      "reason": "常见误解"
+    },
+    {
+      "id": "s012-q04",
+      "storyId": 12,
+      "question": "现场物品在这个故事中起关键作用吗？",
+      "expected": "不是",
+      "type": "clue",
+      "reason": "指向关键线索"
+    },
+    {
+      "id": "s012-q05",
+      "storyId": 12,
+      "question": "死者的过去经历对理解真相很重要吗？",
+      "expected": "不是",
+      "type": "clue",
+      "reason": "时间线索"
+    },
+    {
+      "id": "s012-q06",
+      "storyId": 12,
+      "question": "现场有第三者存在吗？",
+      "expected": "是",
+      "type": "trap",
+      "reason": "看似有凶手实则没有，或相反"
+    },
+    {
+      "id": "s012-q07",
+      "storyId": 12,
+      "question": "需要理解字面背后的真实含义吗？",
+      "expected": "不是",
+      "type": "creative",
+      "reason": "双关或隐喻"
+    },
+    {
+      "id": "s012-q08",
+      "storyId": 12,
+      "question": "这是意外事件吗？",
+      "expected": "不是",
+      "type": "distractor",
+      "reason": "类别判断"
+    },
+    {
+      "id": "s012-q09",
+      "storyId": 12,
+      "question": "死者是自杀的吗？",
+      "expected": "不是",
+      "type": "direct",
+      "reason": "死亡方式判断"
+    },
+    {
+      "id": "s012-q10",
+      "storyId": 12,
+      "question": "需要打破常规思维方式才能理解真相吗？",
+      "expected": "无关",
+      "type": "creative",
+      "reason": "难度指标"
+    },
+    {
+      "id": "s013-q01",
+      "storyId": 13,
+      "question": "这和住所的环境有关吗？",
+      "expected": "无关",
+      "type": "distractor",
+      "reason": "测试AI能否区分表面相关和实质相关"
+    },
+    {
+      "id": "s013-q02",
+      "storyId": 13,
+      "question": "真相和死者发现的某个事实有关吗？",
+      "expected": "不是",
+      "type": "direct",
+      "reason": "指向核心真相"
+    },
+    {
+      "id": "s013-q03",
+      "storyId": 13,
+      "question": "这是一起谋杀案吗？",
+      "expected": "是",
+      "type": "distractor",
+      "reason": "常见误解"
+    },
+    {
+      "id": "s013-q04",
+      "storyId": 13,
+      "question": "电话在这个故事中起关键作用吗？",
+      "expected": "不是",
+      "type": "clue",
+      "reason": "指向关键线索"
+    },
+    {
+      "id": "s013-q05",
+      "storyId": 13,
+      "question": "死者的过去经历对理解真相很重要吗？",
+      "expected": "不是",
+      "type": "clue",
+      "reason": "时间线索"
+    },
+    {
+      "id": "s013-q06",
+      "storyId": 13,
+      "question": "现场有第三者存在吗？",
+      "expected": "是",
+      "type": "trap",
+      "reason": "看似有凶手实则没有，或相反"
+    },
+    {
+      "id": "s013-q07",
+      "storyId": 13,
+      "question": "需要理解字面背后的真实含义吗？",
+      "expected": "不是",
+      "type": "creative",
+      "reason": "双关或隐喻"
+    },
+    {
+      "id": "s013-q08",
+      "storyId": 13,
+      "question": "这是意外事件吗？",
+      "expected": "不是",
+      "type": "distractor",
+      "reason": "类别判断"
+    },
+    {
+      "id": "s013-q09",
+      "storyId": 13,
+      "question": "死者是自杀的吗？",
+      "expected": "不是",
+      "type": "direct",
+      "reason": "死亡方式判断"
+    },
+    {
+      "id": "s013-q10",
+      "storyId": 13,
+      "question": "需要打破常规思维方式才能理解真相吗？",
+      "expected": "是",
+      "type": "creative",
+      "reason": "难度指标"
+    },
+    {
+      "id": "s014-q01",
+      "storyId": 14,
+      "question": "这和现场的环境有关吗？",
+      "expected": "无关",
+      "type": "distractor",
+      "reason": "测试AI能否区分表面相关和实质相关"
+    },
+    {
+      "id": "s014-q02",
+      "storyId": 14,
+      "question": "真相和死者发现的某个事实有关吗？",
+      "expected": "不是",
+      "type": "direct",
+      "reason": "指向核心真相"
+    },
+    {
+      "id": "s014-q03",
+      "storyId": 14,
+      "question": "这是一起谋杀案吗？",
+      "expected": "不是",
+      "type": "distractor",
+      "reason": "常见误解"
+    },
+    {
+      "id": "s014-q04",
+      "storyId": 14,
+      "question": "现场物品在这个故事中起关键作用吗？",
+      "expected": "不是",
+      "type": "clue",
+      "reason": "指向关键线索"
+    },
+    {
+      "id": "s014-q05",
+      "storyId": 14,
+      "question": "当事人的过去经历对理解真相很重要吗？",
+      "expected": "不是",
+      "type": "clue",
+      "reason": "时间线索"
+    },
+    {
+      "id": "s014-q06",
+      "storyId": 14,
+      "question": "现场有第三者存在吗？",
+      "expected": "不是",
+      "type": "trap",
+      "reason": "看似有凶手实则没有，或相反"
+    },
+    {
+      "id": "s014-q07",
+      "storyId": 14,
+      "question": "需要理解字面背后的真实含义吗？",
+      "expected": "不是",
+      "type": "creative",
+      "reason": "双关或隐喻"
+    },
+    {
+      "id": "s014-q08",
+      "storyId": 14,
+      "question": "这是意外事件吗？",
+      "expected": "不是",
+      "type": "distractor",
+      "reason": "类别判断"
+    },
+    {
+      "id": "s014-q09",
+      "storyId": 14,
+      "question": "当事人是自杀的吗？",
+      "expected": "不是",
+      "type": "direct",
+      "reason": "死亡方式判断"
+    },
+    {
+      "id": "s014-q10",
+      "storyId": 14,
+      "question": "需要打破常规思维方式才能理解真相吗？",
+      "expected": "无关",
+      "type": "creative",
+      "reason": "难度指标"
+    },
+    {
+      "id": "s015-q01",
+      "storyId": 15,
+      "question": "这和现场的环境有关吗？",
+      "expected": "无关",
+      "type": "distractor",
+      "reason": "测试AI能否区分表面相关和实质相关"
+    },
+    {
+      "id": "s015-q02",
+      "storyId": 15,
+      "question": "真相和死者发现的某个事实有关吗？",
+      "expected": "不是",
+      "type": "direct",
+      "reason": "指向核心真相"
+    },
+    {
+      "id": "s015-q03",
+      "storyId": 15,
+      "question": "这是一起谋杀案吗？",
+      "expected": "不是",
+      "type": "distractor",
+      "reason": "常见误解"
+    },
+    {
+      "id": "s015-q04",
+      "storyId": 15,
+      "question": "纸条在这个故事中起关键作用吗？",
+      "expected": "不是",
+      "type": "clue",
+      "reason": "指向关键线索"
+    },
+    {
+      "id": "s015-q05",
+      "storyId": 15,
+      "question": "当事人的过去经历对理解真相很重要吗？",
+      "expected": "不是",
+      "type": "clue",
+      "reason": "时间线索"
+    },
+    {
+      "id": "s015-q06",
+      "storyId": 15,
+      "question": "现场有第三者存在吗？",
+      "expected": "是",
+      "type": "trap",
+      "reason": "看似有凶手实则没有，或相反"
+    },
+    {
+      "id": "s015-q07",
+      "storyId": 15,
+      "question": "需要理解字面背后的真实含义吗？",
+      "expected": "不是",
+      "type": "creative",
+      "reason": "双关或隐喻"
+    },
+    {
+      "id": "s015-q08",
+      "storyId": 15,
+      "question": "这是意外事件吗？",
+      "expected": "不是",
+      "type": "distractor",
+      "reason": "类别判断"
+    },
+    {
+      "id": "s015-q09",
+      "storyId": 15,
+      "question": "当事人是自杀的吗？",
+      "expected": "不是",
+      "type": "direct",
+      "reason": "死亡方式判断"
+    },
+    {
+      "id": "s015-q10",
+      "storyId": 15,
+      "question": "需要打破常规思维方式才能理解真相吗？",
+      "expected": "是",
+      "type": "creative",
+      "reason": "难度指标"
+    },
+    {
+      "id": "s016-q01",
+      "storyId": 16,
+      "question": "这和现场的环境有关吗？",
+      "expected": "无关",
+      "type": "distractor",
+      "reason": "测试AI能否区分表面相关和实质相关"
+    },
+    {
+      "id": "s016-q02",
+      "storyId": 16,
+      "question": "真相和死者发现的某个事实有关吗？",
+      "expected": "不是",
+      "type": "direct",
+      "reason": "指向核心真相"
+    },
+    {
+      "id": "s016-q03",
+      "storyId": 16,
+      "question": "这是一起谋杀案吗？",
+      "expected": "不是",
+      "type": "distractor",
+      "reason": "常见误解"
+    },
+    {
+      "id": "s016-q04",
+      "storyId": 16,
+      "question": "现场物品在这个故事中起关键作用吗？",
+      "expected": "不是",
+      "type": "clue",
+      "reason": "指向关键线索"
+    },
+    {
+      "id": "s016-q05",
+      "storyId": 16,
+      "question": "当事人的过去经历对理解真相很重要吗？",
+      "expected": "不是",
+      "type": "clue",
+      "reason": "时间线索"
+    },
+    {
+      "id": "s016-q06",
+      "storyId": 16,
+      "question": "现场有第三者存在吗？",
+      "expected": "是",
+      "type": "trap",
+      "reason": "看似有凶手实则没有，或相反"
+    },
+    {
+      "id": "s016-q07",
+      "storyId": 16,
+      "question": "需要理解字面背后的真实含义吗？",
+      "expected": "不是",
+      "type": "creative",
+      "reason": "双关或隐喻"
+    },
+    {
+      "id": "s016-q08",
+      "storyId": 16,
+      "question": "这是意外事件吗？",
+      "expected": "不是",
+      "type": "distractor",
+      "reason": "类别判断"
+    },
+    {
+      "id": "s016-q09",
+      "storyId": 16,
+      "question": "当事人是自杀的吗？",
+      "expected": "不是",
+      "type": "direct",
+      "reason": "死亡方式判断"
+    },
+    {
+      "id": "s016-q10",
+      "storyId": 16,
+      "question": "需要打破常规思维方式才能理解真相吗？",
+      "expected": "无关",
+      "type": "creative",
+      "reason": "难度指标"
+    },
+    {
+      "id": "s017-q01",
+      "storyId": 17,
+      "question": "这和现场的环境有关吗？",
+      "expected": "无关",
+      "type": "distractor",
+      "reason": "测试AI能否区分表面相关和实质相关"
+    },
+    {
+      "id": "s017-q02",
+      "storyId": 17,
+      "question": "真相和死者发现的某个事实有关吗？",
+      "expected": "不是",
+      "type": "direct",
+      "reason": "指向核心真相"
+    },
+    {
+      "id": "s017-q03",
+      "storyId": 17,
+      "question": "这是一起谋杀案吗？",
+      "expected": "是",
+      "type": "distractor",
+      "reason": "常见误解"
+    },
+    {
+      "id": "s017-q04",
+      "storyId": 17,
+      "question": "现场物品在这个故事中起关键作用吗？",
+      "expected": "不是",
+      "type": "clue",
+      "reason": "指向关键线索"
+    },
+    {
+      "id": "s017-q05",
+      "storyId": 17,
+      "question": "当事人的过去经历对理解真相很重要吗？",
+      "expected": "不是",
+      "type": "clue",
+      "reason": "时间线索"
+    },
+    {
+      "id": "s017-q06",
+      "storyId": 17,
+      "question": "现场有第三者存在吗？",
+      "expected": "不是",
+      "type": "trap",
+      "reason": "看似有凶手实则没有，或相反"
+    },
+    {
+      "id": "s017-q07",
+      "storyId": 17,
+      "question": "需要理解字面背后的真实含义吗？",
+      "expected": "不是",
+      "type": "creative",
+      "reason": "双关或隐喻"
+    },
+    {
+      "id": "s017-q08",
+      "storyId": 17,
+      "question": "这是意外事件吗？",
+      "expected": "不是",
+      "type": "distractor",
+      "reason": "类别判断"
+    },
+    {
+      "id": "s017-q09",
+      "storyId": 17,
+      "question": "当事人是自杀的吗？",
       "expected": "是",
       "type": "direct",
-      "reason": "核心原因"
+      "reason": "死亡方式判断"
+    },
+    {
+      "id": "s017-q10",
+      "storyId": 17,
+      "question": "需要打破常规思维方式才能理解真相吗？",
+      "expected": "是",
+      "type": "creative",
+      "reason": "难度指标"
+    },
+    {
+      "id": "s018-q01",
+      "storyId": 18,
+      "question": "这和现场的环境有关吗？",
+      "expected": "无关",
+      "type": "distractor",
+      "reason": "测试AI能否区分表面相关和实质相关"
+    },
+    {
+      "id": "s018-q02",
+      "storyId": 18,
+      "question": "真相和死者发现的某个事实有关吗？",
+      "expected": "不是",
+      "type": "direct",
+      "reason": "指向核心真相"
+    },
+    {
+      "id": "s018-q03",
+      "storyId": 18,
+      "question": "这是一起谋杀案吗？",
+      "expected": "不是",
+      "type": "distractor",
+      "reason": "常见误解"
+    },
+    {
+      "id": "s018-q04",
+      "storyId": 18,
+      "question": "现场物品在这个故事中起关键作用吗？",
+      "expected": "不是",
+      "type": "clue",
+      "reason": "指向关键线索"
+    },
+    {
+      "id": "s018-q05",
+      "storyId": 18,
+      "question": "当事人的过去经历对理解真相很重要吗？",
+      "expected": "不是",
+      "type": "clue",
+      "reason": "时间线索"
+    },
+    {
+      "id": "s018-q06",
+      "storyId": 18,
+      "question": "现场有第三者存在吗？",
+      "expected": "不是",
+      "type": "trap",
+      "reason": "看似有凶手实则没有，或相反"
+    },
+    {
+      "id": "s018-q07",
+      "storyId": 18,
+      "question": "需要理解字面背后的真实含义吗？",
+      "expected": "不是",
+      "type": "creative",
+      "reason": "双关或隐喻"
+    },
+    {
+      "id": "s018-q08",
+      "storyId": 18,
+      "question": "这是意外事件吗？",
+      "expected": "不是",
+      "type": "distractor",
+      "reason": "类别判断"
+    },
+    {
+      "id": "s018-q09",
+      "storyId": 18,
+      "question": "当事人是自杀的吗？",
+      "expected": "不是",
+      "type": "direct",
+      "reason": "死亡方式判断"
+    },
+    {
+      "id": "s018-q10",
+      "storyId": 18,
+      "question": "需要打破常规思维方式才能理解真相吗？",
+      "expected": "无关",
+      "type": "creative",
+      "reason": "难度指标"
+    },
+    {
+      "id": "s019-q01",
+      "storyId": 19,
+      "question": "这和现场的环境有关吗？",
+      "expected": "无关",
+      "type": "distractor",
+      "reason": "测试AI能否区分表面相关和实质相关"
+    },
+    {
+      "id": "s019-q02",
+      "storyId": 19,
+      "question": "真相和死者发现的某个事实有关吗？",
+      "expected": "不是",
+      "type": "direct",
+      "reason": "指向核心真相"
+    },
+    {
+      "id": "s019-q03",
+      "storyId": 19,
+      "question": "这是一起谋杀案吗？",
+      "expected": "不是",
+      "type": "distractor",
+      "reason": "常见误解"
+    },
+    {
+      "id": "s019-q04",
+      "storyId": 19,
+      "question": "现场物品在这个故事中起关键作用吗？",
+      "expected": "不是",
+      "type": "clue",
+      "reason": "指向关键线索"
+    },
+    {
+      "id": "s019-q05",
+      "storyId": 19,
+      "question": "死者的过去经历对理解真相很重要吗？",
+      "expected": "不是",
+      "type": "clue",
+      "reason": "时间线索"
+    },
+    {
+      "id": "s019-q06",
+      "storyId": 19,
+      "question": "现场有第三者存在吗？",
+      "expected": "是",
+      "type": "trap",
+      "reason": "看似有凶手实则没有，或相反"
+    },
+    {
+      "id": "s019-q07",
+      "storyId": 19,
+      "question": "需要理解字面背后的真实含义吗？",
+      "expected": "不是",
+      "type": "creative",
+      "reason": "双关或隐喻"
+    },
+    {
+      "id": "s019-q08",
+      "storyId": 19,
+      "question": "这是意外事件吗？",
+      "expected": "不是",
+      "type": "distractor",
+      "reason": "类别判断"
+    },
+    {
+      "id": "s019-q09",
+      "storyId": 19,
+      "question": "死者是自杀的吗？",
+      "expected": "不是",
+      "type": "direct",
+      "reason": "死亡方式判断"
+    },
+    {
+      "id": "s019-q10",
+      "storyId": 19,
+      "question": "需要打破常规思维方式才能理解真相吗？",
+      "expected": "无关",
+      "type": "creative",
+      "reason": "难度指标"
+    },
+    {
+      "id": "s020-q01",
+      "storyId": 20,
+      "question": "这和现场的环境有关吗？",
+      "expected": "无关",
+      "type": "distractor",
+      "reason": "测试AI能否区分表面相关和实质相关"
+    },
+    {
+      "id": "s020-q02",
+      "storyId": 20,
+      "question": "真相和死者发现的某个事实有关吗？",
+      "expected": "不是",
+      "type": "direct",
+      "reason": "指向核心真相"
+    },
+    {
+      "id": "s020-q03",
+      "storyId": 20,
+      "question": "这是一起谋杀案吗？",
+      "expected": "不是",
+      "type": "distractor",
+      "reason": "常见误解"
+    },
+    {
+      "id": "s020-q04",
+      "storyId": 20,
+      "question": "现场物品在这个故事中起关键作用吗？",
+      "expected": "不是",
+      "type": "clue",
+      "reason": "指向关键线索"
+    },
+    {
+      "id": "s020-q05",
+      "storyId": 20,
+      "question": "死者的过去经历对理解真相很重要吗？",
+      "expected": "不是",
+      "type": "clue",
+      "reason": "时间线索"
+    },
+    {
+      "id": "s020-q06",
+      "storyId": 20,
+      "question": "现场有第三者存在吗？",
+      "expected": "不是",
+      "type": "trap",
+      "reason": "看似有凶手实则没有，或相反"
+    },
+    {
+      "id": "s020-q07",
+      "storyId": 20,
+      "question": "需要理解字面背后的真实含义吗？",
+      "expected": "不是",
+      "type": "creative",
+      "reason": "双关或隐喻"
+    },
+    {
+      "id": "s020-q08",
+      "storyId": 20,
+      "question": "这是意外事件吗？",
+      "expected": "不是",
+      "type": "distractor",
+      "reason": "类别判断"
+    },
+    {
+      "id": "s020-q09",
+      "storyId": 20,
+      "question": "死者是自杀的吗？",
+      "expected": "是",
+      "type": "direct",
+      "reason": "死亡方式判断"
+    },
+    {
+      "id": "s020-q10",
+      "storyId": 20,
+      "question": "需要打破常规思维方式才能理解真相吗？",
+      "expected": "无关",
+      "type": "creative",
+      "reason": "难度指标"
+    },
+    {
+      "id": "s021-q01",
+      "storyId": 21,
+      "question": "这和现场的环境有关吗？",
+      "expected": "无关",
+      "type": "distractor",
+      "reason": "测试AI能否区分表面相关和实质相关"
+    },
+    {
+      "id": "s021-q02",
+      "storyId": 21,
+      "question": "真相和死者发现的某个事实有关吗？",
+      "expected": "不是",
+      "type": "direct",
+      "reason": "指向核心真相"
+    },
+    {
+      "id": "s021-q03",
+      "storyId": 21,
+      "question": "这是一起谋杀案吗？",
+      "expected": "是",
+      "type": "distractor",
+      "reason": "常见误解"
+    },
+    {
+      "id": "s021-q04",
+      "storyId": 21,
+      "question": "现场物品在这个故事中起关键作用吗？",
+      "expected": "不是",
+      "type": "clue",
+      "reason": "指向关键线索"
+    },
+    {
+      "id": "s021-q05",
+      "storyId": 21,
+      "question": "当事人的过去经历对理解真相很重要吗？",
+      "expected": "不是",
+      "type": "clue",
+      "reason": "时间线索"
+    },
+    {
+      "id": "s021-q06",
+      "storyId": 21,
+      "question": "现场有第三者存在吗？",
+      "expected": "不是",
+      "type": "trap",
+      "reason": "看似有凶手实则没有，或相反"
+    },
+    {
+      "id": "s021-q07",
+      "storyId": 21,
+      "question": "需要理解字面背后的真实含义吗？",
+      "expected": "不是",
+      "type": "creative",
+      "reason": "双关或隐喻"
+    },
+    {
+      "id": "s021-q08",
+      "storyId": 21,
+      "question": "这是意外事件吗？",
+      "expected": "不是",
+      "type": "distractor",
+      "reason": "类别判断"
+    },
+    {
+      "id": "s021-q09",
+      "storyId": 21,
+      "question": "当事人是自杀的吗？",
+      "expected": "不是",
+      "type": "direct",
+      "reason": "死亡方式判断"
+    },
+    {
+      "id": "s021-q10",
+      "storyId": 21,
+      "question": "需要打破常规思维方式才能理解真相吗？",
+      "expected": "是",
+      "type": "creative",
+      "reason": "难度指标"
+    },
+    {
+      "id": "s022-q01",
+      "storyId": 22,
+      "question": "这和现场的环境有关吗？",
+      "expected": "无关",
+      "type": "distractor",
+      "reason": "测试AI能否区分表面相关和实质相关"
+    },
+    {
+      "id": "s022-q02",
+      "storyId": 22,
+      "question": "真相和死者发现的某个事实有关吗？",
+      "expected": "不是",
+      "type": "direct",
+      "reason": "指向核心真相"
+    },
+    {
+      "id": "s022-q03",
+      "storyId": 22,
+      "question": "这是一起谋杀案吗？",
+      "expected": "不是",
+      "type": "distractor",
+      "reason": "常见误解"
+    },
+    {
+      "id": "s022-q04",
+      "storyId": 22,
+      "question": "现场物品在这个故事中起关键作用吗？",
+      "expected": "不是",
+      "type": "clue",
+      "reason": "指向关键线索"
+    },
+    {
+      "id": "s022-q05",
+      "storyId": 22,
+      "question": "当事人的过去经历对理解真相很重要吗？",
+      "expected": "不是",
+      "type": "clue",
+      "reason": "时间线索"
+    },
+    {
+      "id": "s022-q06",
+      "storyId": 22,
+      "question": "现场有第三者存在吗？",
+      "expected": "是",
+      "type": "trap",
+      "reason": "看似有凶手实则没有，或相反"
+    },
+    {
+      "id": "s022-q07",
+      "storyId": 22,
+      "question": "需要理解字面背后的真实含义吗？",
+      "expected": "不是",
+      "type": "creative",
+      "reason": "双关或隐喻"
+    },
+    {
+      "id": "s022-q08",
+      "storyId": 22,
+      "question": "这是意外事件吗？",
+      "expected": "不是",
+      "type": "distractor",
+      "reason": "类别判断"
+    },
+    {
+      "id": "s022-q09",
+      "storyId": 22,
+      "question": "当事人是自杀的吗？",
+      "expected": "不是",
+      "type": "direct",
+      "reason": "死亡方式判断"
+    },
+    {
+      "id": "s022-q10",
+      "storyId": 22,
+      "question": "需要打破常规思维方式才能理解真相吗？",
+      "expected": "无关",
+      "type": "creative",
+      "reason": "难度指标"
+    },
+    {
+      "id": "s023-q01",
+      "storyId": 23,
+      "question": "这和现场的环境有关吗？",
+      "expected": "无关",
+      "type": "distractor",
+      "reason": "测试AI能否区分表面相关和实质相关"
+    },
+    {
+      "id": "s023-q02",
+      "storyId": 23,
+      "question": "真相和死者发现的某个事实有关吗？",
+      "expected": "不是",
+      "type": "direct",
+      "reason": "指向核心真相"
+    },
+    {
+      "id": "s023-q03",
+      "storyId": 23,
+      "question": "这是一起谋杀案吗？",
+      "expected": "不是",
+      "type": "distractor",
+      "reason": "常见误解"
+    },
+    {
+      "id": "s023-q04",
+      "storyId": 23,
+      "question": "现场物品在这个故事中起关键作用吗？",
+      "expected": "不是",
+      "type": "clue",
+      "reason": "指向关键线索"
+    },
+    {
+      "id": "s023-q05",
+      "storyId": 23,
+      "question": "当事人的过去经历对理解真相很重要吗？",
+      "expected": "不是",
+      "type": "clue",
+      "reason": "时间线索"
+    },
+    {
+      "id": "s023-q06",
+      "storyId": 23,
+      "question": "现场有第三者存在吗？",
+      "expected": "不是",
+      "type": "trap",
+      "reason": "看似有凶手实则没有，或相反"
+    },
+    {
+      "id": "s023-q07",
+      "storyId": 23,
+      "question": "需要理解字面背后的真实含义吗？",
+      "expected": "不是",
+      "type": "creative",
+      "reason": "双关或隐喻"
+    },
+    {
+      "id": "s023-q08",
+      "storyId": 23,
+      "question": "这是意外事件吗？",
+      "expected": "不是",
+      "type": "distractor",
+      "reason": "类别判断"
+    },
+    {
+      "id": "s023-q09",
+      "storyId": 23,
+      "question": "当事人是自杀的吗？",
+      "expected": "不是",
+      "type": "direct",
+      "reason": "死亡方式判断"
+    },
+    {
+      "id": "s023-q10",
+      "storyId": 23,
+      "question": "需要打破常规思维方式才能理解真相吗？",
+      "expected": "无关",
+      "type": "creative",
+      "reason": "难度指标"
+    },
+    {
+      "id": "s024-q01",
+      "storyId": 24,
+      "question": "这和现场的环境有关吗？",
+      "expected": "无关",
+      "type": "distractor",
+      "reason": "测试AI能否区分表面相关和实质相关"
+    },
+    {
+      "id": "s024-q02",
+      "storyId": 24,
+      "question": "真相和死者发现的某个事实有关吗？",
+      "expected": "不是",
+      "type": "direct",
+      "reason": "指向核心真相"
+    },
+    {
+      "id": "s024-q03",
+      "storyId": 24,
+      "question": "这是一起谋杀案吗？",
+      "expected": "不是",
+      "type": "distractor",
+      "reason": "常见误解"
+    },
+    {
+      "id": "s024-q04",
+      "storyId": 24,
+      "question": "现场物品在这个故事中起关键作用吗？",
+      "expected": "不是",
+      "type": "clue",
+      "reason": "指向关键线索"
+    },
+    {
+      "id": "s024-q05",
+      "storyId": 24,
+      "question": "当事人的过去经历对理解真相很重要吗？",
+      "expected": "不是",
+      "type": "clue",
+      "reason": "时间线索"
+    },
+    {
+      "id": "s024-q06",
+      "storyId": 24,
+      "question": "现场有第三者存在吗？",
+      "expected": "不是",
+      "type": "trap",
+      "reason": "看似有凶手实则没有，或相反"
+    },
+    {
+      "id": "s024-q07",
+      "storyId": 24,
+      "question": "需要理解字面背后的真实含义吗？",
+      "expected": "不是",
+      "type": "creative",
+      "reason": "双关或隐喻"
+    },
+    {
+      "id": "s024-q08",
+      "storyId": 24,
+      "question": "这是意外事件吗？",
+      "expected": "不是",
+      "type": "distractor",
+      "reason": "类别判断"
+    },
+    {
+      "id": "s024-q09",
+      "storyId": 24,
+      "question": "当事人是自杀的吗？",
+      "expected": "不是",
+      "type": "direct",
+      "reason": "死亡方式判断"
+    },
+    {
+      "id": "s024-q10",
+      "storyId": 24,
+      "question": "需要打破常规思维方式才能理解真相吗？",
+      "expected": "无关",
+      "type": "creative",
+      "reason": "难度指标"
+    },
+    {
+      "id": "s025-q01",
+      "storyId": 25,
+      "question": "这和现场的环境有关吗？",
+      "expected": "无关",
+      "type": "distractor",
+      "reason": "测试AI能否区分表面相关和实质相关"
+    },
+    {
+      "id": "s025-q02",
+      "storyId": 25,
+      "question": "真相和死者发现的某个事实有关吗？",
+      "expected": "不是",
+      "type": "direct",
+      "reason": "指向核心真相"
+    },
+    {
+      "id": "s025-q03",
+      "storyId": 25,
+      "question": "这是一起谋杀案吗？",
+      "expected": "是",
+      "type": "distractor",
+      "reason": "常见误解"
+    },
+    {
+      "id": "s025-q04",
+      "storyId": 25,
+      "question": "现场物品在这个故事中起关键作用吗？",
+      "expected": "不是",
+      "type": "clue",
+      "reason": "指向关键线索"
+    },
+    {
+      "id": "s025-q05",
+      "storyId": 25,
+      "question": "当事人的过去经历对理解真相很重要吗？",
+      "expected": "不是",
+      "type": "clue",
+      "reason": "时间线索"
+    },
+    {
+      "id": "s025-q06",
+      "storyId": 25,
+      "question": "现场有第三者存在吗？",
+      "expected": "是",
+      "type": "trap",
+      "reason": "看似有凶手实则没有，或相反"
+    },
+    {
+      "id": "s025-q07",
+      "storyId": 25,
+      "question": "需要理解字面背后的真实含义吗？",
+      "expected": "不是",
+      "type": "creative",
+      "reason": "双关或隐喻"
+    },
+    {
+      "id": "s025-q08",
+      "storyId": 25,
+      "question": "这是意外事件吗？",
+      "expected": "不是",
+      "type": "distractor",
+      "reason": "类别判断"
+    },
+    {
+      "id": "s025-q09",
+      "storyId": 25,
+      "question": "当事人是自杀的吗？",
+      "expected": "不是",
+      "type": "direct",
+      "reason": "死亡方式判断"
+    },
+    {
+      "id": "s025-q10",
+      "storyId": 25,
+      "question": "需要打破常规思维方式才能理解真相吗？",
+      "expected": "无关",
+      "type": "creative",
+      "reason": "难度指标"
+    },
+    {
+      "id": "s026-q01",
+      "storyId": 26,
+      "question": "这和现场的环境有关吗？",
+      "expected": "无关",
+      "type": "distractor",
+      "reason": "测试AI能否区分表面相关和实质相关"
+    },
+    {
+      "id": "s026-q02",
+      "storyId": 26,
+      "question": "真相和死者发现的某个事实有关吗？",
+      "expected": "不是",
+      "type": "direct",
+      "reason": "指向核心真相"
+    },
+    {
+      "id": "s026-q03",
+      "storyId": 26,
+      "question": "这是一起谋杀案吗？",
+      "expected": "是",
+      "type": "distractor",
+      "reason": "常见误解"
+    },
+    {
+      "id": "s026-q04",
+      "storyId": 26,
+      "question": "现场物品在这个故事中起关键作用吗？",
+      "expected": "不是",
+      "type": "clue",
+      "reason": "指向关键线索"
+    },
+    {
+      "id": "s026-q05",
+      "storyId": 26,
+      "question": "死者的过去经历对理解真相很重要吗？",
+      "expected": "不是",
+      "type": "clue",
+      "reason": "时间线索"
+    },
+    {
+      "id": "s026-q06",
+      "storyId": 26,
+      "question": "现场有第三者存在吗？",
+      "expected": "是",
+      "type": "trap",
+      "reason": "看似有凶手实则没有，或相反"
+    },
+    {
+      "id": "s026-q07",
+      "storyId": 26,
+      "question": "需要理解字面背后的真实含义吗？",
+      "expected": "不是",
+      "type": "creative",
+      "reason": "双关或隐喻"
+    },
+    {
+      "id": "s026-q08",
+      "storyId": 26,
+      "question": "这是意外事件吗？",
+      "expected": "不是",
+      "type": "distractor",
+      "reason": "类别判断"
+    },
+    {
+      "id": "s026-q09",
+      "storyId": 26,
+      "question": "死者是自杀的吗？",
+      "expected": "不是",
+      "type": "direct",
+      "reason": "死亡方式判断"
+    },
+    {
+      "id": "s026-q10",
+      "storyId": 26,
+      "question": "需要打破常规思维方式才能理解真相吗？",
+      "expected": "无关",
+      "type": "creative",
+      "reason": "难度指标"
+    },
+    {
+      "id": "s027-q01",
+      "storyId": 27,
+      "question": "这和住所的环境有关吗？",
+      "expected": "无关",
+      "type": "distractor",
+      "reason": "测试AI能否区分表面相关和实质相关"
+    },
+    {
+      "id": "s027-q02",
+      "storyId": 27,
+      "question": "真相和死者发现的某个事实有关吗？",
+      "expected": "不是",
+      "type": "direct",
+      "reason": "指向核心真相"
+    },
+    {
+      "id": "s027-q03",
+      "storyId": 27,
+      "question": "这是一起谋杀案吗？",
+      "expected": "不是",
+      "type": "distractor",
+      "reason": "常见误解"
+    },
+    {
+      "id": "s027-q04",
+      "storyId": 27,
+      "question": "现场物品在这个故事中起关键作用吗？",
+      "expected": "不是",
+      "type": "clue",
+      "reason": "指向关键线索"
+    },
+    {
+      "id": "s027-q05",
+      "storyId": 27,
+      "question": "当事人的过去经历对理解真相很重要吗？",
+      "expected": "不是",
+      "type": "clue",
+      "reason": "时间线索"
+    },
+    {
+      "id": "s027-q06",
+      "storyId": 27,
+      "question": "现场有第三者存在吗？",
+      "expected": "是",
+      "type": "trap",
+      "reason": "看似有凶手实则没有，或相反"
+    },
+    {
+      "id": "s027-q07",
+      "storyId": 27,
+      "question": "需要理解字面背后的真实含义吗？",
+      "expected": "不是",
+      "type": "creative",
+      "reason": "双关或隐喻"
+    },
+    {
+      "id": "s027-q08",
+      "storyId": 27,
+      "question": "这是意外事件吗？",
+      "expected": "不是",
+      "type": "distractor",
+      "reason": "类别判断"
+    },
+    {
+      "id": "s027-q09",
+      "storyId": 27,
+      "question": "当事人是自杀的吗？",
+      "expected": "不是",
+      "type": "direct",
+      "reason": "死亡方式判断"
+    },
+    {
+      "id": "s027-q10",
+      "storyId": 27,
+      "question": "需要打破常规思维方式才能理解真相吗？",
+      "expected": "是",
+      "type": "creative",
+      "reason": "难度指标"
+    },
+    {
+      "id": "s028-q01",
+      "storyId": 28,
+      "question": "这和现场的环境有关吗？",
+      "expected": "无关",
+      "type": "distractor",
+      "reason": "测试AI能否区分表面相关和实质相关"
+    },
+    {
+      "id": "s028-q02",
+      "storyId": 28,
+      "question": "真相和死者发现的某个事实有关吗？",
+      "expected": "不是",
+      "type": "direct",
+      "reason": "指向核心真相"
+    },
+    {
+      "id": "s028-q03",
+      "storyId": 28,
+      "question": "这是一起谋杀案吗？",
+      "expected": "是",
+      "type": "distractor",
+      "reason": "常见误解"
+    },
+    {
+      "id": "s028-q04",
+      "storyId": 28,
+      "question": "现场物品在这个故事中起关键作用吗？",
+      "expected": "不是",
+      "type": "clue",
+      "reason": "指向关键线索"
+    },
+    {
+      "id": "s028-q05",
+      "storyId": 28,
+      "question": "死者的过去经历对理解真相很重要吗？",
+      "expected": "不是",
+      "type": "clue",
+      "reason": "时间线索"
+    },
+    {
+      "id": "s028-q06",
+      "storyId": 28,
+      "question": "现场有第三者存在吗？",
+      "expected": "是",
+      "type": "trap",
+      "reason": "看似有凶手实则没有，或相反"
+    },
+    {
+      "id": "s028-q07",
+      "storyId": 28,
+      "question": "需要理解字面背后的真实含义吗？",
+      "expected": "不是",
+      "type": "creative",
+      "reason": "双关或隐喻"
+    },
+    {
+      "id": "s028-q08",
+      "storyId": 28,
+      "question": "这是意外事件吗？",
+      "expected": "不是",
+      "type": "distractor",
+      "reason": "类别判断"
+    },
+    {
+      "id": "s028-q09",
+      "storyId": 28,
+      "question": "死者是自杀的吗？",
+      "expected": "不是",
+      "type": "direct",
+      "reason": "死亡方式判断"
+    },
+    {
+      "id": "s028-q10",
+      "storyId": 28,
+      "question": "需要打破常规思维方式才能理解真相吗？",
+      "expected": "是",
+      "type": "creative",
+      "reason": "难度指标"
+    },
+    {
+      "id": "s029-q01",
+      "storyId": 29,
+      "question": "这和现场的环境有关吗？",
+      "expected": "无关",
+      "type": "distractor",
+      "reason": "测试AI能否区分表面相关和实质相关"
+    },
+    {
+      "id": "s029-q02",
+      "storyId": 29,
+      "question": "真相和死者发现的某个事实有关吗？",
+      "expected": "不是",
+      "type": "direct",
+      "reason": "指向核心真相"
+    },
+    {
+      "id": "s029-q03",
+      "storyId": 29,
+      "question": "这是一起谋杀案吗？",
+      "expected": "是",
+      "type": "distractor",
+      "reason": "常见误解"
+    },
+    {
+      "id": "s029-q04",
+      "storyId": 29,
+      "question": "现场物品在这个故事中起关键作用吗？",
+      "expected": "不是",
+      "type": "clue",
+      "reason": "指向关键线索"
+    },
+    {
+      "id": "s029-q05",
+      "storyId": 29,
+      "question": "死者的过去经历对理解真相很重要吗？",
+      "expected": "不是",
+      "type": "clue",
+      "reason": "时间线索"
+    },
+    {
+      "id": "s029-q06",
+      "storyId": 29,
+      "question": "现场有第三者存在吗？",
+      "expected": "不是",
+      "type": "trap",
+      "reason": "看似有凶手实则没有，或相反"
+    },
+    {
+      "id": "s029-q07",
+      "storyId": 29,
+      "question": "需要理解字面背后的真实含义吗？",
+      "expected": "不是",
+      "type": "creative",
+      "reason": "双关或隐喻"
+    },
+    {
+      "id": "s029-q08",
+      "storyId": 29,
+      "question": "这是意外事件吗？",
+      "expected": "不是",
+      "type": "distractor",
+      "reason": "类别判断"
+    },
+    {
+      "id": "s029-q09",
+      "storyId": 29,
+      "question": "死者是自杀的吗？",
+      "expected": "不是",
+      "type": "direct",
+      "reason": "死亡方式判断"
+    },
+    {
+      "id": "s029-q10",
+      "storyId": 29,
+      "question": "需要打破常规思维方式才能理解真相吗？",
+      "expected": "是",
+      "type": "creative",
+      "reason": "难度指标"
+    },
+    {
+      "id": "s030-q01",
+      "storyId": 30,
+      "question": "这和现场的环境有关吗？",
+      "expected": "无关",
+      "type": "distractor",
+      "reason": "测试AI能否区分表面相关和实质相关"
+    },
+    {
+      "id": "s030-q02",
+      "storyId": 30,
+      "question": "真相和死者发现的某个事实有关吗？",
+      "expected": "不是",
+      "type": "direct",
+      "reason": "指向核心真相"
+    },
+    {
+      "id": "s030-q03",
+      "storyId": 30,
+      "question": "这是一起谋杀案吗？",
+      "expected": "是",
+      "type": "distractor",
+      "reason": "常见误解"
+    },
+    {
+      "id": "s030-q04",
+      "storyId": 30,
+      "question": "现场物品在这个故事中起关键作用吗？",
+      "expected": "不是",
+      "type": "clue",
+      "reason": "指向关键线索"
+    },
+    {
+      "id": "s030-q05",
+      "storyId": 30,
+      "question": "死者的过去经历对理解真相很重要吗？",
+      "expected": "不是",
+      "type": "clue",
+      "reason": "时间线索"
+    },
+    {
+      "id": "s030-q06",
+      "storyId": 30,
+      "question": "现场有第三者存在吗？",
+      "expected": "不是",
+      "type": "trap",
+      "reason": "看似有凶手实则没有，或相反"
+    },
+    {
+      "id": "s030-q07",
+      "storyId": 30,
+      "question": "需要理解字面背后的真实含义吗？",
+      "expected": "不是",
+      "type": "creative",
+      "reason": "双关或隐喻"
+    },
+    {
+      "id": "s030-q08",
+      "storyId": 30,
+      "question": "这是意外事件吗？",
+      "expected": "不是",
+      "type": "distractor",
+      "reason": "类别判断"
+    },
+    {
+      "id": "s030-q09",
+      "storyId": 30,
+      "question": "死者是自杀的吗？",
+      "expected": "不是",
+      "type": "direct",
+      "reason": "死亡方式判断"
+    },
+    {
+      "id": "s030-q10",
+      "storyId": 30,
+      "question": "需要打破常规思维方式才能理解真相吗？",
+      "expected": "无关",
+      "type": "creative",
+      "reason": "难度指标"
+    },
+    {
+      "id": "s031-q01",
+      "storyId": 31,
+      "question": "这和现场的环境有关吗？",
+      "expected": "无关",
+      "type": "distractor",
+      "reason": "测试AI能否区分表面相关和实质相关"
+    },
+    {
+      "id": "s031-q02",
+      "storyId": 31,
+      "question": "真相和死者发现的某个事实有关吗？",
+      "expected": "不是",
+      "type": "direct",
+      "reason": "指向核心真相"
+    },
+    {
+      "id": "s031-q03",
+      "storyId": 31,
+      "question": "这是一起谋杀案吗？",
+      "expected": "不是",
+      "type": "distractor",
+      "reason": "常见误解"
+    },
+    {
+      "id": "s031-q04",
+      "storyId": 31,
+      "question": "镜子在这个故事中起关键作用吗？",
+      "expected": "是",
+      "type": "clue",
+      "reason": "指向关键线索"
+    },
+    {
+      "id": "s031-q05",
+      "storyId": 31,
+      "question": "死者的过去经历对理解真相很重要吗？",
+      "expected": "不是",
+      "type": "clue",
+      "reason": "时间线索"
+    },
+    {
+      "id": "s031-q06",
+      "storyId": 31,
+      "question": "现场有第三者存在吗？",
+      "expected": "是",
+      "type": "trap",
+      "reason": "看似有凶手实则没有，或相反"
+    },
+    {
+      "id": "s031-q07",
+      "storyId": 31,
+      "question": "需要理解字面背后的真实含义吗？",
+      "expected": "不是",
+      "type": "creative",
+      "reason": "双关或隐喻"
+    },
+    {
+      "id": "s031-q08",
+      "storyId": 31,
+      "question": "这是意外事件吗？",
+      "expected": "是",
+      "type": "distractor",
+      "reason": "类别判断"
+    },
+    {
+      "id": "s031-q09",
+      "storyId": 31,
+      "question": "死者是自杀的吗？",
+      "expected": "不是",
+      "type": "direct",
+      "reason": "死亡方式判断"
+    },
+    {
+      "id": "s031-q10",
+      "storyId": 31,
+      "question": "需要打破常规思维方式才能理解真相吗？",
+      "expected": "无关",
+      "type": "creative",
+      "reason": "难度指标"
+    },
+    {
+      "id": "s032-q01",
+      "storyId": 32,
+      "question": "这和现场的环境有关吗？",
+      "expected": "无关",
+      "type": "distractor",
+      "reason": "测试AI能否区分表面相关和实质相关"
+    },
+    {
+      "id": "s032-q02",
+      "storyId": 32,
+      "question": "真相和死者发现的某个事实有关吗？",
+      "expected": "不是",
+      "type": "direct",
+      "reason": "指向核心真相"
+    },
+    {
+      "id": "s032-q03",
+      "storyId": 32,
+      "question": "这是一起谋杀案吗？",
+      "expected": "不是",
+      "type": "distractor",
+      "reason": "常见误解"
+    },
+    {
+      "id": "s032-q04",
+      "storyId": 32,
+      "question": "现场物品在这个故事中起关键作用吗？",
+      "expected": "不是",
+      "type": "clue",
+      "reason": "指向关键线索"
+    },
+    {
+      "id": "s032-q05",
+      "storyId": 32,
+      "question": "死者的过去经历对理解真相很重要吗？",
+      "expected": "不是",
+      "type": "clue",
+      "reason": "时间线索"
+    },
+    {
+      "id": "s032-q06",
+      "storyId": 32,
+      "question": "现场有第三者存在吗？",
+      "expected": "是",
+      "type": "trap",
+      "reason": "看似有凶手实则没有，或相反"
+    },
+    {
+      "id": "s032-q07",
+      "storyId": 32,
+      "question": "需要理解字面背后的真实含义吗？",
+      "expected": "不是",
+      "type": "creative",
+      "reason": "双关或隐喻"
+    },
+    {
+      "id": "s032-q08",
+      "storyId": 32,
+      "question": "这是意外事件吗？",
+      "expected": "是",
+      "type": "distractor",
+      "reason": "类别判断"
+    },
+    {
+      "id": "s032-q09",
+      "storyId": 32,
+      "question": "死者是自杀的吗？",
+      "expected": "不是",
+      "type": "direct",
+      "reason": "死亡方式判断"
+    },
+    {
+      "id": "s032-q10",
+      "storyId": 32,
+      "question": "需要打破常规思维方式才能理解真相吗？",
+      "expected": "是",
+      "type": "creative",
+      "reason": "难度指标"
+    },
+    {
+      "id": "s033-q01",
+      "storyId": 33,
+      "question": "这和住所的环境有关吗？",
+      "expected": "无关",
+      "type": "distractor",
+      "reason": "测试AI能否区分表面相关和实质相关"
+    },
+    {
+      "id": "s033-q02",
+      "storyId": 33,
+      "question": "真相和死者发现的某个事实有关吗？",
+      "expected": "不是",
+      "type": "direct",
+      "reason": "指向核心真相"
+    },
+    {
+      "id": "s033-q03",
+      "storyId": 33,
+      "question": "这是一起谋杀案吗？",
+      "expected": "不是",
+      "type": "distractor",
+      "reason": "常见误解"
+    },
+    {
+      "id": "s033-q04",
+      "storyId": 33,
+      "question": "现场物品在这个故事中起关键作用吗？",
+      "expected": "不是",
+      "type": "clue",
+      "reason": "指向关键线索"
+    },
+    {
+      "id": "s033-q05",
+      "storyId": 33,
+      "question": "死者的过去经历对理解真相很重要吗？",
+      "expected": "不是",
+      "type": "clue",
+      "reason": "时间线索"
+    },
+    {
+      "id": "s033-q06",
+      "storyId": 33,
+      "question": "现场有第三者存在吗？",
+      "expected": "是",
+      "type": "trap",
+      "reason": "看似有凶手实则没有，或相反"
+    },
+    {
+      "id": "s033-q07",
+      "storyId": 33,
+      "question": "需要理解字面背后的真实含义吗？",
+      "expected": "不是",
+      "type": "creative",
+      "reason": "双关或隐喻"
+    },
+    {
+      "id": "s033-q08",
+      "storyId": 33,
+      "question": "这是意外事件吗？",
+      "expected": "是",
+      "type": "distractor",
+      "reason": "类别判断"
+    },
+    {
+      "id": "s033-q09",
+      "storyId": 33,
+      "question": "死者是自杀的吗？",
+      "expected": "不是",
+      "type": "direct",
+      "reason": "死亡方式判断"
+    },
+    {
+      "id": "s033-q10",
+      "storyId": 33,
+      "question": "需要打破常规思维方式才能理解真相吗？",
+      "expected": "无关",
+      "type": "creative",
+      "reason": "难度指标"
+    },
+    {
+      "id": "s034-q01",
+      "storyId": 34,
+      "question": "这和海边的环境有关吗？",
+      "expected": "无关",
+      "type": "distractor",
+      "reason": "测试AI能否区分表面相关和实质相关"
+    },
+    {
+      "id": "s034-q02",
+      "storyId": 34,
+      "question": "真相和死者发现的某个事实有关吗？",
+      "expected": "不是",
+      "type": "direct",
+      "reason": "指向核心真相"
+    },
+    {
+      "id": "s034-q03",
+      "storyId": 34,
+      "question": "这是一起谋杀案吗？",
+      "expected": "不是",
+      "type": "distractor",
+      "reason": "常见误解"
+    },
+    {
+      "id": "s034-q04",
+      "storyId": 34,
+      "question": "现场物品在这个故事中起关键作用吗？",
+      "expected": "不是",
+      "type": "clue",
+      "reason": "指向关键线索"
+    },
+    {
+      "id": "s034-q05",
+      "storyId": 34,
+      "question": "当事人的过去经历对理解真相很重要吗？",
+      "expected": "不是",
+      "type": "clue",
+      "reason": "时间线索"
+    },
+    {
+      "id": "s034-q06",
+      "storyId": 34,
+      "question": "现场有第三者存在吗？",
+      "expected": "是",
+      "type": "trap",
+      "reason": "看似有凶手实则没有，或相反"
+    },
+    {
+      "id": "s034-q07",
+      "storyId": 34,
+      "question": "需要理解字面背后的真实含义吗？",
+      "expected": "不是",
+      "type": "creative",
+      "reason": "双关或隐喻"
+    },
+    {
+      "id": "s034-q08",
+      "storyId": 34,
+      "question": "这是意外事件吗？",
+      "expected": "是",
+      "type": "distractor",
+      "reason": "类别判断"
+    },
+    {
+      "id": "s034-q09",
+      "storyId": 34,
+      "question": "当事人是自杀的吗？",
+      "expected": "不是",
+      "type": "direct",
+      "reason": "死亡方式判断"
+    },
+    {
+      "id": "s034-q10",
+      "storyId": 34,
+      "question": "需要打破常规思维方式才能理解真相吗？",
+      "expected": "无关",
+      "type": "creative",
+      "reason": "难度指标"
+    },
+    {
+      "id": "s035-q01",
+      "storyId": 35,
+      "question": "这和现场的环境有关吗？",
+      "expected": "无关",
+      "type": "distractor",
+      "reason": "测试AI能否区分表面相关和实质相关"
+    },
+    {
+      "id": "s035-q02",
+      "storyId": 35,
+      "question": "真相和死者发现的某个事实有关吗？",
+      "expected": "不是",
+      "type": "direct",
+      "reason": "指向核心真相"
+    },
+    {
+      "id": "s035-q03",
+      "storyId": 35,
+      "question": "这是一起谋杀案吗？",
+      "expected": "不是",
+      "type": "distractor",
+      "reason": "常见误解"
+    },
+    {
+      "id": "s035-q04",
+      "storyId": 35,
+      "question": "现场物品在这个故事中起关键作用吗？",
+      "expected": "不是",
+      "type": "clue",
+      "reason": "指向关键线索"
+    },
+    {
+      "id": "s035-q05",
+      "storyId": 35,
+      "question": "当事人的过去经历对理解真相很重要吗？",
+      "expected": "不是",
+      "type": "clue",
+      "reason": "时间线索"
+    },
+    {
+      "id": "s035-q06",
+      "storyId": 35,
+      "question": "现场有第三者存在吗？",
+      "expected": "是",
+      "type": "trap",
+      "reason": "看似有凶手实则没有，或相反"
+    },
+    {
+      "id": "s035-q07",
+      "storyId": 35,
+      "question": "需要理解字面背后的真实含义吗？",
+      "expected": "不是",
+      "type": "creative",
+      "reason": "双关或隐喻"
+    },
+    {
+      "id": "s035-q08",
+      "storyId": 35,
+      "question": "这是意外事件吗？",
+      "expected": "是",
+      "type": "distractor",
+      "reason": "类别判断"
+    },
+    {
+      "id": "s035-q09",
+      "storyId": 35,
+      "question": "当事人是自杀的吗？",
+      "expected": "不是",
+      "type": "direct",
+      "reason": "死亡方式判断"
+    },
+    {
+      "id": "s035-q10",
+      "storyId": 35,
+      "question": "需要打破常规思维方式才能理解真相吗？",
+      "expected": "无关",
+      "type": "creative",
+      "reason": "难度指标"
+    },
+    {
+      "id": "s036-q01",
+      "storyId": 36,
+      "question": "这和电梯的环境有关吗？",
+      "expected": "无关",
+      "type": "distractor",
+      "reason": "测试AI能否区分表面相关和实质相关"
+    },
+    {
+      "id": "s036-q02",
+      "storyId": 36,
+      "question": "真相和死者发现的某个事实有关吗？",
+      "expected": "不是",
+      "type": "direct",
+      "reason": "指向核心真相"
+    },
+    {
+      "id": "s036-q03",
+      "storyId": 36,
+      "question": "这是一起谋杀案吗？",
+      "expected": "不是",
+      "type": "distractor",
+      "reason": "常见误解"
+    },
+    {
+      "id": "s036-q04",
+      "storyId": 36,
+      "question": "现场物品在这个故事中起关键作用吗？",
+      "expected": "不是",
+      "type": "clue",
+      "reason": "指向关键线索"
+    },
+    {
+      "id": "s036-q05",
+      "storyId": 36,
+      "question": "死者的过去经历对理解真相很重要吗？",
+      "expected": "不是",
+      "type": "clue",
+      "reason": "时间线索"
+    },
+    {
+      "id": "s036-q06",
+      "storyId": 36,
+      "question": "现场有第三者存在吗？",
+      "expected": "不是",
+      "type": "trap",
+      "reason": "看似有凶手实则没有，或相反"
+    },
+    {
+      "id": "s036-q07",
+      "storyId": 36,
+      "question": "需要理解字面背后的真实含义吗？",
+      "expected": "不是",
+      "type": "creative",
+      "reason": "双关或隐喻"
+    },
+    {
+      "id": "s036-q08",
+      "storyId": 36,
+      "question": "这是意外事件吗？",
+      "expected": "是",
+      "type": "distractor",
+      "reason": "类别判断"
+    },
+    {
+      "id": "s036-q09",
+      "storyId": 36,
+      "question": "死者是自杀的吗？",
+      "expected": "不是",
+      "type": "direct",
+      "reason": "死亡方式判断"
+    },
+    {
+      "id": "s036-q10",
+      "storyId": 36,
+      "question": "需要打破常规思维方式才能理解真相吗？",
+      "expected": "无关",
+      "type": "creative",
+      "reason": "难度指标"
+    },
+    {
+      "id": "s037-q01",
+      "storyId": 37,
+      "question": "这和现场的环境有关吗？",
+      "expected": "无关",
+      "type": "distractor",
+      "reason": "测试AI能否区分表面相关和实质相关"
+    },
+    {
+      "id": "s037-q02",
+      "storyId": 37,
+      "question": "真相和死者发现的某个事实有关吗？",
+      "expected": "不是",
+      "type": "direct",
+      "reason": "指向核心真相"
+    },
+    {
+      "id": "s037-q03",
+      "storyId": 37,
+      "question": "这是一起谋杀案吗？",
+      "expected": "不是",
+      "type": "distractor",
+      "reason": "常见误解"
+    },
+    {
+      "id": "s037-q04",
+      "storyId": 37,
+      "question": "现场物品在这个故事中起关键作用吗？",
+      "expected": "不是",
+      "type": "clue",
+      "reason": "指向关键线索"
+    },
+    {
+      "id": "s037-q05",
+      "storyId": 37,
+      "question": "当事人的过去经历对理解真相很重要吗？",
+      "expected": "不是",
+      "type": "clue",
+      "reason": "时间线索"
+    },
+    {
+      "id": "s037-q06",
+      "storyId": 37,
+      "question": "现场有第三者存在吗？",
+      "expected": "是",
+      "type": "trap",
+      "reason": "看似有凶手实则没有，或相反"
+    },
+    {
+      "id": "s037-q07",
+      "storyId": 37,
+      "question": "需要理解字面背后的真实含义吗？",
+      "expected": "不是",
+      "type": "creative",
+      "reason": "双关或隐喻"
+    },
+    {
+      "id": "s037-q08",
+      "storyId": 37,
+      "question": "这是意外事件吗？",
+      "expected": "是",
+      "type": "distractor",
+      "reason": "类别判断"
+    },
+    {
+      "id": "s037-q09",
+      "storyId": 37,
+      "question": "当事人是自杀的吗？",
+      "expected": "不是",
+      "type": "direct",
+      "reason": "死亡方式判断"
+    },
+    {
+      "id": "s037-q10",
+      "storyId": 37,
+      "question": "需要打破常规思维方式才能理解真相吗？",
+      "expected": "是",
+      "type": "creative",
+      "reason": "难度指标"
+    },
+    {
+      "id": "s038-q01",
+      "storyId": 38,
+      "question": "这和现场的环境有关吗？",
+      "expected": "无关",
+      "type": "distractor",
+      "reason": "测试AI能否区分表面相关和实质相关"
+    },
+    {
+      "id": "s038-q02",
+      "storyId": 38,
+      "question": "真相和死者发现的某个事实有关吗？",
+      "expected": "不是",
+      "type": "direct",
+      "reason": "指向核心真相"
+    },
+    {
+      "id": "s038-q03",
+      "storyId": 38,
+      "question": "这是一起谋杀案吗？",
+      "expected": "不是",
+      "type": "distractor",
+      "reason": "常见误解"
+    },
+    {
+      "id": "s038-q04",
+      "storyId": 38,
+      "question": "现场物品在这个故事中起关键作用吗？",
+      "expected": "不是",
+      "type": "clue",
+      "reason": "指向关键线索"
+    },
+    {
+      "id": "s038-q05",
+      "storyId": 38,
+      "question": "死者的过去经历对理解真相很重要吗？",
+      "expected": "不是",
+      "type": "clue",
+      "reason": "时间线索"
+    },
+    {
+      "id": "s038-q06",
+      "storyId": 38,
+      "question": "现场有第三者存在吗？",
+      "expected": "是",
+      "type": "trap",
+      "reason": "看似有凶手实则没有，或相反"
+    },
+    {
+      "id": "s038-q07",
+      "storyId": 38,
+      "question": "需要理解字面背后的真实含义吗？",
+      "expected": "不是",
+      "type": "creative",
+      "reason": "双关或隐喻"
+    },
+    {
+      "id": "s038-q08",
+      "storyId": 38,
+      "question": "这是意外事件吗？",
+      "expected": "是",
+      "type": "distractor",
+      "reason": "类别判断"
+    },
+    {
+      "id": "s038-q09",
+      "storyId": 38,
+      "question": "死者是自杀的吗？",
+      "expected": "不是",
+      "type": "direct",
+      "reason": "死亡方式判断"
+    },
+    {
+      "id": "s038-q10",
+      "storyId": 38,
+      "question": "需要打破常规思维方式才能理解真相吗？",
+      "expected": "无关",
+      "type": "creative",
+      "reason": "难度指标"
+    },
+    {
+      "id": "s039-q01",
+      "storyId": 39,
+      "question": "这和住所的环境有关吗？",
+      "expected": "无关",
+      "type": "distractor",
+      "reason": "测试AI能否区分表面相关和实质相关"
+    },
+    {
+      "id": "s039-q02",
+      "storyId": 39,
+      "question": "真相和死者发现的某个事实有关吗？",
+      "expected": "不是",
+      "type": "direct",
+      "reason": "指向核心真相"
+    },
+    {
+      "id": "s039-q03",
+      "storyId": 39,
+      "question": "这是一起谋杀案吗？",
+      "expected": "不是",
+      "type": "distractor",
+      "reason": "常见误解"
+    },
+    {
+      "id": "s039-q04",
+      "storyId": 39,
+      "question": "现场物品在这个故事中起关键作用吗？",
+      "expected": "不是",
+      "type": "clue",
+      "reason": "指向关键线索"
+    },
+    {
+      "id": "s039-q05",
+      "storyId": 39,
+      "question": "死者的过去经历对理解真相很重要吗？",
+      "expected": "不是",
+      "type": "clue",
+      "reason": "时间线索"
+    },
+    {
+      "id": "s039-q06",
+      "storyId": 39,
+      "question": "现场有第三者存在吗？",
+      "expected": "是",
+      "type": "trap",
+      "reason": "看似有凶手实则没有，或相反"
+    },
+    {
+      "id": "s039-q07",
+      "storyId": 39,
+      "question": "需要理解字面背后的真实含义吗？",
+      "expected": "不是",
+      "type": "creative",
+      "reason": "双关或隐喻"
+    },
+    {
+      "id": "s039-q08",
+      "storyId": 39,
+      "question": "这是意外事件吗？",
+      "expected": "是",
+      "type": "distractor",
+      "reason": "类别判断"
+    },
+    {
+      "id": "s039-q09",
+      "storyId": 39,
+      "question": "死者是自杀的吗？",
+      "expected": "不是",
+      "type": "direct",
+      "reason": "死亡方式判断"
+    },
+    {
+      "id": "s039-q10",
+      "storyId": 39,
+      "question": "需要打破常规思维方式才能理解真相吗？",
+      "expected": "无关",
+      "type": "creative",
+      "reason": "难度指标"
+    },
+    {
+      "id": "s040-q01",
+      "storyId": 40,
+      "question": "这和现场的环境有关吗？",
+      "expected": "无关",
+      "type": "distractor",
+      "reason": "测试AI能否区分表面相关和实质相关"
+    },
+    {
+      "id": "s040-q02",
+      "storyId": 40,
+      "question": "真相和死者发现的某个事实有关吗？",
+      "expected": "不是",
+      "type": "direct",
+      "reason": "指向核心真相"
+    },
+    {
+      "id": "s040-q03",
+      "storyId": 40,
+      "question": "这是一起谋杀案吗？",
+      "expected": "不是",
+      "type": "distractor",
+      "reason": "常见误解"
+    },
+    {
+      "id": "s040-q04",
+      "storyId": 40,
+      "question": "现场物品在这个故事中起关键作用吗？",
+      "expected": "不是",
+      "type": "clue",
+      "reason": "指向关键线索"
+    },
+    {
+      "id": "s040-q05",
+      "storyId": 40,
+      "question": "死者的过去经历对理解真相很重要吗？",
+      "expected": "不是",
+      "type": "clue",
+      "reason": "时间线索"
+    },
+    {
+      "id": "s040-q06",
+      "storyId": 40,
+      "question": "现场有第三者存在吗？",
+      "expected": "不是",
+      "type": "trap",
+      "reason": "看似有凶手实则没有，或相反"
+    },
+    {
+      "id": "s040-q07",
+      "storyId": 40,
+      "question": "需要理解字面背后的真实含义吗？",
+      "expected": "不是",
+      "type": "creative",
+      "reason": "双关或隐喻"
+    },
+    {
+      "id": "s040-q08",
+      "storyId": 40,
+      "question": "这是意外事件吗？",
+      "expected": "是",
+      "type": "distractor",
+      "reason": "类别判断"
+    },
+    {
+      "id": "s040-q09",
+      "storyId": 40,
+      "question": "死者是自杀的吗？",
+      "expected": "不是",
+      "type": "direct",
+      "reason": "死亡方式判断"
+    },
+    {
+      "id": "s040-q10",
+      "storyId": 40,
+      "question": "需要打破常规思维方式才能理解真相吗？",
+      "expected": "无关",
+      "type": "creative",
+      "reason": "难度指标"
+    },
+    {
+      "id": "s041-q01",
+      "storyId": 41,
+      "question": "这和现场的环境有关吗？",
+      "expected": "无关",
+      "type": "distractor",
+      "reason": "测试AI能否区分表面相关和实质相关"
+    },
+    {
+      "id": "s041-q02",
+      "storyId": 41,
+      "question": "真相和死者发现的某个事实有关吗？",
+      "expected": "不是",
+      "type": "direct",
+      "reason": "指向核心真相"
+    },
+    {
+      "id": "s041-q03",
+      "storyId": 41,
+      "question": "这是一起谋杀案吗？",
+      "expected": "不是",
+      "type": "distractor",
+      "reason": "常见误解"
+    },
+    {
+      "id": "s041-q04",
+      "storyId": 41,
+      "question": "现场物品在这个故事中起关键作用吗？",
+      "expected": "不是",
+      "type": "clue",
+      "reason": "指向关键线索"
+    },
+    {
+      "id": "s041-q05",
+      "storyId": 41,
+      "question": "死者的过去经历对理解真相很重要吗？",
+      "expected": "不是",
+      "type": "clue",
+      "reason": "时间线索"
+    },
+    {
+      "id": "s041-q06",
+      "storyId": 41,
+      "question": "现场有第三者存在吗？",
+      "expected": "不是",
+      "type": "trap",
+      "reason": "看似有凶手实则没有，或相反"
+    },
+    {
+      "id": "s041-q07",
+      "storyId": 41,
+      "question": "需要理解字面背后的真实含义吗？",
+      "expected": "不是",
+      "type": "creative",
+      "reason": "双关或隐喻"
+    },
+    {
+      "id": "s041-q08",
+      "storyId": 41,
+      "question": "这是意外事件吗？",
+      "expected": "是",
+      "type": "distractor",
+      "reason": "类别判断"
+    },
+    {
+      "id": "s041-q09",
+      "storyId": 41,
+      "question": "死者是自杀的吗？",
+      "expected": "不是",
+      "type": "direct",
+      "reason": "死亡方式判断"
+    },
+    {
+      "id": "s041-q10",
+      "storyId": 41,
+      "question": "需要打破常规思维方式才能理解真相吗？",
+      "expected": "无关",
+      "type": "creative",
+      "reason": "难度指标"
+    },
+    {
+      "id": "s042-q01",
+      "storyId": 42,
+      "question": "这和现场的环境有关吗？",
+      "expected": "无关",
+      "type": "distractor",
+      "reason": "测试AI能否区分表面相关和实质相关"
+    },
+    {
+      "id": "s042-q02",
+      "storyId": 42,
+      "question": "真相和死者发现的某个事实有关吗？",
+      "expected": "不是",
+      "type": "direct",
+      "reason": "指向核心真相"
+    },
+    {
+      "id": "s042-q03",
+      "storyId": 42,
+      "question": "这是一起谋杀案吗？",
+      "expected": "不是",
+      "type": "distractor",
+      "reason": "常见误解"
+    },
+    {
+      "id": "s042-q04",
+      "storyId": 42,
+      "question": "电话在这个故事中起关键作用吗？",
+      "expected": "不是",
+      "type": "clue",
+      "reason": "指向关键线索"
+    },
+    {
+      "id": "s042-q05",
+      "storyId": 42,
+      "question": "死者的过去经历对理解真相很重要吗？",
+      "expected": "不是",
+      "type": "clue",
+      "reason": "时间线索"
+    },
+    {
+      "id": "s042-q06",
+      "storyId": 42,
+      "question": "现场有第三者存在吗？",
+      "expected": "是",
+      "type": "trap",
+      "reason": "看似有凶手实则没有，或相反"
+    },
+    {
+      "id": "s042-q07",
+      "storyId": 42,
+      "question": "需要理解字面背后的真实含义吗？",
+      "expected": "不是",
+      "type": "creative",
+      "reason": "双关或隐喻"
+    },
+    {
+      "id": "s042-q08",
+      "storyId": 42,
+      "question": "这是意外事件吗？",
+      "expected": "是",
+      "type": "distractor",
+      "reason": "类别判断"
+    },
+    {
+      "id": "s042-q09",
+      "storyId": 42,
+      "question": "死者是自杀的吗？",
+      "expected": "不是",
+      "type": "direct",
+      "reason": "死亡方式判断"
+    },
+    {
+      "id": "s042-q10",
+      "storyId": 42,
+      "question": "需要打破常规思维方式才能理解真相吗？",
+      "expected": "无关",
+      "type": "creative",
+      "reason": "难度指标"
+    },
+    {
+      "id": "s043-q01",
+      "storyId": 43,
+      "question": "这和现场的环境有关吗？",
+      "expected": "无关",
+      "type": "distractor",
+      "reason": "测试AI能否区分表面相关和实质相关"
+    },
+    {
+      "id": "s043-q02",
+      "storyId": 43,
+      "question": "真相和死者发现的某个事实有关吗？",
+      "expected": "不是",
+      "type": "direct",
+      "reason": "指向核心真相"
+    },
+    {
+      "id": "s043-q03",
+      "storyId": 43,
+      "question": "这是一起谋杀案吗？",
+      "expected": "不是",
+      "type": "distractor",
+      "reason": "常见误解"
+    },
+    {
+      "id": "s043-q04",
+      "storyId": 43,
+      "question": "枪在这个故事中起关键作用吗？",
+      "expected": "是",
+      "type": "clue",
+      "reason": "指向关键线索"
+    },
+    {
+      "id": "s043-q05",
+      "storyId": 43,
+      "question": "死者的过去经历对理解真相很重要吗？",
+      "expected": "不是",
+      "type": "clue",
+      "reason": "时间线索"
+    },
+    {
+      "id": "s043-q06",
+      "storyId": 43,
+      "question": "现场有第三者存在吗？",
+      "expected": "不是",
+      "type": "trap",
+      "reason": "看似有凶手实则没有，或相反"
+    },
+    {
+      "id": "s043-q07",
+      "storyId": 43,
+      "question": "需要理解字面背后的真实含义吗？",
+      "expected": "不是",
+      "type": "creative",
+      "reason": "双关或隐喻"
+    },
+    {
+      "id": "s043-q08",
+      "storyId": 43,
+      "question": "这是意外事件吗？",
+      "expected": "是",
+      "type": "distractor",
+      "reason": "类别判断"
+    },
+    {
+      "id": "s043-q09",
+      "storyId": 43,
+      "question": "死者是自杀的吗？",
+      "expected": "是",
+      "type": "direct",
+      "reason": "死亡方式判断"
+    },
+    {
+      "id": "s043-q10",
+      "storyId": 43,
+      "question": "需要打破常规思维方式才能理解真相吗？",
+      "expected": "无关",
+      "type": "creative",
+      "reason": "难度指标"
+    },
+    {
+      "id": "s044-q01",
+      "storyId": 44,
+      "question": "这和现场的环境有关吗？",
+      "expected": "无关",
+      "type": "distractor",
+      "reason": "测试AI能否区分表面相关和实质相关"
+    },
+    {
+      "id": "s044-q02",
+      "storyId": 44,
+      "question": "真相和死者发现的某个事实有关吗？",
+      "expected": "不是",
+      "type": "direct",
+      "reason": "指向核心真相"
+    },
+    {
+      "id": "s044-q03",
+      "storyId": 44,
+      "question": "这是一起谋杀案吗？",
+      "expected": "不是",
+      "type": "distractor",
+      "reason": "常见误解"
+    },
+    {
+      "id": "s044-q04",
+      "storyId": 44,
+      "question": "现场物品在这个故事中起关键作用吗？",
+      "expected": "不是",
+      "type": "clue",
+      "reason": "指向关键线索"
+    },
+    {
+      "id": "s044-q05",
+      "storyId": 44,
+      "question": "死者的过去经历对理解真相很重要吗？",
+      "expected": "不是",
+      "type": "clue",
+      "reason": "时间线索"
+    },
+    {
+      "id": "s044-q06",
+      "storyId": 44,
+      "question": "现场有第三者存在吗？",
+      "expected": "不是",
+      "type": "trap",
+      "reason": "看似有凶手实则没有，或相反"
+    },
+    {
+      "id": "s044-q07",
+      "storyId": 44,
+      "question": "需要理解字面背后的真实含义吗？",
+      "expected": "不是",
+      "type": "creative",
+      "reason": "双关或隐喻"
+    },
+    {
+      "id": "s044-q08",
+      "storyId": 44,
+      "question": "这是意外事件吗？",
+      "expected": "是",
+      "type": "distractor",
+      "reason": "类别判断"
+    },
+    {
+      "id": "s044-q09",
+      "storyId": 44,
+      "question": "死者是自杀的吗？",
+      "expected": "不是",
+      "type": "direct",
+      "reason": "死亡方式判断"
+    },
+    {
+      "id": "s044-q10",
+      "storyId": 44,
+      "question": "需要打破常规思维方式才能理解真相吗？",
+      "expected": "无关",
+      "type": "creative",
+      "reason": "难度指标"
+    },
+    {
+      "id": "s045-q01",
+      "storyId": 45,
+      "question": "这和现场的环境有关吗？",
+      "expected": "无关",
+      "type": "distractor",
+      "reason": "测试AI能否区分表面相关和实质相关"
+    },
+    {
+      "id": "s045-q02",
+      "storyId": 45,
+      "question": "真相和死者发现的某个事实有关吗？",
+      "expected": "不是",
+      "type": "direct",
+      "reason": "指向核心真相"
+    },
+    {
+      "id": "s045-q03",
+      "storyId": 45,
+      "question": "这是一起谋杀案吗？",
+      "expected": "不是",
+      "type": "distractor",
+      "reason": "常见误解"
+    },
+    {
+      "id": "s045-q04",
+      "storyId": 45,
+      "question": "现场物品在这个故事中起关键作用吗？",
+      "expected": "不是",
+      "type": "clue",
+      "reason": "指向关键线索"
+    },
+    {
+      "id": "s045-q05",
+      "storyId": 45,
+      "question": "死者的过去经历对理解真相很重要吗？",
+      "expected": "不是",
+      "type": "clue",
+      "reason": "时间线索"
+    },
+    {
+      "id": "s045-q06",
+      "storyId": 45,
+      "question": "现场有第三者存在吗？",
+      "expected": "是",
+      "type": "trap",
+      "reason": "看似有凶手实则没有，或相反"
+    },
+    {
+      "id": "s045-q07",
+      "storyId": 45,
+      "question": "需要理解字面背后的真实含义吗？",
+      "expected": "不是",
+      "type": "creative",
+      "reason": "双关或隐喻"
+    },
+    {
+      "id": "s045-q08",
+      "storyId": 45,
+      "question": "这是意外事件吗？",
+      "expected": "是",
+      "type": "distractor",
+      "reason": "类别判断"
+    },
+    {
+      "id": "s045-q09",
+      "storyId": 45,
+      "question": "死者是自杀的吗？",
+      "expected": "不是",
+      "type": "direct",
+      "reason": "死亡方式判断"
+    },
+    {
+      "id": "s045-q10",
+      "storyId": 45,
+      "question": "需要打破常规思维方式才能理解真相吗？",
+      "expected": "无关",
+      "type": "creative",
+      "reason": "难度指标"
+    },
+    {
+      "id": "s046-q01",
+      "storyId": 46,
+      "question": "这和现场的环境有关吗？",
+      "expected": "无关",
+      "type": "distractor",
+      "reason": "测试AI能否区分表面相关和实质相关"
+    },
+    {
+      "id": "s046-q02",
+      "storyId": 46,
+      "question": "真相和死者发现的某个事实有关吗？",
+      "expected": "不是",
+      "type": "direct",
+      "reason": "指向核心真相"
+    },
+    {
+      "id": "s046-q03",
+      "storyId": 46,
+      "question": "这是一起谋杀案吗？",
+      "expected": "不是",
+      "type": "distractor",
+      "reason": "常见误解"
+    },
+    {
+      "id": "s046-q04",
+      "storyId": 46,
+      "question": "纸条在这个故事中起关键作用吗？",
+      "expected": "不是",
+      "type": "clue",
+      "reason": "指向关键线索"
+    },
+    {
+      "id": "s046-q05",
+      "storyId": 46,
+      "question": "死者的过去经历对理解真相很重要吗？",
+      "expected": "不是",
+      "type": "clue",
+      "reason": "时间线索"
+    },
+    {
+      "id": "s046-q06",
+      "storyId": 46,
+      "question": "现场有第三者存在吗？",
+      "expected": "不是",
+      "type": "trap",
+      "reason": "看似有凶手实则没有，或相反"
+    },
+    {
+      "id": "s046-q07",
+      "storyId": 46,
+      "question": "需要理解字面背后的真实含义吗？",
+      "expected": "不是",
+      "type": "creative",
+      "reason": "双关或隐喻"
+    },
+    {
+      "id": "s046-q08",
+      "storyId": 46,
+      "question": "这是意外事件吗？",
+      "expected": "是",
+      "type": "distractor",
+      "reason": "类别判断"
+    },
+    {
+      "id": "s046-q09",
+      "storyId": 46,
+      "question": "死者是自杀的吗？",
+      "expected": "不是",
+      "type": "direct",
+      "reason": "死亡方式判断"
+    },
+    {
+      "id": "s046-q10",
+      "storyId": 46,
+      "question": "需要打破常规思维方式才能理解真相吗？",
+      "expected": "无关",
+      "type": "creative",
+      "reason": "难度指标"
+    },
+    {
+      "id": "s047-q01",
+      "storyId": 47,
+      "question": "这和电梯的环境有关吗？",
+      "expected": "无关",
+      "type": "distractor",
+      "reason": "测试AI能否区分表面相关和实质相关"
+    },
+    {
+      "id": "s047-q02",
+      "storyId": 47,
+      "question": "真相和死者发现的某个事实有关吗？",
+      "expected": "不是",
+      "type": "direct",
+      "reason": "指向核心真相"
+    },
+    {
+      "id": "s047-q03",
+      "storyId": 47,
+      "question": "这是一起谋杀案吗？",
+      "expected": "不是",
+      "type": "distractor",
+      "reason": "常见误解"
+    },
+    {
+      "id": "s047-q04",
+      "storyId": 47,
+      "question": "现场物品在这个故事中起关键作用吗？",
+      "expected": "不是",
+      "type": "clue",
+      "reason": "指向关键线索"
+    },
+    {
+      "id": "s047-q05",
+      "storyId": 47,
+      "question": "当事人的过去经历对理解真相很重要吗？",
+      "expected": "不是",
+      "type": "clue",
+      "reason": "时间线索"
+    },
+    {
+      "id": "s047-q06",
+      "storyId": 47,
+      "question": "现场有第三者存在吗？",
+      "expected": "是",
+      "type": "trap",
+      "reason": "看似有凶手实则没有，或相反"
+    },
+    {
+      "id": "s047-q07",
+      "storyId": 47,
+      "question": "需要理解字面背后的真实含义吗？",
+      "expected": "不是",
+      "type": "creative",
+      "reason": "双关或隐喻"
+    },
+    {
+      "id": "s047-q08",
+      "storyId": 47,
+      "question": "这是意外事件吗？",
+      "expected": "是",
+      "type": "distractor",
+      "reason": "类别判断"
+    },
+    {
+      "id": "s047-q09",
+      "storyId": 47,
+      "question": "当事人是自杀的吗？",
+      "expected": "不是",
+      "type": "direct",
+      "reason": "死亡方式判断"
+    },
+    {
+      "id": "s047-q10",
+      "storyId": 47,
+      "question": "需要打破常规思维方式才能理解真相吗？",
+      "expected": "是",
+      "type": "creative",
+      "reason": "难度指标"
+    },
+    {
+      "id": "s048-q01",
+      "storyId": 48,
+      "question": "这和现场的环境有关吗？",
+      "expected": "无关",
+      "type": "distractor",
+      "reason": "测试AI能否区分表面相关和实质相关"
+    },
+    {
+      "id": "s048-q02",
+      "storyId": 48,
+      "question": "真相和死者发现的某个事实有关吗？",
+      "expected": "不是",
+      "type": "direct",
+      "reason": "指向核心真相"
+    },
+    {
+      "id": "s048-q03",
+      "storyId": 48,
+      "question": "这是一起谋杀案吗？",
+      "expected": "不是",
+      "type": "distractor",
+      "reason": "常见误解"
+    },
+    {
+      "id": "s048-q04",
+      "storyId": 48,
+      "question": "现场物品在这个故事中起关键作用吗？",
+      "expected": "不是",
+      "type": "clue",
+      "reason": "指向关键线索"
+    },
+    {
+      "id": "s048-q05",
+      "storyId": 48,
+      "question": "当事人的过去经历对理解真相很重要吗？",
+      "expected": "不是",
+      "type": "clue",
+      "reason": "时间线索"
+    },
+    {
+      "id": "s048-q06",
+      "storyId": 48,
+      "question": "现场有第三者存在吗？",
+      "expected": "是",
+      "type": "trap",
+      "reason": "看似有凶手实则没有，或相反"
+    },
+    {
+      "id": "s048-q07",
+      "storyId": 48,
+      "question": "需要理解字面背后的真实含义吗？",
+      "expected": "不是",
+      "type": "creative",
+      "reason": "双关或隐喻"
+    },
+    {
+      "id": "s048-q08",
+      "storyId": 48,
+      "question": "这是意外事件吗？",
+      "expected": "是",
+      "type": "distractor",
+      "reason": "类别判断"
+    },
+    {
+      "id": "s048-q09",
+      "storyId": 48,
+      "question": "当事人是自杀的吗？",
+      "expected": "不是",
+      "type": "direct",
+      "reason": "死亡方式判断"
+    },
+    {
+      "id": "s048-q10",
+      "storyId": 48,
+      "question": "需要打破常规思维方式才能理解真相吗？",
+      "expected": "是",
+      "type": "creative",
+      "reason": "难度指标"
+    },
+    {
+      "id": "s049-q01",
+      "storyId": 49,
+      "question": "这和现场的环境有关吗？",
+      "expected": "无关",
+      "type": "distractor",
+      "reason": "测试AI能否区分表面相关和实质相关"
+    },
+    {
+      "id": "s049-q02",
+      "storyId": 49,
+      "question": "真相和死者发现的某个事实有关吗？",
+      "expected": "不是",
+      "type": "direct",
+      "reason": "指向核心真相"
+    },
+    {
+      "id": "s049-q03",
+      "storyId": 49,
+      "question": "这是一起谋杀案吗？",
+      "expected": "不是",
+      "type": "distractor",
+      "reason": "常见误解"
+    },
+    {
+      "id": "s049-q04",
+      "storyId": 49,
+      "question": "现场物品在这个故事中起关键作用吗？",
+      "expected": "不是",
+      "type": "clue",
+      "reason": "指向关键线索"
+    },
+    {
+      "id": "s049-q05",
+      "storyId": 49,
+      "question": "死者的过去经历对理解真相很重要吗？",
+      "expected": "不是",
+      "type": "clue",
+      "reason": "时间线索"
+    },
+    {
+      "id": "s049-q06",
+      "storyId": 49,
+      "question": "现场有第三者存在吗？",
+      "expected": "是",
+      "type": "trap",
+      "reason": "看似有凶手实则没有，或相反"
+    },
+    {
+      "id": "s049-q07",
+      "storyId": 49,
+      "question": "需要理解字面背后的真实含义吗？",
+      "expected": "不是",
+      "type": "creative",
+      "reason": "双关或隐喻"
+    },
+    {
+      "id": "s049-q08",
+      "storyId": 49,
+      "question": "这是意外事件吗？",
+      "expected": "是",
+      "type": "distractor",
+      "reason": "类别判断"
+    },
+    {
+      "id": "s049-q09",
+      "storyId": 49,
+      "question": "死者是自杀的吗？",
+      "expected": "不是",
+      "type": "direct",
+      "reason": "死亡方式判断"
+    },
+    {
+      "id": "s049-q10",
+      "storyId": 49,
+      "question": "需要打破常规思维方式才能理解真相吗？",
+      "expected": "无关",
+      "type": "creative",
+      "reason": "难度指标"
+    },
+    {
+      "id": "s050-q01",
+      "storyId": 50,
+      "question": "这和现场的环境有关吗？",
+      "expected": "无关",
+      "type": "distractor",
+      "reason": "测试AI能否区分表面相关和实质相关"
+    },
+    {
+      "id": "s050-q02",
+      "storyId": 50,
+      "question": "真相和死者发现的某个事实有关吗？",
+      "expected": "不是",
+      "type": "direct",
+      "reason": "指向核心真相"
+    },
+    {
+      "id": "s050-q03",
+      "storyId": 50,
+      "question": "这是一起谋杀案吗？",
+      "expected": "不是",
+      "type": "distractor",
+      "reason": "常见误解"
+    },
+    {
+      "id": "s050-q04",
+      "storyId": 50,
+      "question": "现场物品在这个故事中起关键作用吗？",
+      "expected": "不是",
+      "type": "clue",
+      "reason": "指向关键线索"
+    },
+    {
+      "id": "s050-q05",
+      "storyId": 50,
+      "question": "死者的过去经历对理解真相很重要吗？",
+      "expected": "不是",
+      "type": "clue",
+      "reason": "时间线索"
+    },
+    {
+      "id": "s050-q06",
+      "storyId": 50,
+      "question": "现场有第三者存在吗？",
+      "expected": "不是",
+      "type": "trap",
+      "reason": "看似有凶手实则没有，或相反"
+    },
+    {
+      "id": "s050-q07",
+      "storyId": 50,
+      "question": "需要理解字面背后的真实含义吗？",
+      "expected": "不是",
+      "type": "creative",
+      "reason": "双关或隐喻"
+    },
+    {
+      "id": "s050-q08",
+      "storyId": 50,
+      "question": "这是意外事件吗？",
+      "expected": "是",
+      "type": "distractor",
+      "reason": "类别判断"
+    },
+    {
+      "id": "s050-q09",
+      "storyId": 50,
+      "question": "死者是自杀的吗？",
+      "expected": "不是",
+      "type": "direct",
+      "reason": "死亡方式判断"
+    },
+    {
+      "id": "s050-q10",
+      "storyId": 50,
+      "question": "需要打破常规思维方式才能理解真相吗？",
+      "expected": "无关",
+      "type": "creative",
+      "reason": "难度指标"
+    },
+    {
+      "id": "s051-q01",
+      "storyId": 51,
+      "question": "这和住所的环境有关吗？",
+      "expected": "无关",
+      "type": "distractor",
+      "reason": "测试AI能否区分表面相关和实质相关"
+    },
+    {
+      "id": "s051-q02",
+      "storyId": 51,
+      "question": "真相和死者发现的某个事实有关吗？",
+      "expected": "不是",
+      "type": "direct",
+      "reason": "指向核心真相"
+    },
+    {
+      "id": "s051-q03",
+      "storyId": 51,
+      "question": "这是一起谋杀案吗？",
+      "expected": "不是",
+      "type": "distractor",
+      "reason": "常见误解"
+    },
+    {
+      "id": "s051-q04",
+      "storyId": 51,
+      "question": "现场物品在这个故事中起关键作用吗？",
+      "expected": "不是",
+      "type": "clue",
+      "reason": "指向关键线索"
+    },
+    {
+      "id": "s051-q05",
+      "storyId": 51,
+      "question": "当事人的过去经历对理解真相很重要吗？",
+      "expected": "不是",
+      "type": "clue",
+      "reason": "时间线索"
+    },
+    {
+      "id": "s051-q06",
+      "storyId": 51,
+      "question": "现场有第三者存在吗？",
+      "expected": "不是",
+      "type": "trap",
+      "reason": "看似有凶手实则没有，或相反"
+    },
+    {
+      "id": "s051-q07",
+      "storyId": 51,
+      "question": "需要理解字面背后的真实含义吗？",
+      "expected": "不是",
+      "type": "creative",
+      "reason": "双关或隐喻"
+    },
+    {
+      "id": "s051-q08",
+      "storyId": 51,
+      "question": "这是意外事件吗？",
+      "expected": "是",
+      "type": "distractor",
+      "reason": "类别判断"
+    },
+    {
+      "id": "s051-q09",
+      "storyId": 51,
+      "question": "当事人是自杀的吗？",
+      "expected": "不是",
+      "type": "direct",
+      "reason": "死亡方式判断"
+    },
+    {
+      "id": "s051-q10",
+      "storyId": 51,
+      "question": "需要打破常规思维方式才能理解真相吗？",
+      "expected": "无关",
+      "type": "creative",
+      "reason": "难度指标"
+    },
+    {
+      "id": "s052-q01",
+      "storyId": 52,
+      "question": "这和海边的环境有关吗？",
+      "expected": "无关",
+      "type": "distractor",
+      "reason": "测试AI能否区分表面相关和实质相关"
+    },
+    {
+      "id": "s052-q02",
+      "storyId": 52,
+      "question": "真相和死者发现的某个事实有关吗？",
+      "expected": "不是",
+      "type": "direct",
+      "reason": "指向核心真相"
+    },
+    {
+      "id": "s052-q03",
+      "storyId": 52,
+      "question": "这是一起谋杀案吗？",
+      "expected": "不是",
+      "type": "distractor",
+      "reason": "常见误解"
+    },
+    {
+      "id": "s052-q04",
+      "storyId": 52,
+      "question": "现场物品在这个故事中起关键作用吗？",
+      "expected": "不是",
+      "type": "clue",
+      "reason": "指向关键线索"
+    },
+    {
+      "id": "s052-q05",
+      "storyId": 52,
+      "question": "死者的过去经历对理解真相很重要吗？",
+      "expected": "不是",
+      "type": "clue",
+      "reason": "时间线索"
+    },
+    {
+      "id": "s052-q06",
+      "storyId": 52,
+      "question": "现场有第三者存在吗？",
+      "expected": "不是",
+      "type": "trap",
+      "reason": "看似有凶手实则没有，或相反"
+    },
+    {
+      "id": "s052-q07",
+      "storyId": 52,
+      "question": "需要理解字面背后的真实含义吗？",
+      "expected": "不是",
+      "type": "creative",
+      "reason": "双关或隐喻"
+    },
+    {
+      "id": "s052-q08",
+      "storyId": 52,
+      "question": "这是意外事件吗？",
+      "expected": "是",
+      "type": "distractor",
+      "reason": "类别判断"
+    },
+    {
+      "id": "s052-q09",
+      "storyId": 52,
+      "question": "死者是自杀的吗？",
+      "expected": "不是",
+      "type": "direct",
+      "reason": "死亡方式判断"
+    },
+    {
+      "id": "s052-q10",
+      "storyId": 52,
+      "question": "需要打破常规思维方式才能理解真相吗？",
+      "expected": "无关",
+      "type": "creative",
+      "reason": "难度指标"
+    },
+    {
+      "id": "s053-q01",
+      "storyId": 53,
+      "question": "这和现场的环境有关吗？",
+      "expected": "无关",
+      "type": "distractor",
+      "reason": "测试AI能否区分表面相关和实质相关"
+    },
+    {
+      "id": "s053-q02",
+      "storyId": 53,
+      "question": "真相和死者发现的某个事实有关吗？",
+      "expected": "不是",
+      "type": "direct",
+      "reason": "指向核心真相"
+    },
+    {
+      "id": "s053-q03",
+      "storyId": 53,
+      "question": "这是一起谋杀案吗？",
+      "expected": "不是",
+      "type": "distractor",
+      "reason": "常见误解"
+    },
+    {
+      "id": "s053-q04",
+      "storyId": 53,
+      "question": "现场物品在这个故事中起关键作用吗？",
+      "expected": "不是",
+      "type": "clue",
+      "reason": "指向关键线索"
+    },
+    {
+      "id": "s053-q05",
+      "storyId": 53,
+      "question": "当事人的过去经历对理解真相很重要吗？",
+      "expected": "不是",
+      "type": "clue",
+      "reason": "时间线索"
+    },
+    {
+      "id": "s053-q06",
+      "storyId": 53,
+      "question": "现场有第三者存在吗？",
+      "expected": "是",
+      "type": "trap",
+      "reason": "看似有凶手实则没有，或相反"
+    },
+    {
+      "id": "s053-q07",
+      "storyId": 53,
+      "question": "需要理解字面背后的真实含义吗？",
+      "expected": "不是",
+      "type": "creative",
+      "reason": "双关或隐喻"
+    },
+    {
+      "id": "s053-q08",
+      "storyId": 53,
+      "question": "这是意外事件吗？",
+      "expected": "是",
+      "type": "distractor",
+      "reason": "类别判断"
+    },
+    {
+      "id": "s053-q09",
+      "storyId": 53,
+      "question": "当事人是自杀的吗？",
+      "expected": "不是",
+      "type": "direct",
+      "reason": "死亡方式判断"
+    },
+    {
+      "id": "s053-q10",
+      "storyId": 53,
+      "question": "需要打破常规思维方式才能理解真相吗？",
+      "expected": "无关",
+      "type": "creative",
+      "reason": "难度指标"
+    },
+    {
+      "id": "s054-q01",
+      "storyId": 54,
+      "question": "这和电梯的环境有关吗？",
+      "expected": "无关",
+      "type": "distractor",
+      "reason": "测试AI能否区分表面相关和实质相关"
+    },
+    {
+      "id": "s054-q02",
+      "storyId": 54,
+      "question": "真相和死者发现的某个事实有关吗？",
+      "expected": "不是",
+      "type": "direct",
+      "reason": "指向核心真相"
+    },
+    {
+      "id": "s054-q03",
+      "storyId": 54,
+      "question": "这是一起谋杀案吗？",
+      "expected": "不是",
+      "type": "distractor",
+      "reason": "常见误解"
+    },
+    {
+      "id": "s054-q04",
+      "storyId": 54,
+      "question": "现场物品在这个故事中起关键作用吗？",
+      "expected": "不是",
+      "type": "clue",
+      "reason": "指向关键线索"
+    },
+    {
+      "id": "s054-q05",
+      "storyId": 54,
+      "question": "死者的过去经历对理解真相很重要吗？",
+      "expected": "不是",
+      "type": "clue",
+      "reason": "时间线索"
+    },
+    {
+      "id": "s054-q06",
+      "storyId": 54,
+      "question": "现场有第三者存在吗？",
+      "expected": "不是",
+      "type": "trap",
+      "reason": "看似有凶手实则没有，或相反"
+    },
+    {
+      "id": "s054-q07",
+      "storyId": 54,
+      "question": "需要理解字面背后的真实含义吗？",
+      "expected": "不是",
+      "type": "creative",
+      "reason": "双关或隐喻"
+    },
+    {
+      "id": "s054-q08",
+      "storyId": 54,
+      "question": "这是意外事件吗？",
+      "expected": "是",
+      "type": "distractor",
+      "reason": "类别判断"
+    },
+    {
+      "id": "s054-q09",
+      "storyId": 54,
+      "question": "死者是自杀的吗？",
+      "expected": "不是",
+      "type": "direct",
+      "reason": "死亡方式判断"
+    },
+    {
+      "id": "s054-q10",
+      "storyId": 54,
+      "question": "需要打破常规思维方式才能理解真相吗？",
+      "expected": "无关",
+      "type": "creative",
+      "reason": "难度指标"
+    },
+    {
+      "id": "s055-q01",
+      "storyId": 55,
+      "question": "这和现场的环境有关吗？",
+      "expected": "无关",
+      "type": "distractor",
+      "reason": "测试AI能否区分表面相关和实质相关"
+    },
+    {
+      "id": "s055-q02",
+      "storyId": 55,
+      "question": "真相和死者发现的某个事实有关吗？",
+      "expected": "不是",
+      "type": "direct",
+      "reason": "指向核心真相"
+    },
+    {
+      "id": "s055-q03",
+      "storyId": 55,
+      "question": "这是一起谋杀案吗？",
+      "expected": "不是",
+      "type": "distractor",
+      "reason": "常见误解"
+    },
+    {
+      "id": "s055-q04",
+      "storyId": 55,
+      "question": "现场物品在这个故事中起关键作用吗？",
+      "expected": "不是",
+      "type": "clue",
+      "reason": "指向关键线索"
+    },
+    {
+      "id": "s055-q05",
+      "storyId": 55,
+      "question": "死者的过去经历对理解真相很重要吗？",
+      "expected": "不是",
+      "type": "clue",
+      "reason": "时间线索"
+    },
+    {
+      "id": "s055-q06",
+      "storyId": 55,
+      "question": "现场有第三者存在吗？",
+      "expected": "不是",
+      "type": "trap",
+      "reason": "看似有凶手实则没有，或相反"
+    },
+    {
+      "id": "s055-q07",
+      "storyId": 55,
+      "question": "需要理解字面背后的真实含义吗？",
+      "expected": "不是",
+      "type": "creative",
+      "reason": "双关或隐喻"
+    },
+    {
+      "id": "s055-q08",
+      "storyId": 55,
+      "question": "这是意外事件吗？",
+      "expected": "是",
+      "type": "distractor",
+      "reason": "类别判断"
+    },
+    {
+      "id": "s055-q09",
+      "storyId": 55,
+      "question": "死者是自杀的吗？",
+      "expected": "不是",
+      "type": "direct",
+      "reason": "死亡方式判断"
+    },
+    {
+      "id": "s055-q10",
+      "storyId": 55,
+      "question": "需要打破常规思维方式才能理解真相吗？",
+      "expected": "无关",
+      "type": "creative",
+      "reason": "难度指标"
+    },
+    {
+      "id": "s056-q01",
+      "storyId": 56,
+      "question": "这和现场的环境有关吗？",
+      "expected": "无关",
+      "type": "distractor",
+      "reason": "测试AI能否区分表面相关和实质相关"
+    },
+    {
+      "id": "s056-q02",
+      "storyId": 56,
+      "question": "真相和死者发现的某个事实有关吗？",
+      "expected": "是",
+      "type": "direct",
+      "reason": "指向核心真相"
+    },
+    {
+      "id": "s056-q03",
+      "storyId": 56,
+      "question": "这是一起谋杀案吗？",
+      "expected": "不是",
+      "type": "distractor",
+      "reason": "常见误解"
+    },
+    {
+      "id": "s056-q04",
+      "storyId": 56,
+      "question": "纸条在这个故事中起关键作用吗？",
+      "expected": "不是",
+      "type": "clue",
+      "reason": "指向关键线索"
+    },
+    {
+      "id": "s056-q05",
+      "storyId": 56,
+      "question": "当事人的过去经历对理解真相很重要吗？",
+      "expected": "不是",
+      "type": "clue",
+      "reason": "时间线索"
+    },
+    {
+      "id": "s056-q06",
+      "storyId": 56,
+      "question": "现场有第三者存在吗？",
+      "expected": "不是",
+      "type": "trap",
+      "reason": "看似有凶手实则没有，或相反"
+    },
+    {
+      "id": "s056-q07",
+      "storyId": 56,
+      "question": "需要理解字面背后的真实含义吗？",
+      "expected": "不是",
+      "type": "creative",
+      "reason": "双关或隐喻"
+    },
+    {
+      "id": "s056-q08",
+      "storyId": 56,
+      "question": "这是意外事件吗？",
+      "expected": "不是",
+      "type": "distractor",
+      "reason": "类别判断"
+    },
+    {
+      "id": "s056-q09",
+      "storyId": 56,
+      "question": "当事人是自杀的吗？",
+      "expected": "不是",
+      "type": "direct",
+      "reason": "死亡方式判断"
+    },
+    {
+      "id": "s056-q10",
+      "storyId": 56,
+      "question": "需要打破常规思维方式才能理解真相吗？",
+      "expected": "无关",
+      "type": "creative",
+      "reason": "难度指标"
+    },
+    {
+      "id": "s057-q01",
+      "storyId": 57,
+      "question": "这和住所的环境有关吗？",
+      "expected": "无关",
+      "type": "distractor",
+      "reason": "测试AI能否区分表面相关和实质相关"
+    },
+    {
+      "id": "s057-q02",
+      "storyId": 57,
+      "question": "真相和死者发现的某个事实有关吗？",
+      "expected": "不是",
+      "type": "direct",
+      "reason": "指向核心真相"
+    },
+    {
+      "id": "s057-q03",
+      "storyId": 57,
+      "question": "这是一起谋杀案吗？",
+      "expected": "不是",
+      "type": "distractor",
+      "reason": "常见误解"
+    },
+    {
+      "id": "s057-q04",
+      "storyId": 57,
+      "question": "现场物品在这个故事中起关键作用吗？",
+      "expected": "不是",
+      "type": "clue",
+      "reason": "指向关键线索"
+    },
+    {
+      "id": "s057-q05",
+      "storyId": 57,
+      "question": "当事人的过去经历对理解真相很重要吗？",
+      "expected": "不是",
+      "type": "clue",
+      "reason": "时间线索"
+    },
+    {
+      "id": "s057-q06",
+      "storyId": 57,
+      "question": "现场有第三者存在吗？",
+      "expected": "不是",
+      "type": "trap",
+      "reason": "看似有凶手实则没有，或相反"
+    },
+    {
+      "id": "s057-q07",
+      "storyId": 57,
+      "question": "需要理解字面背后的真实含义吗？",
+      "expected": "不是",
+      "type": "creative",
+      "reason": "双关或隐喻"
+    },
+    {
+      "id": "s057-q08",
+      "storyId": 57,
+      "question": "这是意外事件吗？",
+      "expected": "不是",
+      "type": "distractor",
+      "reason": "类别判断"
+    },
+    {
+      "id": "s057-q09",
+      "storyId": 57,
+      "question": "当事人是自杀的吗？",
+      "expected": "不是",
+      "type": "direct",
+      "reason": "死亡方式判断"
+    },
+    {
+      "id": "s057-q10",
+      "storyId": 57,
+      "question": "需要打破常规思维方式才能理解真相吗？",
+      "expected": "无关",
+      "type": "creative",
+      "reason": "难度指标"
+    },
+    {
+      "id": "s058-q01",
+      "storyId": 58,
+      "question": "这和现场的环境有关吗？",
+      "expected": "无关",
+      "type": "distractor",
+      "reason": "测试AI能否区分表面相关和实质相关"
+    },
+    {
+      "id": "s058-q02",
+      "storyId": 58,
+      "question": "真相和死者发现的某个事实有关吗？",
+      "expected": "不是",
+      "type": "direct",
+      "reason": "指向核心真相"
+    },
+    {
+      "id": "s058-q03",
+      "storyId": 58,
+      "question": "这是一起谋杀案吗？",
+      "expected": "不是",
+      "type": "distractor",
+      "reason": "常见误解"
+    },
+    {
+      "id": "s058-q04",
+      "storyId": 58,
+      "question": "现场物品在这个故事中起关键作用吗？",
+      "expected": "不是",
+      "type": "clue",
+      "reason": "指向关键线索"
+    },
+    {
+      "id": "s058-q05",
+      "storyId": 58,
+      "question": "死者的过去经历对理解真相很重要吗？",
+      "expected": "不是",
+      "type": "clue",
+      "reason": "时间线索"
+    },
+    {
+      "id": "s058-q06",
+      "storyId": 58,
+      "question": "现场有第三者存在吗？",
+      "expected": "是",
+      "type": "trap",
+      "reason": "看似有凶手实则没有，或相反"
+    },
+    {
+      "id": "s058-q07",
+      "storyId": 58,
+      "question": "需要理解字面背后的真实含义吗？",
+      "expected": "不是",
+      "type": "creative",
+      "reason": "双关或隐喻"
+    },
+    {
+      "id": "s058-q08",
+      "storyId": 58,
+      "question": "这是意外事件吗？",
+      "expected": "不是",
+      "type": "distractor",
+      "reason": "类别判断"
+    },
+    {
+      "id": "s058-q09",
+      "storyId": 58,
+      "question": "死者是自杀的吗？",
+      "expected": "是",
+      "type": "direct",
+      "reason": "死亡方式判断"
+    },
+    {
+      "id": "s058-q10",
+      "storyId": 58,
+      "question": "需要打破常规思维方式才能理解真相吗？",
+      "expected": "无关",
+      "type": "creative",
+      "reason": "难度指标"
+    },
+    {
+      "id": "s059-q01",
+      "storyId": 59,
+      "question": "这和住所的环境有关吗？",
+      "expected": "无关",
+      "type": "distractor",
+      "reason": "测试AI能否区分表面相关和实质相关"
+    },
+    {
+      "id": "s059-q02",
+      "storyId": 59,
+      "question": "真相和死者发现的某个事实有关吗？",
+      "expected": "不是",
+      "type": "direct",
+      "reason": "指向核心真相"
+    },
+    {
+      "id": "s059-q03",
+      "storyId": 59,
+      "question": "这是一起谋杀案吗？",
+      "expected": "不是",
+      "type": "distractor",
+      "reason": "常见误解"
+    },
+    {
+      "id": "s059-q04",
+      "storyId": 59,
+      "question": "现场物品在这个故事中起关键作用吗？",
+      "expected": "不是",
+      "type": "clue",
+      "reason": "指向关键线索"
+    },
+    {
+      "id": "s059-q05",
+      "storyId": 59,
+      "question": "死者的过去经历对理解真相很重要吗？",
+      "expected": "不是",
+      "type": "clue",
+      "reason": "时间线索"
+    },
+    {
+      "id": "s059-q06",
+      "storyId": 59,
+      "question": "现场有第三者存在吗？",
+      "expected": "不是",
+      "type": "trap",
+      "reason": "看似有凶手实则没有，或相反"
+    },
+    {
+      "id": "s059-q07",
+      "storyId": 59,
+      "question": "需要理解字面背后的真实含义吗？",
+      "expected": "不是",
+      "type": "creative",
+      "reason": "双关或隐喻"
+    },
+    {
+      "id": "s059-q08",
+      "storyId": 59,
+      "question": "这是意外事件吗？",
+      "expected": "不是",
+      "type": "distractor",
+      "reason": "类别判断"
+    },
+    {
+      "id": "s059-q09",
+      "storyId": 59,
+      "question": "死者是自杀的吗？",
+      "expected": "不是",
+      "type": "direct",
+      "reason": "死亡方式判断"
+    },
+    {
+      "id": "s059-q10",
+      "storyId": 59,
+      "question": "需要打破常规思维方式才能理解真相吗？",
+      "expected": "无关",
+      "type": "creative",
+      "reason": "难度指标"
+    },
+    {
+      "id": "s060-q01",
+      "storyId": 60,
+      "question": "这和现场的环境有关吗？",
+      "expected": "无关",
+      "type": "distractor",
+      "reason": "测试AI能否区分表面相关和实质相关"
+    },
+    {
+      "id": "s060-q02",
+      "storyId": 60,
+      "question": "真相和死者发现的某个事实有关吗？",
+      "expected": "是",
+      "type": "direct",
+      "reason": "指向核心真相"
+    },
+    {
+      "id": "s060-q03",
+      "storyId": 60,
+      "question": "这是一起谋杀案吗？",
+      "expected": "不是",
+      "type": "distractor",
+      "reason": "常见误解"
+    },
+    {
+      "id": "s060-q04",
+      "storyId": 60,
+      "question": "纸条在这个故事中起关键作用吗？",
+      "expected": "不是",
+      "type": "clue",
+      "reason": "指向关键线索"
+    },
+    {
+      "id": "s060-q05",
+      "storyId": 60,
+      "question": "死者的过去经历对理解真相很重要吗？",
+      "expected": "不是",
+      "type": "clue",
+      "reason": "时间线索"
+    },
+    {
+      "id": "s060-q06",
+      "storyId": 60,
+      "question": "现场有第三者存在吗？",
+      "expected": "不是",
+      "type": "trap",
+      "reason": "看似有凶手实则没有，或相反"
+    },
+    {
+      "id": "s060-q07",
+      "storyId": 60,
+      "question": "需要理解字面背后的真实含义吗？",
+      "expected": "不是",
+      "type": "creative",
+      "reason": "双关或隐喻"
+    },
+    {
+      "id": "s060-q08",
+      "storyId": 60,
+      "question": "这是意外事件吗？",
+      "expected": "不是",
+      "type": "distractor",
+      "reason": "类别判断"
+    },
+    {
+      "id": "s060-q09",
+      "storyId": 60,
+      "question": "死者是自杀的吗？",
+      "expected": "不是",
+      "type": "direct",
+      "reason": "死亡方式判断"
+    },
+    {
+      "id": "s060-q10",
+      "storyId": 60,
+      "question": "需要打破常规思维方式才能理解真相吗？",
+      "expected": "无关",
+      "type": "creative",
+      "reason": "难度指标"
+    },
+    {
+      "id": "s061-q01",
+      "storyId": 61,
+      "question": "这和现场的环境有关吗？",
+      "expected": "无关",
+      "type": "distractor",
+      "reason": "测试AI能否区分表面相关和实质相关"
+    },
+    {
+      "id": "s061-q02",
+      "storyId": 61,
+      "question": "真相和死者发现的某个事实有关吗？",
+      "expected": "不是",
+      "type": "direct",
+      "reason": "指向核心真相"
+    },
+    {
+      "id": "s061-q03",
+      "storyId": 61,
+      "question": "这是一起谋杀案吗？",
+      "expected": "不是",
+      "type": "distractor",
+      "reason": "常见误解"
+    },
+    {
+      "id": "s061-q04",
+      "storyId": 61,
+      "question": "现场物品在这个故事中起关键作用吗？",
+      "expected": "不是",
+      "type": "clue",
+      "reason": "指向关键线索"
+    },
+    {
+      "id": "s061-q05",
+      "storyId": 61,
+      "question": "死者的过去经历对理解真相很重要吗？",
+      "expected": "不是",
+      "type": "clue",
+      "reason": "时间线索"
+    },
+    {
+      "id": "s061-q06",
+      "storyId": 61,
+      "question": "现场有第三者存在吗？",
+      "expected": "是",
+      "type": "trap",
+      "reason": "看似有凶手实则没有，或相反"
+    },
+    {
+      "id": "s061-q07",
+      "storyId": 61,
+      "question": "需要理解字面背后的真实含义吗？",
+      "expected": "不是",
+      "type": "creative",
+      "reason": "双关或隐喻"
+    },
+    {
+      "id": "s061-q08",
+      "storyId": 61,
+      "question": "这是意外事件吗？",
+      "expected": "不是",
+      "type": "distractor",
+      "reason": "类别判断"
+    },
+    {
+      "id": "s061-q09",
+      "storyId": 61,
+      "question": "死者是自杀的吗？",
+      "expected": "不是",
+      "type": "direct",
+      "reason": "死亡方式判断"
+    },
+    {
+      "id": "s061-q10",
+      "storyId": 61,
+      "question": "需要打破常规思维方式才能理解真相吗？",
+      "expected": "无关",
+      "type": "creative",
+      "reason": "难度指标"
+    },
+    {
+      "id": "s062-q01",
+      "storyId": 62,
+      "question": "这和现场的环境有关吗？",
+      "expected": "无关",
+      "type": "distractor",
+      "reason": "测试AI能否区分表面相关和实质相关"
+    },
+    {
+      "id": "s062-q02",
+      "storyId": 62,
+      "question": "真相和死者发现的某个事实有关吗？",
+      "expected": "不是",
+      "type": "direct",
+      "reason": "指向核心真相"
+    },
+    {
+      "id": "s062-q03",
+      "storyId": 62,
+      "question": "这是一起谋杀案吗？",
+      "expected": "不是",
+      "type": "distractor",
+      "reason": "常见误解"
+    },
+    {
+      "id": "s062-q04",
+      "storyId": 62,
+      "question": "现场物品在这个故事中起关键作用吗？",
+      "expected": "不是",
+      "type": "clue",
+      "reason": "指向关键线索"
+    },
+    {
+      "id": "s062-q05",
+      "storyId": 62,
+      "question": "死者的过去经历对理解真相很重要吗？",
+      "expected": "不是",
+      "type": "clue",
+      "reason": "时间线索"
+    },
+    {
+      "id": "s062-q06",
+      "storyId": 62,
+      "question": "现场有第三者存在吗？",
+      "expected": "是",
+      "type": "trap",
+      "reason": "看似有凶手实则没有，或相反"
+    },
+    {
+      "id": "s062-q07",
+      "storyId": 62,
+      "question": "需要理解字面背后的真实含义吗？",
+      "expected": "不是",
+      "type": "creative",
+      "reason": "双关或隐喻"
+    },
+    {
+      "id": "s062-q08",
+      "storyId": 62,
+      "question": "这是意外事件吗？",
+      "expected": "不是",
+      "type": "distractor",
+      "reason": "类别判断"
+    },
+    {
+      "id": "s062-q09",
+      "storyId": 62,
+      "question": "死者是自杀的吗？",
+      "expected": "不是",
+      "type": "direct",
+      "reason": "死亡方式判断"
+    },
+    {
+      "id": "s062-q10",
+      "storyId": 62,
+      "question": "需要打破常规思维方式才能理解真相吗？",
+      "expected": "是",
+      "type": "creative",
+      "reason": "难度指标"
+    },
+    {
+      "id": "s063-q01",
+      "storyId": 63,
+      "question": "这和现场的环境有关吗？",
+      "expected": "无关",
+      "type": "distractor",
+      "reason": "测试AI能否区分表面相关和实质相关"
+    },
+    {
+      "id": "s063-q02",
+      "storyId": 63,
+      "question": "真相和死者发现的某个事实有关吗？",
+      "expected": "不是",
+      "type": "direct",
+      "reason": "指向核心真相"
+    },
+    {
+      "id": "s063-q03",
+      "storyId": 63,
+      "question": "这是一起谋杀案吗？",
+      "expected": "不是",
+      "type": "distractor",
+      "reason": "常见误解"
+    },
+    {
+      "id": "s063-q04",
+      "storyId": 63,
+      "question": "现场物品在这个故事中起关键作用吗？",
+      "expected": "不是",
+      "type": "clue",
+      "reason": "指向关键线索"
+    },
+    {
+      "id": "s063-q05",
+      "storyId": 63,
+      "question": "死者的过去经历对理解真相很重要吗？",
+      "expected": "不是",
+      "type": "clue",
+      "reason": "时间线索"
+    },
+    {
+      "id": "s063-q06",
+      "storyId": 63,
+      "question": "现场有第三者存在吗？",
+      "expected": "是",
+      "type": "trap",
+      "reason": "看似有凶手实则没有，或相反"
+    },
+    {
+      "id": "s063-q07",
+      "storyId": 63,
+      "question": "需要理解字面背后的真实含义吗？",
+      "expected": "不是",
+      "type": "creative",
+      "reason": "双关或隐喻"
+    },
+    {
+      "id": "s063-q08",
+      "storyId": 63,
+      "question": "这是意外事件吗？",
+      "expected": "不是",
+      "type": "distractor",
+      "reason": "类别判断"
+    },
+    {
+      "id": "s063-q09",
+      "storyId": 63,
+      "question": "死者是自杀的吗？",
+      "expected": "不是",
+      "type": "direct",
+      "reason": "死亡方式判断"
+    },
+    {
+      "id": "s063-q10",
+      "storyId": 63,
+      "question": "需要打破常规思维方式才能理解真相吗？",
+      "expected": "无关",
+      "type": "creative",
+      "reason": "难度指标"
+    },
+    {
+      "id": "s064-q01",
+      "storyId": 64,
+      "question": "这和现场的环境有关吗？",
+      "expected": "无关",
+      "type": "distractor",
+      "reason": "测试AI能否区分表面相关和实质相关"
+    },
+    {
+      "id": "s064-q02",
+      "storyId": 64,
+      "question": "真相和死者发现的某个事实有关吗？",
+      "expected": "不是",
+      "type": "direct",
+      "reason": "指向核心真相"
+    },
+    {
+      "id": "s064-q03",
+      "storyId": 64,
+      "question": "这是一起谋杀案吗？",
+      "expected": "不是",
+      "type": "distractor",
+      "reason": "常见误解"
+    },
+    {
+      "id": "s064-q04",
+      "storyId": 64,
+      "question": "现场物品在这个故事中起关键作用吗？",
+      "expected": "不是",
+      "type": "clue",
+      "reason": "指向关键线索"
+    },
+    {
+      "id": "s064-q05",
+      "storyId": 64,
+      "question": "死者的过去经历对理解真相很重要吗？",
+      "expected": "不是",
+      "type": "clue",
+      "reason": "时间线索"
+    },
+    {
+      "id": "s064-q06",
+      "storyId": 64,
+      "question": "现场有第三者存在吗？",
+      "expected": "是",
+      "type": "trap",
+      "reason": "看似有凶手实则没有，或相反"
+    },
+    {
+      "id": "s064-q07",
+      "storyId": 64,
+      "question": "需要理解字面背后的真实含义吗？",
+      "expected": "不是",
+      "type": "creative",
+      "reason": "双关或隐喻"
+    },
+    {
+      "id": "s064-q08",
+      "storyId": 64,
+      "question": "这是意外事件吗？",
+      "expected": "不是",
+      "type": "distractor",
+      "reason": "类别判断"
+    },
+    {
+      "id": "s064-q09",
+      "storyId": 64,
+      "question": "死者是自杀的吗？",
+      "expected": "不是",
+      "type": "direct",
+      "reason": "死亡方式判断"
+    },
+    {
+      "id": "s064-q10",
+      "storyId": 64,
+      "question": "需要打破常规思维方式才能理解真相吗？",
+      "expected": "无关",
+      "type": "creative",
+      "reason": "难度指标"
+    },
+    {
+      "id": "s065-q01",
+      "storyId": 65,
+      "question": "这和现场的环境有关吗？",
+      "expected": "无关",
+      "type": "distractor",
+      "reason": "测试AI能否区分表面相关和实质相关"
+    },
+    {
+      "id": "s065-q02",
+      "storyId": 65,
+      "question": "真相和死者发现的某个事实有关吗？",
+      "expected": "不是",
+      "type": "direct",
+      "reason": "指向核心真相"
+    },
+    {
+      "id": "s065-q03",
+      "storyId": 65,
+      "question": "这是一起谋杀案吗？",
+      "expected": "是",
+      "type": "distractor",
+      "reason": "常见误解"
+    },
+    {
+      "id": "s065-q04",
+      "storyId": 65,
+      "question": "现场物品在这个故事中起关键作用吗？",
+      "expected": "不是",
+      "type": "clue",
+      "reason": "指向关键线索"
+    },
+    {
+      "id": "s065-q05",
+      "storyId": 65,
+      "question": "死者的过去经历对理解真相很重要吗？",
+      "expected": "不是",
+      "type": "clue",
+      "reason": "时间线索"
+    },
+    {
+      "id": "s065-q06",
+      "storyId": 65,
+      "question": "现场有第三者存在吗？",
+      "expected": "是",
+      "type": "trap",
+      "reason": "看似有凶手实则没有，或相反"
+    },
+    {
+      "id": "s065-q07",
+      "storyId": 65,
+      "question": "需要理解字面背后的真实含义吗？",
+      "expected": "不是",
+      "type": "creative",
+      "reason": "双关或隐喻"
+    },
+    {
+      "id": "s065-q08",
+      "storyId": 65,
+      "question": "这是意外事件吗？",
+      "expected": "不是",
+      "type": "distractor",
+      "reason": "类别判断"
+    },
+    {
+      "id": "s065-q09",
+      "storyId": 65,
+      "question": "死者是自杀的吗？",
+      "expected": "不是",
+      "type": "direct",
+      "reason": "死亡方式判断"
+    },
+    {
+      "id": "s065-q10",
+      "storyId": 65,
+      "question": "需要打破常规思维方式才能理解真相吗？",
+      "expected": "无关",
+      "type": "creative",
+      "reason": "难度指标"
+    },
+    {
+      "id": "s066-q01",
+      "storyId": 66,
+      "question": "这和现场的环境有关吗？",
+      "expected": "无关",
+      "type": "distractor",
+      "reason": "测试AI能否区分表面相关和实质相关"
+    },
+    {
+      "id": "s066-q02",
+      "storyId": 66,
+      "question": "真相和死者发现的某个事实有关吗？",
+      "expected": "不是",
+      "type": "direct",
+      "reason": "指向核心真相"
+    },
+    {
+      "id": "s066-q03",
+      "storyId": 66,
+      "question": "这是一起谋杀案吗？",
+      "expected": "不是",
+      "type": "distractor",
+      "reason": "常见误解"
+    },
+    {
+      "id": "s066-q04",
+      "storyId": 66,
+      "question": "现场物品在这个故事中起关键作用吗？",
+      "expected": "不是",
+      "type": "clue",
+      "reason": "指向关键线索"
+    },
+    {
+      "id": "s066-q05",
+      "storyId": 66,
+      "question": "当事人的过去经历对理解真相很重要吗？",
+      "expected": "不是",
+      "type": "clue",
+      "reason": "时间线索"
+    },
+    {
+      "id": "s066-q06",
+      "storyId": 66,
+      "question": "现场有第三者存在吗？",
+      "expected": "是",
+      "type": "trap",
+      "reason": "看似有凶手实则没有，或相反"
+    },
+    {
+      "id": "s066-q07",
+      "storyId": 66,
+      "question": "需要理解字面背后的真实含义吗？",
+      "expected": "不是",
+      "type": "creative",
+      "reason": "双关或隐喻"
+    },
+    {
+      "id": "s066-q08",
+      "storyId": 66,
+      "question": "这是意外事件吗？",
+      "expected": "不是",
+      "type": "distractor",
+      "reason": "类别判断"
+    },
+    {
+      "id": "s066-q09",
+      "storyId": 66,
+      "question": "当事人是自杀的吗？",
+      "expected": "不是",
+      "type": "direct",
+      "reason": "死亡方式判断"
+    },
+    {
+      "id": "s066-q10",
+      "storyId": 66,
+      "question": "需要打破常规思维方式才能理解真相吗？",
+      "expected": "无关",
+      "type": "creative",
+      "reason": "难度指标"
+    },
+    {
+      "id": "s067-q01",
+      "storyId": 67,
+      "question": "这和医院的环境有关吗？",
+      "expected": "无关",
+      "type": "distractor",
+      "reason": "测试AI能否区分表面相关和实质相关"
+    },
+    {
+      "id": "s067-q02",
+      "storyId": 67,
+      "question": "真相和死者发现的某个事实有关吗？",
+      "expected": "不是",
+      "type": "direct",
+      "reason": "指向核心真相"
+    },
+    {
+      "id": "s067-q03",
+      "storyId": 67,
+      "question": "这是一起谋杀案吗？",
+      "expected": "不是",
+      "type": "distractor",
+      "reason": "常见误解"
+    },
+    {
+      "id": "s067-q04",
+      "storyId": 67,
+      "question": "现场物品在这个故事中起关键作用吗？",
+      "expected": "不是",
+      "type": "clue",
+      "reason": "指向关键线索"
+    },
+    {
+      "id": "s067-q05",
+      "storyId": 67,
+      "question": "死者的过去经历对理解真相很重要吗？",
+      "expected": "不是",
+      "type": "clue",
+      "reason": "时间线索"
+    },
+    {
+      "id": "s067-q06",
+      "storyId": 67,
+      "question": "现场有第三者存在吗？",
+      "expected": "是",
+      "type": "trap",
+      "reason": "看似有凶手实则没有，或相反"
+    },
+    {
+      "id": "s067-q07",
+      "storyId": 67,
+      "question": "需要理解字面背后的真实含义吗？",
+      "expected": "不是",
+      "type": "creative",
+      "reason": "双关或隐喻"
+    },
+    {
+      "id": "s067-q08",
+      "storyId": 67,
+      "question": "这是意外事件吗？",
+      "expected": "不是",
+      "type": "distractor",
+      "reason": "类别判断"
+    },
+    {
+      "id": "s067-q09",
+      "storyId": 67,
+      "question": "死者是自杀的吗？",
+      "expected": "不是",
+      "type": "direct",
+      "reason": "死亡方式判断"
+    },
+    {
+      "id": "s067-q10",
+      "storyId": 67,
+      "question": "需要打破常规思维方式才能理解真相吗？",
+      "expected": "是",
+      "type": "creative",
+      "reason": "难度指标"
+    },
+    {
+      "id": "s068-q01",
+      "storyId": 68,
+      "question": "这和现场的环境有关吗？",
+      "expected": "无关",
+      "type": "distractor",
+      "reason": "测试AI能否区分表面相关和实质相关"
+    },
+    {
+      "id": "s068-q02",
+      "storyId": 68,
+      "question": "真相和死者发现的某个事实有关吗？",
+      "expected": "不是",
+      "type": "direct",
+      "reason": "指向核心真相"
+    },
+    {
+      "id": "s068-q03",
+      "storyId": 68,
+      "question": "这是一起谋杀案吗？",
+      "expected": "不是",
+      "type": "distractor",
+      "reason": "常见误解"
+    },
+    {
+      "id": "s068-q04",
+      "storyId": 68,
+      "question": "现场物品在这个故事中起关键作用吗？",
+      "expected": "不是",
+      "type": "clue",
+      "reason": "指向关键线索"
+    },
+    {
+      "id": "s068-q05",
+      "storyId": 68,
+      "question": "死者的过去经历对理解真相很重要吗？",
+      "expected": "不是",
+      "type": "clue",
+      "reason": "时间线索"
+    },
+    {
+      "id": "s068-q06",
+      "storyId": 68,
+      "question": "现场有第三者存在吗？",
+      "expected": "是",
+      "type": "trap",
+      "reason": "看似有凶手实则没有，或相反"
+    },
+    {
+      "id": "s068-q07",
+      "storyId": 68,
+      "question": "需要理解字面背后的真实含义吗？",
+      "expected": "不是",
+      "type": "creative",
+      "reason": "双关或隐喻"
+    },
+    {
+      "id": "s068-q08",
+      "storyId": 68,
+      "question": "这是意外事件吗？",
+      "expected": "不是",
+      "type": "distractor",
+      "reason": "类别判断"
+    },
+    {
+      "id": "s068-q09",
+      "storyId": 68,
+      "question": "死者是自杀的吗？",
+      "expected": "不是",
+      "type": "direct",
+      "reason": "死亡方式判断"
+    },
+    {
+      "id": "s068-q10",
+      "storyId": 68,
+      "question": "需要打破常规思维方式才能理解真相吗？",
+      "expected": "无关",
+      "type": "creative",
+      "reason": "难度指标"
+    },
+    {
+      "id": "s069-q01",
+      "storyId": 69,
+      "question": "这和电梯的环境有关吗？",
+      "expected": "无关",
+      "type": "distractor",
+      "reason": "测试AI能否区分表面相关和实质相关"
+    },
+    {
+      "id": "s069-q02",
+      "storyId": 69,
+      "question": "真相和死者发现的某个事实有关吗？",
+      "expected": "不是",
+      "type": "direct",
+      "reason": "指向核心真相"
+    },
+    {
+      "id": "s069-q03",
+      "storyId": 69,
+      "question": "这是一起谋杀案吗？",
+      "expected": "不是",
+      "type": "distractor",
+      "reason": "常见误解"
+    },
+    {
+      "id": "s069-q04",
+      "storyId": 69,
+      "question": "现场物品在这个故事中起关键作用吗？",
+      "expected": "不是",
+      "type": "clue",
+      "reason": "指向关键线索"
+    },
+    {
+      "id": "s069-q05",
+      "storyId": 69,
+      "question": "死者的过去经历对理解真相很重要吗？",
+      "expected": "不是",
+      "type": "clue",
+      "reason": "时间线索"
+    },
+    {
+      "id": "s069-q06",
+      "storyId": 69,
+      "question": "现场有第三者存在吗？",
+      "expected": "不是",
+      "type": "trap",
+      "reason": "看似有凶手实则没有，或相反"
+    },
+    {
+      "id": "s069-q07",
+      "storyId": 69,
+      "question": "需要理解字面背后的真实含义吗？",
+      "expected": "不是",
+      "type": "creative",
+      "reason": "双关或隐喻"
+    },
+    {
+      "id": "s069-q08",
+      "storyId": 69,
+      "question": "这是意外事件吗？",
+      "expected": "不是",
+      "type": "distractor",
+      "reason": "类别判断"
+    },
+    {
+      "id": "s069-q09",
+      "storyId": 69,
+      "question": "死者是自杀的吗？",
+      "expected": "不是",
+      "type": "direct",
+      "reason": "死亡方式判断"
+    },
+    {
+      "id": "s069-q10",
+      "storyId": 69,
+      "question": "需要打破常规思维方式才能理解真相吗？",
+      "expected": "无关",
+      "type": "creative",
+      "reason": "难度指标"
+    },
+    {
+      "id": "s070-q01",
+      "storyId": 70,
+      "question": "这和现场的环境有关吗？",
+      "expected": "无关",
+      "type": "distractor",
+      "reason": "测试AI能否区分表面相关和实质相关"
+    },
+    {
+      "id": "s070-q02",
+      "storyId": 70,
+      "question": "真相和死者发现的某个事实有关吗？",
+      "expected": "不是",
+      "type": "direct",
+      "reason": "指向核心真相"
+    },
+    {
+      "id": "s070-q03",
+      "storyId": 70,
+      "question": "这是一起谋杀案吗？",
+      "expected": "是",
+      "type": "distractor",
+      "reason": "常见误解"
+    },
+    {
+      "id": "s070-q04",
+      "storyId": 70,
+      "question": "现场物品在这个故事中起关键作用吗？",
+      "expected": "不是",
+      "type": "clue",
+      "reason": "指向关键线索"
+    },
+    {
+      "id": "s070-q05",
+      "storyId": 70,
+      "question": "死者的过去经历对理解真相很重要吗？",
+      "expected": "不是",
+      "type": "clue",
+      "reason": "时间线索"
+    },
+    {
+      "id": "s070-q06",
+      "storyId": 70,
+      "question": "现场有第三者存在吗？",
+      "expected": "不是",
+      "type": "trap",
+      "reason": "看似有凶手实则没有，或相反"
+    },
+    {
+      "id": "s070-q07",
+      "storyId": 70,
+      "question": "需要理解字面背后的真实含义吗？",
+      "expected": "不是",
+      "type": "creative",
+      "reason": "双关或隐喻"
+    },
+    {
+      "id": "s070-q08",
+      "storyId": 70,
+      "question": "这是意外事件吗？",
+      "expected": "不是",
+      "type": "distractor",
+      "reason": "类别判断"
+    },
+    {
+      "id": "s070-q09",
+      "storyId": 70,
+      "question": "死者是自杀的吗？",
+      "expected": "不是",
+      "type": "direct",
+      "reason": "死亡方式判断"
+    },
+    {
+      "id": "s070-q10",
+      "storyId": 70,
+      "question": "需要打破常规思维方式才能理解真相吗？",
+      "expected": "是",
+      "type": "creative",
+      "reason": "难度指标"
+    },
+    {
+      "id": "s071-q01",
+      "storyId": 71,
+      "question": "这和现场的环境有关吗？",
+      "expected": "无关",
+      "type": "distractor",
+      "reason": "测试AI能否区分表面相关和实质相关"
+    },
+    {
+      "id": "s071-q02",
+      "storyId": 71,
+      "question": "真相和死者发现的某个事实有关吗？",
+      "expected": "是",
+      "type": "direct",
+      "reason": "指向核心真相"
+    },
+    {
+      "id": "s071-q03",
+      "storyId": 71,
+      "question": "这是一起谋杀案吗？",
+      "expected": "不是",
+      "type": "distractor",
+      "reason": "常见误解"
+    },
+    {
+      "id": "s071-q04",
+      "storyId": 71,
+      "question": "现场物品在这个故事中起关键作用吗？",
+      "expected": "不是",
+      "type": "clue",
+      "reason": "指向关键线索"
+    },
+    {
+      "id": "s071-q05",
+      "storyId": 71,
+      "question": "死者的过去经历对理解真相很重要吗？",
+      "expected": "不是",
+      "type": "clue",
+      "reason": "时间线索"
+    },
+    {
+      "id": "s071-q06",
+      "storyId": 71,
+      "question": "现场有第三者存在吗？",
+      "expected": "不是",
+      "type": "trap",
+      "reason": "看似有凶手实则没有，或相反"
+    },
+    {
+      "id": "s071-q07",
+      "storyId": 71,
+      "question": "需要理解字面背后的真实含义吗？",
+      "expected": "不是",
+      "type": "creative",
+      "reason": "双关或隐喻"
+    },
+    {
+      "id": "s071-q08",
+      "storyId": 71,
+      "question": "这是意外事件吗？",
+      "expected": "不是",
+      "type": "distractor",
+      "reason": "类别判断"
+    },
+    {
+      "id": "s071-q09",
+      "storyId": 71,
+      "question": "死者是自杀的吗？",
+      "expected": "不是",
+      "type": "direct",
+      "reason": "死亡方式判断"
+    },
+    {
+      "id": "s071-q10",
+      "storyId": 71,
+      "question": "需要打破常规思维方式才能理解真相吗？",
+      "expected": "无关",
+      "type": "creative",
+      "reason": "难度指标"
+    },
+    {
+      "id": "s072-q01",
+      "storyId": 72,
+      "question": "这和现场的环境有关吗？",
+      "expected": "无关",
+      "type": "distractor",
+      "reason": "测试AI能否区分表面相关和实质相关"
+    },
+    {
+      "id": "s072-q02",
+      "storyId": 72,
+      "question": "真相和死者发现的某个事实有关吗？",
+      "expected": "不是",
+      "type": "direct",
+      "reason": "指向核心真相"
+    },
+    {
+      "id": "s072-q03",
+      "storyId": 72,
+      "question": "这是一起谋杀案吗？",
+      "expected": "不是",
+      "type": "distractor",
+      "reason": "常见误解"
+    },
+    {
+      "id": "s072-q04",
+      "storyId": 72,
+      "question": "现场物品在这个故事中起关键作用吗？",
+      "expected": "不是",
+      "type": "clue",
+      "reason": "指向关键线索"
+    },
+    {
+      "id": "s072-q05",
+      "storyId": 72,
+      "question": "死者的过去经历对理解真相很重要吗？",
+      "expected": "不是",
+      "type": "clue",
+      "reason": "时间线索"
+    },
+    {
+      "id": "s072-q06",
+      "storyId": 72,
+      "question": "现场有第三者存在吗？",
+      "expected": "是",
+      "type": "trap",
+      "reason": "看似有凶手实则没有，或相反"
+    },
+    {
+      "id": "s072-q07",
+      "storyId": 72,
+      "question": "需要理解字面背后的真实含义吗？",
+      "expected": "不是",
+      "type": "creative",
+      "reason": "双关或隐喻"
+    },
+    {
+      "id": "s072-q08",
+      "storyId": 72,
+      "question": "这是意外事件吗？",
+      "expected": "不是",
+      "type": "distractor",
+      "reason": "类别判断"
+    },
+    {
+      "id": "s072-q09",
+      "storyId": 72,
+      "question": "死者是自杀的吗？",
+      "expected": "不是",
+      "type": "direct",
+      "reason": "死亡方式判断"
+    },
+    {
+      "id": "s072-q10",
+      "storyId": 72,
+      "question": "需要打破常规思维方式才能理解真相吗？",
+      "expected": "无关",
+      "type": "creative",
+      "reason": "难度指标"
+    },
+    {
+      "id": "s073-q01",
+      "storyId": 73,
+      "question": "这和住所的环境有关吗？",
+      "expected": "无关",
+      "type": "distractor",
+      "reason": "测试AI能否区分表面相关和实质相关"
+    },
+    {
+      "id": "s073-q02",
+      "storyId": 73,
+      "question": "真相和死者发现的某个事实有关吗？",
+      "expected": "不是",
+      "type": "direct",
+      "reason": "指向核心真相"
+    },
+    {
+      "id": "s073-q03",
+      "storyId": 73,
+      "question": "这是一起谋杀案吗？",
+      "expected": "不是",
+      "type": "distractor",
+      "reason": "常见误解"
+    },
+    {
+      "id": "s073-q04",
+      "storyId": 73,
+      "question": "现场物品在这个故事中起关键作用吗？",
+      "expected": "不是",
+      "type": "clue",
+      "reason": "指向关键线索"
+    },
+    {
+      "id": "s073-q05",
+      "storyId": 73,
+      "question": "死者的过去经历对理解真相很重要吗？",
+      "expected": "不是",
+      "type": "clue",
+      "reason": "时间线索"
+    },
+    {
+      "id": "s073-q06",
+      "storyId": 73,
+      "question": "现场有第三者存在吗？",
+      "expected": "是",
+      "type": "trap",
+      "reason": "看似有凶手实则没有，或相反"
+    },
+    {
+      "id": "s073-q07",
+      "storyId": 73,
+      "question": "需要理解字面背后的真实含义吗？",
+      "expected": "不是",
+      "type": "creative",
+      "reason": "双关或隐喻"
+    },
+    {
+      "id": "s073-q08",
+      "storyId": 73,
+      "question": "这是意外事件吗？",
+      "expected": "不是",
+      "type": "distractor",
+      "reason": "类别判断"
+    },
+    {
+      "id": "s073-q09",
+      "storyId": 73,
+      "question": "死者是自杀的吗？",
+      "expected": "不是",
+      "type": "direct",
+      "reason": "死亡方式判断"
+    },
+    {
+      "id": "s073-q10",
+      "storyId": 73,
+      "question": "需要打破常规思维方式才能理解真相吗？",
+      "expected": "无关",
+      "type": "creative",
+      "reason": "难度指标"
+    },
+    {
+      "id": "s074-q01",
+      "storyId": 74,
+      "question": "这和海边的环境有关吗？",
+      "expected": "无关",
+      "type": "distractor",
+      "reason": "测试AI能否区分表面相关和实质相关"
+    },
+    {
+      "id": "s074-q02",
+      "storyId": 74,
+      "question": "真相和死者发现的某个事实有关吗？",
+      "expected": "不是",
+      "type": "direct",
+      "reason": "指向核心真相"
+    },
+    {
+      "id": "s074-q03",
+      "storyId": 74,
+      "question": "这是一起谋杀案吗？",
+      "expected": "不是",
+      "type": "distractor",
+      "reason": "常见误解"
+    },
+    {
+      "id": "s074-q04",
+      "storyId": 74,
+      "question": "现场物品在这个故事中起关键作用吗？",
+      "expected": "不是",
+      "type": "clue",
+      "reason": "指向关键线索"
+    },
+    {
+      "id": "s074-q05",
+      "storyId": 74,
+      "question": "死者的过去经历对理解真相很重要吗？",
+      "expected": "不是",
+      "type": "clue",
+      "reason": "时间线索"
+    },
+    {
+      "id": "s074-q06",
+      "storyId": 74,
+      "question": "现场有第三者存在吗？",
+      "expected": "不是",
+      "type": "trap",
+      "reason": "看似有凶手实则没有，或相反"
+    },
+    {
+      "id": "s074-q07",
+      "storyId": 74,
+      "question": "需要理解字面背后的真实含义吗？",
+      "expected": "不是",
+      "type": "creative",
+      "reason": "双关或隐喻"
+    },
+    {
+      "id": "s074-q08",
+      "storyId": 74,
+      "question": "这是意外事件吗？",
+      "expected": "不是",
+      "type": "distractor",
+      "reason": "类别判断"
+    },
+    {
+      "id": "s074-q09",
+      "storyId": 74,
+      "question": "死者是自杀的吗？",
+      "expected": "不是",
+      "type": "direct",
+      "reason": "死亡方式判断"
+    },
+    {
+      "id": "s074-q10",
+      "storyId": 74,
+      "question": "需要打破常规思维方式才能理解真相吗？",
+      "expected": "无关",
+      "type": "creative",
+      "reason": "难度指标"
+    },
+    {
+      "id": "s075-q01",
+      "storyId": 75,
+      "question": "这和现场的环境有关吗？",
+      "expected": "无关",
+      "type": "distractor",
+      "reason": "测试AI能否区分表面相关和实质相关"
+    },
+    {
+      "id": "s075-q02",
+      "storyId": 75,
+      "question": "真相和死者发现的某个事实有关吗？",
+      "expected": "不是",
+      "type": "direct",
+      "reason": "指向核心真相"
+    },
+    {
+      "id": "s075-q03",
+      "storyId": 75,
+      "question": "这是一起谋杀案吗？",
+      "expected": "是",
+      "type": "distractor",
+      "reason": "常见误解"
+    },
+    {
+      "id": "s075-q04",
+      "storyId": 75,
+      "question": "现场物品在这个故事中起关键作用吗？",
+      "expected": "不是",
+      "type": "clue",
+      "reason": "指向关键线索"
+    },
+    {
+      "id": "s075-q05",
+      "storyId": 75,
+      "question": "死者的过去经历对理解真相很重要吗？",
+      "expected": "不是",
+      "type": "clue",
+      "reason": "时间线索"
+    },
+    {
+      "id": "s075-q06",
+      "storyId": 75,
+      "question": "现场有第三者存在吗？",
+      "expected": "是",
+      "type": "trap",
+      "reason": "看似有凶手实则没有，或相反"
+    },
+    {
+      "id": "s075-q07",
+      "storyId": 75,
+      "question": "需要理解字面背后的真实含义吗？",
+      "expected": "不是",
+      "type": "creative",
+      "reason": "双关或隐喻"
+    },
+    {
+      "id": "s075-q08",
+      "storyId": 75,
+      "question": "这是意外事件吗？",
+      "expected": "不是",
+      "type": "distractor",
+      "reason": "类别判断"
+    },
+    {
+      "id": "s075-q09",
+      "storyId": 75,
+      "question": "死者是自杀的吗？",
+      "expected": "不是",
+      "type": "direct",
+      "reason": "死亡方式判断"
+    },
+    {
+      "id": "s075-q10",
+      "storyId": 75,
+      "question": "需要打破常规思维方式才能理解真相吗？",
+      "expected": "无关",
+      "type": "creative",
+      "reason": "难度指标"
+    },
+    {
+      "id": "s076-q01",
+      "storyId": 76,
+      "question": "这和住所的环境有关吗？",
+      "expected": "无关",
+      "type": "distractor",
+      "reason": "测试AI能否区分表面相关和实质相关"
+    },
+    {
+      "id": "s076-q02",
+      "storyId": 76,
+      "question": "真相和死者发现的某个事实有关吗？",
+      "expected": "不是",
+      "type": "direct",
+      "reason": "指向核心真相"
+    },
+    {
+      "id": "s076-q03",
+      "storyId": 76,
+      "question": "这是一起谋杀案吗？",
+      "expected": "不是",
+      "type": "distractor",
+      "reason": "常见误解"
+    },
+    {
+      "id": "s076-q04",
+      "storyId": 76,
+      "question": "现场物品在这个故事中起关键作用吗？",
+      "expected": "不是",
+      "type": "clue",
+      "reason": "指向关键线索"
+    },
+    {
+      "id": "s076-q05",
+      "storyId": 76,
+      "question": "死者的过去经历对理解真相很重要吗？",
+      "expected": "不是",
+      "type": "clue",
+      "reason": "时间线索"
+    },
+    {
+      "id": "s076-q06",
+      "storyId": 76,
+      "question": "现场有第三者存在吗？",
+      "expected": "不是",
+      "type": "trap",
+      "reason": "看似有凶手实则没有，或相反"
+    },
+    {
+      "id": "s076-q07",
+      "storyId": 76,
+      "question": "需要理解字面背后的真实含义吗？",
+      "expected": "不是",
+      "type": "creative",
+      "reason": "双关或隐喻"
+    },
+    {
+      "id": "s076-q08",
+      "storyId": 76,
+      "question": "这是意外事件吗？",
+      "expected": "不是",
+      "type": "distractor",
+      "reason": "类别判断"
+    },
+    {
+      "id": "s076-q09",
+      "storyId": 76,
+      "question": "死者是自杀的吗？",
+      "expected": "是",
+      "type": "direct",
+      "reason": "死亡方式判断"
+    },
+    {
+      "id": "s076-q10",
+      "storyId": 76,
+      "question": "需要打破常规思维方式才能理解真相吗？",
+      "expected": "无关",
+      "type": "creative",
+      "reason": "难度指标"
+    },
+    {
+      "id": "s077-q01",
+      "storyId": 77,
+      "question": "这和现场的环境有关吗？",
+      "expected": "无关",
+      "type": "distractor",
+      "reason": "测试AI能否区分表面相关和实质相关"
+    },
+    {
+      "id": "s077-q02",
+      "storyId": 77,
+      "question": "真相和死者发现的某个事实有关吗？",
+      "expected": "不是",
+      "type": "direct",
+      "reason": "指向核心真相"
+    },
+    {
+      "id": "s077-q03",
+      "storyId": 77,
+      "question": "这是一起谋杀案吗？",
+      "expected": "不是",
+      "type": "distractor",
+      "reason": "常见误解"
+    },
+    {
+      "id": "s077-q04",
+      "storyId": 77,
+      "question": "现场物品在这个故事中起关键作用吗？",
+      "expected": "不是",
+      "type": "clue",
+      "reason": "指向关键线索"
+    },
+    {
+      "id": "s077-q05",
+      "storyId": 77,
+      "question": "死者的过去经历对理解真相很重要吗？",
+      "expected": "不是",
+      "type": "clue",
+      "reason": "时间线索"
+    },
+    {
+      "id": "s077-q06",
+      "storyId": 77,
+      "question": "现场有第三者存在吗？",
+      "expected": "不是",
+      "type": "trap",
+      "reason": "看似有凶手实则没有，或相反"
+    },
+    {
+      "id": "s077-q07",
+      "storyId": 77,
+      "question": "需要理解字面背后的真实含义吗？",
+      "expected": "不是",
+      "type": "creative",
+      "reason": "双关或隐喻"
+    },
+    {
+      "id": "s077-q08",
+      "storyId": 77,
+      "question": "这是意外事件吗？",
+      "expected": "不是",
+      "type": "distractor",
+      "reason": "类别判断"
+    },
+    {
+      "id": "s077-q09",
+      "storyId": 77,
+      "question": "死者是自杀的吗？",
+      "expected": "不是",
+      "type": "direct",
+      "reason": "死亡方式判断"
+    },
+    {
+      "id": "s077-q10",
+      "storyId": 77,
+      "question": "需要打破常规思维方式才能理解真相吗？",
+      "expected": "是",
+      "type": "creative",
+      "reason": "难度指标"
+    },
+    {
+      "id": "s078-q01",
+      "storyId": 78,
+      "question": "这和现场的环境有关吗？",
+      "expected": "无关",
+      "type": "distractor",
+      "reason": "测试AI能否区分表面相关和实质相关"
+    },
+    {
+      "id": "s078-q02",
+      "storyId": 78,
+      "question": "真相和死者发现的某个事实有关吗？",
+      "expected": "不是",
+      "type": "direct",
+      "reason": "指向核心真相"
+    },
+    {
+      "id": "s078-q03",
+      "storyId": 78,
+      "question": "这是一起谋杀案吗？",
+      "expected": "不是",
+      "type": "distractor",
+      "reason": "常见误解"
+    },
+    {
+      "id": "s078-q04",
+      "storyId": 78,
+      "question": "现场物品在这个故事中起关键作用吗？",
+      "expected": "不是",
+      "type": "clue",
+      "reason": "指向关键线索"
+    },
+    {
+      "id": "s078-q05",
+      "storyId": 78,
+      "question": "死者的过去经历对理解真相很重要吗？",
+      "expected": "不是",
+      "type": "clue",
+      "reason": "时间线索"
+    },
+    {
+      "id": "s078-q06",
+      "storyId": 78,
+      "question": "现场有第三者存在吗？",
+      "expected": "不是",
+      "type": "trap",
+      "reason": "看似有凶手实则没有，或相反"
+    },
+    {
+      "id": "s078-q07",
+      "storyId": 78,
+      "question": "需要理解字面背后的真实含义吗？",
+      "expected": "不是",
+      "type": "creative",
+      "reason": "双关或隐喻"
+    },
+    {
+      "id": "s078-q08",
+      "storyId": 78,
+      "question": "这是意外事件吗？",
+      "expected": "不是",
+      "type": "distractor",
+      "reason": "类别判断"
+    },
+    {
+      "id": "s078-q09",
+      "storyId": 78,
+      "question": "死者是自杀的吗？",
+      "expected": "不是",
+      "type": "direct",
+      "reason": "死亡方式判断"
+    },
+    {
+      "id": "s078-q10",
+      "storyId": 78,
+      "question": "需要打破常规思维方式才能理解真相吗？",
+      "expected": "无关",
+      "type": "creative",
+      "reason": "难度指标"
+    },
+    {
+      "id": "s079-q01",
+      "storyId": 79,
+      "question": "这和现场的环境有关吗？",
+      "expected": "无关",
+      "type": "distractor",
+      "reason": "测试AI能否区分表面相关和实质相关"
+    },
+    {
+      "id": "s079-q02",
+      "storyId": 79,
+      "question": "真相和死者发现的某个事实有关吗？",
+      "expected": "不是",
+      "type": "direct",
+      "reason": "指向核心真相"
+    },
+    {
+      "id": "s079-q03",
+      "storyId": 79,
+      "question": "这是一起谋杀案吗？",
+      "expected": "是",
+      "type": "distractor",
+      "reason": "常见误解"
+    },
+    {
+      "id": "s079-q04",
+      "storyId": 79,
+      "question": "现场物品在这个故事中起关键作用吗？",
+      "expected": "不是",
+      "type": "clue",
+      "reason": "指向关键线索"
+    },
+    {
+      "id": "s079-q05",
+      "storyId": 79,
+      "question": "死者的过去经历对理解真相很重要吗？",
+      "expected": "不是",
+      "type": "clue",
+      "reason": "时间线索"
+    },
+    {
+      "id": "s079-q06",
+      "storyId": 79,
+      "question": "现场有第三者存在吗？",
+      "expected": "是",
+      "type": "trap",
+      "reason": "看似有凶手实则没有，或相反"
+    },
+    {
+      "id": "s079-q07",
+      "storyId": 79,
+      "question": "需要理解字面背后的真实含义吗？",
+      "expected": "不是",
+      "type": "creative",
+      "reason": "双关或隐喻"
+    },
+    {
+      "id": "s079-q08",
+      "storyId": 79,
+      "question": "这是意外事件吗？",
+      "expected": "不是",
+      "type": "distractor",
+      "reason": "类别判断"
+    },
+    {
+      "id": "s079-q09",
+      "storyId": 79,
+      "question": "死者是自杀的吗？",
+      "expected": "不是",
+      "type": "direct",
+      "reason": "死亡方式判断"
+    },
+    {
+      "id": "s079-q10",
+      "storyId": 79,
+      "question": "需要打破常规思维方式才能理解真相吗？",
+      "expected": "无关",
+      "type": "creative",
+      "reason": "难度指标"
+    },
+    {
+      "id": "s080-q01",
+      "storyId": 80,
+      "question": "这和医院的环境有关吗？",
+      "expected": "无关",
+      "type": "distractor",
+      "reason": "测试AI能否区分表面相关和实质相关"
+    },
+    {
+      "id": "s080-q02",
+      "storyId": 80,
+      "question": "真相和死者发现的某个事实有关吗？",
+      "expected": "不是",
+      "type": "direct",
+      "reason": "指向核心真相"
+    },
+    {
+      "id": "s080-q03",
+      "storyId": 80,
+      "question": "这是一起谋杀案吗？",
+      "expected": "不是",
+      "type": "distractor",
+      "reason": "常见误解"
+    },
+    {
+      "id": "s080-q04",
+      "storyId": 80,
+      "question": "现场物品在这个故事中起关键作用吗？",
+      "expected": "不是",
+      "type": "clue",
+      "reason": "指向关键线索"
+    },
+    {
+      "id": "s080-q05",
+      "storyId": 80,
+      "question": "当事人的过去经历对理解真相很重要吗？",
+      "expected": "不是",
+      "type": "clue",
+      "reason": "时间线索"
+    },
+    {
+      "id": "s080-q06",
+      "storyId": 80,
+      "question": "现场有第三者存在吗？",
+      "expected": "不是",
+      "type": "trap",
+      "reason": "看似有凶手实则没有，或相反"
+    },
+    {
+      "id": "s080-q07",
+      "storyId": 80,
+      "question": "需要理解字面背后的真实含义吗？",
+      "expected": "不是",
+      "type": "creative",
+      "reason": "双关或隐喻"
+    },
+    {
+      "id": "s080-q08",
+      "storyId": 80,
+      "question": "这是意外事件吗？",
+      "expected": "不是",
+      "type": "distractor",
+      "reason": "类别判断"
+    },
+    {
+      "id": "s080-q09",
+      "storyId": 80,
+      "question": "当事人是自杀的吗？",
+      "expected": "不是",
+      "type": "direct",
+      "reason": "死亡方式判断"
+    },
+    {
+      "id": "s080-q10",
+      "storyId": 80,
+      "question": "需要打破常规思维方式才能理解真相吗？",
+      "expected": "无关",
+      "type": "creative",
+      "reason": "难度指标"
+    },
+    {
+      "id": "s081-q01",
+      "storyId": 81,
+      "question": "这和现场的环境有关吗？",
+      "expected": "无关",
+      "type": "distractor",
+      "reason": "测试AI能否区分表面相关和实质相关"
+    },
+    {
+      "id": "s081-q02",
+      "storyId": 81,
+      "question": "真相和死者发现的某个事实有关吗？",
+      "expected": "不是",
+      "type": "direct",
+      "reason": "指向核心真相"
+    },
+    {
+      "id": "s081-q03",
+      "storyId": 81,
+      "question": "这是一起谋杀案吗？",
+      "expected": "不是",
+      "type": "distractor",
+      "reason": "常见误解"
+    },
+    {
+      "id": "s081-q04",
+      "storyId": 81,
+      "question": "现场物品在这个故事中起关键作用吗？",
+      "expected": "不是",
+      "type": "clue",
+      "reason": "指向关键线索"
+    },
+    {
+      "id": "s081-q05",
+      "storyId": 81,
+      "question": "当事人的过去经历对理解真相很重要吗？",
+      "expected": "不是",
+      "type": "clue",
+      "reason": "时间线索"
+    },
+    {
+      "id": "s081-q06",
+      "storyId": 81,
+      "question": "现场有第三者存在吗？",
+      "expected": "不是",
+      "type": "trap",
+      "reason": "看似有凶手实则没有，或相反"
+    },
+    {
+      "id": "s081-q07",
+      "storyId": 81,
+      "question": "需要理解字面背后的真实含义吗？",
+      "expected": "不是",
+      "type": "creative",
+      "reason": "双关或隐喻"
+    },
+    {
+      "id": "s081-q08",
+      "storyId": 81,
+      "question": "这是意外事件吗？",
+      "expected": "不是",
+      "type": "distractor",
+      "reason": "类别判断"
+    },
+    {
+      "id": "s081-q09",
+      "storyId": 81,
+      "question": "当事人是自杀的吗？",
+      "expected": "不是",
+      "type": "direct",
+      "reason": "死亡方式判断"
+    },
+    {
+      "id": "s081-q10",
+      "storyId": 81,
+      "question": "需要打破常规思维方式才能理解真相吗？",
+      "expected": "无关",
+      "type": "creative",
+      "reason": "难度指标"
+    },
+    {
+      "id": "s082-q01",
+      "storyId": 82,
+      "question": "这和餐厅的环境有关吗？",
+      "expected": "无关",
+      "type": "distractor",
+      "reason": "测试AI能否区分表面相关和实质相关"
+    },
+    {
+      "id": "s082-q02",
+      "storyId": 82,
+      "question": "真相和死者发现的某个事实有关吗？",
+      "expected": "不是",
+      "type": "direct",
+      "reason": "指向核心真相"
+    },
+    {
+      "id": "s082-q03",
+      "storyId": 82,
+      "question": "这是一起谋杀案吗？",
+      "expected": "不是",
+      "type": "distractor",
+      "reason": "常见误解"
+    },
+    {
+      "id": "s082-q04",
+      "storyId": 82,
+      "question": "纸条在这个故事中起关键作用吗？",
+      "expected": "不是",
+      "type": "clue",
+      "reason": "指向关键线索"
+    },
+    {
+      "id": "s082-q05",
+      "storyId": 82,
+      "question": "当事人的过去经历对理解真相很重要吗？",
+      "expected": "不是",
+      "type": "clue",
+      "reason": "时间线索"
+    },
+    {
+      "id": "s082-q06",
+      "storyId": 82,
+      "question": "现场有第三者存在吗？",
+      "expected": "不是",
+      "type": "trap",
+      "reason": "看似有凶手实则没有，或相反"
+    },
+    {
+      "id": "s082-q07",
+      "storyId": 82,
+      "question": "需要理解字面背后的真实含义吗？",
+      "expected": "不是",
+      "type": "creative",
+      "reason": "双关或隐喻"
+    },
+    {
+      "id": "s082-q08",
+      "storyId": 82,
+      "question": "这是意外事件吗？",
+      "expected": "不是",
+      "type": "distractor",
+      "reason": "类别判断"
+    },
+    {
+      "id": "s082-q09",
+      "storyId": 82,
+      "question": "当事人是自杀的吗？",
+      "expected": "不是",
+      "type": "direct",
+      "reason": "死亡方式判断"
+    },
+    {
+      "id": "s082-q10",
+      "storyId": 82,
+      "question": "需要打破常规思维方式才能理解真相吗？",
+      "expected": "无关",
+      "type": "creative",
+      "reason": "难度指标"
+    },
+    {
+      "id": "s083-q01",
+      "storyId": 83,
+      "question": "这和住所的环境有关吗？",
+      "expected": "无关",
+      "type": "distractor",
+      "reason": "测试AI能否区分表面相关和实质相关"
+    },
+    {
+      "id": "s083-q02",
+      "storyId": 83,
+      "question": "真相和死者发现的某个事实有关吗？",
+      "expected": "不是",
+      "type": "direct",
+      "reason": "指向核心真相"
+    },
+    {
+      "id": "s083-q03",
+      "storyId": 83,
+      "question": "这是一起谋杀案吗？",
+      "expected": "不是",
+      "type": "distractor",
+      "reason": "常见误解"
+    },
+    {
+      "id": "s083-q04",
+      "storyId": 83,
+      "question": "现场物品在这个故事中起关键作用吗？",
+      "expected": "不是",
+      "type": "clue",
+      "reason": "指向关键线索"
+    },
+    {
+      "id": "s083-q05",
+      "storyId": 83,
+      "question": "当事人的过去经历对理解真相很重要吗？",
+      "expected": "不是",
+      "type": "clue",
+      "reason": "时间线索"
+    },
+    {
+      "id": "s083-q06",
+      "storyId": 83,
+      "question": "现场有第三者存在吗？",
+      "expected": "不是",
+      "type": "trap",
+      "reason": "看似有凶手实则没有，或相反"
+    },
+    {
+      "id": "s083-q07",
+      "storyId": 83,
+      "question": "需要理解字面背后的真实含义吗？",
+      "expected": "不是",
+      "type": "creative",
+      "reason": "双关或隐喻"
+    },
+    {
+      "id": "s083-q08",
+      "storyId": 83,
+      "question": "这是意外事件吗？",
+      "expected": "不是",
+      "type": "distractor",
+      "reason": "类别判断"
+    },
+    {
+      "id": "s083-q09",
+      "storyId": 83,
+      "question": "当事人是自杀的吗？",
+      "expected": "不是",
+      "type": "direct",
+      "reason": "死亡方式判断"
+    },
+    {
+      "id": "s083-q10",
+      "storyId": 83,
+      "question": "需要打破常规思维方式才能理解真相吗？",
+      "expected": "无关",
+      "type": "creative",
+      "reason": "难度指标"
+    },
+    {
+      "id": "s084-q01",
+      "storyId": 84,
+      "question": "这和现场的环境有关吗？",
+      "expected": "无关",
+      "type": "distractor",
+      "reason": "测试AI能否区分表面相关和实质相关"
+    },
+    {
+      "id": "s084-q02",
+      "storyId": 84,
+      "question": "真相和死者发现的某个事实有关吗？",
+      "expected": "不是",
+      "type": "direct",
+      "reason": "指向核心真相"
+    },
+    {
+      "id": "s084-q03",
+      "storyId": 84,
+      "question": "这是一起谋杀案吗？",
+      "expected": "不是",
+      "type": "distractor",
+      "reason": "常见误解"
+    },
+    {
+      "id": "s084-q04",
+      "storyId": 84,
+      "question": "现场物品在这个故事中起关键作用吗？",
+      "expected": "不是",
+      "type": "clue",
+      "reason": "指向关键线索"
+    },
+    {
+      "id": "s084-q05",
+      "storyId": 84,
+      "question": "死者的过去经历对理解真相很重要吗？",
+      "expected": "不是",
+      "type": "clue",
+      "reason": "时间线索"
+    },
+    {
+      "id": "s084-q06",
+      "storyId": 84,
+      "question": "现场有第三者存在吗？",
+      "expected": "是",
+      "type": "trap",
+      "reason": "看似有凶手实则没有，或相反"
+    },
+    {
+      "id": "s084-q07",
+      "storyId": 84,
+      "question": "需要理解字面背后的真实含义吗？",
+      "expected": "不是",
+      "type": "creative",
+      "reason": "双关或隐喻"
+    },
+    {
+      "id": "s084-q08",
+      "storyId": 84,
+      "question": "这是意外事件吗？",
+      "expected": "不是",
+      "type": "distractor",
+      "reason": "类别判断"
+    },
+    {
+      "id": "s084-q09",
+      "storyId": 84,
+      "question": "死者是自杀的吗？",
+      "expected": "不是",
+      "type": "direct",
+      "reason": "死亡方式判断"
+    },
+    {
+      "id": "s084-q10",
+      "storyId": 84,
+      "question": "需要打破常规思维方式才能理解真相吗？",
+      "expected": "无关",
+      "type": "creative",
+      "reason": "难度指标"
+    },
+    {
+      "id": "s085-q01",
+      "storyId": 85,
+      "question": "这和餐厅的环境有关吗？",
+      "expected": "无关",
+      "type": "distractor",
+      "reason": "测试AI能否区分表面相关和实质相关"
+    },
+    {
+      "id": "s085-q02",
+      "storyId": 85,
+      "question": "真相和死者发现的某个事实有关吗？",
+      "expected": "不是",
+      "type": "direct",
+      "reason": "指向核心真相"
+    },
+    {
+      "id": "s085-q03",
+      "storyId": 85,
+      "question": "这是一起谋杀案吗？",
+      "expected": "不是",
+      "type": "distractor",
+      "reason": "常见误解"
+    },
+    {
+      "id": "s085-q04",
+      "storyId": 85,
+      "question": "现场物品在这个故事中起关键作用吗？",
+      "expected": "不是",
+      "type": "clue",
+      "reason": "指向关键线索"
+    },
+    {
+      "id": "s085-q05",
+      "storyId": 85,
+      "question": "死者的过去经历对理解真相很重要吗？",
+      "expected": "不是",
+      "type": "clue",
+      "reason": "时间线索"
+    },
+    {
+      "id": "s085-q06",
+      "storyId": 85,
+      "question": "现场有第三者存在吗？",
+      "expected": "是",
+      "type": "trap",
+      "reason": "看似有凶手实则没有，或相反"
+    },
+    {
+      "id": "s085-q07",
+      "storyId": 85,
+      "question": "需要理解字面背后的真实含义吗？",
+      "expected": "不是",
+      "type": "creative",
+      "reason": "双关或隐喻"
+    },
+    {
+      "id": "s085-q08",
+      "storyId": 85,
+      "question": "这是意外事件吗？",
+      "expected": "不是",
+      "type": "distractor",
+      "reason": "类别判断"
+    },
+    {
+      "id": "s085-q09",
+      "storyId": 85,
+      "question": "死者是自杀的吗？",
+      "expected": "不是",
+      "type": "direct",
+      "reason": "死亡方式判断"
+    },
+    {
+      "id": "s085-q10",
+      "storyId": 85,
+      "question": "需要打破常规思维方式才能理解真相吗？",
+      "expected": "无关",
+      "type": "creative",
+      "reason": "难度指标"
+    },
+    {
+      "id": "s086-q01",
+      "storyId": 86,
+      "question": "这和现场的环境有关吗？",
+      "expected": "无关",
+      "type": "distractor",
+      "reason": "测试AI能否区分表面相关和实质相关"
+    },
+    {
+      "id": "s086-q02",
+      "storyId": 86,
+      "question": "真相和死者发现的某个事实有关吗？",
+      "expected": "是",
+      "type": "direct",
+      "reason": "指向核心真相"
+    },
+    {
+      "id": "s086-q03",
+      "storyId": 86,
+      "question": "这是一起谋杀案吗？",
+      "expected": "不是",
+      "type": "distractor",
+      "reason": "常见误解"
+    },
+    {
+      "id": "s086-q04",
+      "storyId": 86,
+      "question": "现场物品在这个故事中起关键作用吗？",
+      "expected": "不是",
+      "type": "clue",
+      "reason": "指向关键线索"
+    },
+    {
+      "id": "s086-q05",
+      "storyId": 86,
+      "question": "当事人的过去经历对理解真相很重要吗？",
+      "expected": "不是",
+      "type": "clue",
+      "reason": "时间线索"
+    },
+    {
+      "id": "s086-q06",
+      "storyId": 86,
+      "question": "现场有第三者存在吗？",
+      "expected": "是",
+      "type": "trap",
+      "reason": "看似有凶手实则没有，或相反"
+    },
+    {
+      "id": "s086-q07",
+      "storyId": 86,
+      "question": "需要理解字面背后的真实含义吗？",
+      "expected": "不是",
+      "type": "creative",
+      "reason": "双关或隐喻"
+    },
+    {
+      "id": "s086-q08",
+      "storyId": 86,
+      "question": "这是意外事件吗？",
+      "expected": "不是",
+      "type": "distractor",
+      "reason": "类别判断"
+    },
+    {
+      "id": "s086-q09",
+      "storyId": 86,
+      "question": "当事人是自杀的吗？",
+      "expected": "不是",
+      "type": "direct",
+      "reason": "死亡方式判断"
+    },
+    {
+      "id": "s086-q10",
+      "storyId": 86,
+      "question": "需要打破常规思维方式才能理解真相吗？",
+      "expected": "是",
+      "type": "creative",
+      "reason": "难度指标"
+    },
+    {
+      "id": "s087-q01",
+      "storyId": 87,
+      "question": "这和现场的环境有关吗？",
+      "expected": "无关",
+      "type": "distractor",
+      "reason": "测试AI能否区分表面相关和实质相关"
+    },
+    {
+      "id": "s087-q02",
+      "storyId": 87,
+      "question": "真相和死者发现的某个事实有关吗？",
+      "expected": "是",
+      "type": "direct",
+      "reason": "指向核心真相"
+    },
+    {
+      "id": "s087-q03",
+      "storyId": 87,
+      "question": "这是一起谋杀案吗？",
+      "expected": "不是",
+      "type": "distractor",
+      "reason": "常见误解"
+    },
+    {
+      "id": "s087-q04",
+      "storyId": 87,
+      "question": "现场物品在这个故事中起关键作用吗？",
+      "expected": "不是",
+      "type": "clue",
+      "reason": "指向关键线索"
+    },
+    {
+      "id": "s087-q05",
+      "storyId": 87,
+      "question": "死者的过去经历对理解真相很重要吗？",
+      "expected": "不是",
+      "type": "clue",
+      "reason": "时间线索"
+    },
+    {
+      "id": "s087-q06",
+      "storyId": 87,
+      "question": "现场有第三者存在吗？",
+      "expected": "是",
+      "type": "trap",
+      "reason": "看似有凶手实则没有，或相反"
+    },
+    {
+      "id": "s087-q07",
+      "storyId": 87,
+      "question": "需要理解字面背后的真实含义吗？",
+      "expected": "不是",
+      "type": "creative",
+      "reason": "双关或隐喻"
+    },
+    {
+      "id": "s087-q08",
+      "storyId": 87,
+      "question": "这是意外事件吗？",
+      "expected": "不是",
+      "type": "distractor",
+      "reason": "类别判断"
+    },
+    {
+      "id": "s087-q09",
+      "storyId": 87,
+      "question": "死者是自杀的吗？",
+      "expected": "不是",
+      "type": "direct",
+      "reason": "死亡方式判断"
+    },
+    {
+      "id": "s087-q10",
+      "storyId": 87,
+      "question": "需要打破常规思维方式才能理解真相吗？",
+      "expected": "无关",
+      "type": "creative",
+      "reason": "难度指标"
+    },
+    {
+      "id": "s088-q01",
+      "storyId": 88,
+      "question": "这和海边的环境有关吗？",
+      "expected": "无关",
+      "type": "distractor",
+      "reason": "测试AI能否区分表面相关和实质相关"
+    },
+    {
+      "id": "s088-q02",
+      "storyId": 88,
+      "question": "真相和死者发现的某个事实有关吗？",
+      "expected": "不是",
+      "type": "direct",
+      "reason": "指向核心真相"
+    },
+    {
+      "id": "s088-q03",
+      "storyId": 88,
+      "question": "这是一起谋杀案吗？",
+      "expected": "是",
+      "type": "distractor",
+      "reason": "常见误解"
+    },
+    {
+      "id": "s088-q04",
+      "storyId": 88,
+      "question": "纸条在这个故事中起关键作用吗？",
+      "expected": "是",
+      "type": "clue",
+      "reason": "指向关键线索"
+    },
+    {
+      "id": "s088-q05",
+      "storyId": 88,
+      "question": "当事人的过去经历对理解真相很重要吗？",
+      "expected": "不是",
+      "type": "clue",
+      "reason": "时间线索"
+    },
+    {
+      "id": "s088-q06",
+      "storyId": 88,
+      "question": "现场有第三者存在吗？",
+      "expected": "是",
+      "type": "trap",
+      "reason": "看似有凶手实则没有，或相反"
+    },
+    {
+      "id": "s088-q07",
+      "storyId": 88,
+      "question": "需要理解字面背后的真实含义吗？",
+      "expected": "不是",
+      "type": "creative",
+      "reason": "双关或隐喻"
+    },
+    {
+      "id": "s088-q08",
+      "storyId": 88,
+      "question": "这是意外事件吗？",
+      "expected": "不是",
+      "type": "distractor",
+      "reason": "类别判断"
+    },
+    {
+      "id": "s088-q09",
+      "storyId": 88,
+      "question": "当事人是自杀的吗？",
+      "expected": "不是",
+      "type": "direct",
+      "reason": "死亡方式判断"
+    },
+    {
+      "id": "s088-q10",
+      "storyId": 88,
+      "question": "需要打破常规思维方式才能理解真相吗？",
+      "expected": "是",
+      "type": "creative",
+      "reason": "难度指标"
+    },
+    {
+      "id": "s089-q01",
+      "storyId": 89,
+      "question": "这和现场的环境有关吗？",
+      "expected": "无关",
+      "type": "distractor",
+      "reason": "测试AI能否区分表面相关和实质相关"
+    },
+    {
+      "id": "s089-q02",
+      "storyId": 89,
+      "question": "真相和死者发现的某个事实有关吗？",
+      "expected": "不是",
+      "type": "direct",
+      "reason": "指向核心真相"
+    },
+    {
+      "id": "s089-q03",
+      "storyId": 89,
+      "question": "这是一起谋杀案吗？",
+      "expected": "不是",
+      "type": "distractor",
+      "reason": "常见误解"
+    },
+    {
+      "id": "s089-q04",
+      "storyId": 89,
+      "question": "现场物品在这个故事中起关键作用吗？",
+      "expected": "不是",
+      "type": "clue",
+      "reason": "指向关键线索"
+    },
+    {
+      "id": "s089-q05",
+      "storyId": 89,
+      "question": "当事人的过去经历对理解真相很重要吗？",
+      "expected": "不是",
+      "type": "clue",
+      "reason": "时间线索"
+    },
+    {
+      "id": "s089-q06",
+      "storyId": 89,
+      "question": "现场有第三者存在吗？",
+      "expected": "是",
+      "type": "trap",
+      "reason": "看似有凶手实则没有，或相反"
+    },
+    {
+      "id": "s089-q07",
+      "storyId": 89,
+      "question": "需要理解字面背后的真实含义吗？",
+      "expected": "不是",
+      "type": "creative",
+      "reason": "双关或隐喻"
+    },
+    {
+      "id": "s089-q08",
+      "storyId": 89,
+      "question": "这是意外事件吗？",
+      "expected": "不是",
+      "type": "distractor",
+      "reason": "类别判断"
+    },
+    {
+      "id": "s089-q09",
+      "storyId": 89,
+      "question": "当事人是自杀的吗？",
+      "expected": "是",
+      "type": "direct",
+      "reason": "死亡方式判断"
+    },
+    {
+      "id": "s089-q10",
+      "storyId": 89,
+      "question": "需要打破常规思维方式才能理解真相吗？",
+      "expected": "无关",
+      "type": "creative",
+      "reason": "难度指标"
+    },
+    {
+      "id": "s090-q01",
+      "storyId": 90,
+      "question": "这和住所的环境有关吗？",
+      "expected": "无关",
+      "type": "distractor",
+      "reason": "测试AI能否区分表面相关和实质相关"
+    },
+    {
+      "id": "s090-q02",
+      "storyId": 90,
+      "question": "真相和死者发现的某个事实有关吗？",
+      "expected": "不是",
+      "type": "direct",
+      "reason": "指向核心真相"
+    },
+    {
+      "id": "s090-q03",
+      "storyId": 90,
+      "question": "这是一起谋杀案吗？",
+      "expected": "不是",
+      "type": "distractor",
+      "reason": "常见误解"
+    },
+    {
+      "id": "s090-q04",
+      "storyId": 90,
+      "question": "现场物品在这个故事中起关键作用吗？",
+      "expected": "不是",
+      "type": "clue",
+      "reason": "指向关键线索"
+    },
+    {
+      "id": "s090-q05",
+      "storyId": 90,
+      "question": "当事人的过去经历对理解真相很重要吗？",
+      "expected": "不是",
+      "type": "clue",
+      "reason": "时间线索"
+    },
+    {
+      "id": "s090-q06",
+      "storyId": 90,
+      "question": "现场有第三者存在吗？",
+      "expected": "是",
+      "type": "trap",
+      "reason": "看似有凶手实则没有，或相反"
+    },
+    {
+      "id": "s090-q07",
+      "storyId": 90,
+      "question": "需要理解字面背后的真实含义吗？",
+      "expected": "不是",
+      "type": "creative",
+      "reason": "双关或隐喻"
+    },
+    {
+      "id": "s090-q08",
+      "storyId": 90,
+      "question": "这是意外事件吗？",
+      "expected": "不是",
+      "type": "distractor",
+      "reason": "类别判断"
+    },
+    {
+      "id": "s090-q09",
+      "storyId": 90,
+      "question": "当事人是自杀的吗？",
+      "expected": "是",
+      "type": "direct",
+      "reason": "死亡方式判断"
+    },
+    {
+      "id": "s090-q10",
+      "storyId": 90,
+      "question": "需要打破常规思维方式才能理解真相吗？",
+      "expected": "无关",
+      "type": "creative",
+      "reason": "难度指标"
+    },
+    {
+      "id": "s091-q01",
+      "storyId": 91,
+      "question": "这和海边的环境有关吗？",
+      "expected": "无关",
+      "type": "distractor",
+      "reason": "测试AI能否区分表面相关和实质相关"
+    },
+    {
+      "id": "s091-q02",
+      "storyId": 91,
+      "question": "真相和死者发现的某个事实有关吗？",
+      "expected": "不是",
+      "type": "direct",
+      "reason": "指向核心真相"
+    },
+    {
+      "id": "s091-q03",
+      "storyId": 91,
+      "question": "这是一起谋杀案吗？",
+      "expected": "不是",
+      "type": "distractor",
+      "reason": "常见误解"
+    },
+    {
+      "id": "s091-q04",
+      "storyId": 91,
+      "question": "现场物品在这个故事中起关键作用吗？",
+      "expected": "不是",
+      "type": "clue",
+      "reason": "指向关键线索"
+    },
+    {
+      "id": "s091-q05",
+      "storyId": 91,
+      "question": "死者的过去经历对理解真相很重要吗？",
+      "expected": "不是",
+      "type": "clue",
+      "reason": "时间线索"
+    },
+    {
+      "id": "s091-q06",
+      "storyId": 91,
+      "question": "现场有第三者存在吗？",
+      "expected": "不是",
+      "type": "trap",
+      "reason": "看似有凶手实则没有，或相反"
+    },
+    {
+      "id": "s091-q07",
+      "storyId": 91,
+      "question": "需要理解字面背后的真实含义吗？",
+      "expected": "不是",
+      "type": "creative",
+      "reason": "双关或隐喻"
+    },
+    {
+      "id": "s091-q08",
+      "storyId": 91,
+      "question": "这是意外事件吗？",
+      "expected": "不是",
+      "type": "distractor",
+      "reason": "类别判断"
+    },
+    {
+      "id": "s091-q09",
+      "storyId": 91,
+      "question": "死者是自杀的吗？",
+      "expected": "不是",
+      "type": "direct",
+      "reason": "死亡方式判断"
+    },
+    {
+      "id": "s091-q10",
+      "storyId": 91,
+      "question": "需要打破常规思维方式才能理解真相吗？",
+      "expected": "无关",
+      "type": "creative",
+      "reason": "难度指标"
+    },
+    {
+      "id": "s092-q01",
+      "storyId": 92,
+      "question": "这和现场的环境有关吗？",
+      "expected": "无关",
+      "type": "distractor",
+      "reason": "测试AI能否区分表面相关和实质相关"
+    },
+    {
+      "id": "s092-q02",
+      "storyId": 92,
+      "question": "真相和死者发现的某个事实有关吗？",
+      "expected": "不是",
+      "type": "direct",
+      "reason": "指向核心真相"
+    },
+    {
+      "id": "s092-q03",
+      "storyId": 92,
+      "question": "这是一起谋杀案吗？",
+      "expected": "是",
+      "type": "distractor",
+      "reason": "常见误解"
+    },
+    {
+      "id": "s092-q04",
+      "storyId": 92,
+      "question": "现场物品在这个故事中起关键作用吗？",
+      "expected": "不是",
+      "type": "clue",
+      "reason": "指向关键线索"
+    },
+    {
+      "id": "s092-q05",
+      "storyId": 92,
+      "question": "死者的过去经历对理解真相很重要吗？",
+      "expected": "不是",
+      "type": "clue",
+      "reason": "时间线索"
+    },
+    {
+      "id": "s092-q06",
+      "storyId": 92,
+      "question": "现场有第三者存在吗？",
+      "expected": "是",
+      "type": "trap",
+      "reason": "看似有凶手实则没有，或相反"
+    },
+    {
+      "id": "s092-q07",
+      "storyId": 92,
+      "question": "需要理解字面背后的真实含义吗？",
+      "expected": "不是",
+      "type": "creative",
+      "reason": "双关或隐喻"
+    },
+    {
+      "id": "s092-q08",
+      "storyId": 92,
+      "question": "这是意外事件吗？",
+      "expected": "不是",
+      "type": "distractor",
+      "reason": "类别判断"
+    },
+    {
+      "id": "s092-q09",
+      "storyId": 92,
+      "question": "死者是自杀的吗？",
+      "expected": "不是",
+      "type": "direct",
+      "reason": "死亡方式判断"
+    },
+    {
+      "id": "s092-q10",
+      "storyId": 92,
+      "question": "需要打破常规思维方式才能理解真相吗？",
+      "expected": "是",
+      "type": "creative",
+      "reason": "难度指标"
+    },
+    {
+      "id": "s093-q01",
+      "storyId": 93,
+      "question": "这和现场的环境有关吗？",
+      "expected": "无关",
+      "type": "distractor",
+      "reason": "测试AI能否区分表面相关和实质相关"
+    },
+    {
+      "id": "s093-q02",
+      "storyId": 93,
+      "question": "真相和死者发现的某个事实有关吗？",
+      "expected": "不是",
+      "type": "direct",
+      "reason": "指向核心真相"
+    },
+    {
+      "id": "s093-q03",
+      "storyId": 93,
+      "question": "这是一起谋杀案吗？",
+      "expected": "不是",
+      "type": "distractor",
+      "reason": "常见误解"
+    },
+    {
+      "id": "s093-q04",
+      "storyId": 93,
+      "question": "现场物品在这个故事中起关键作用吗？",
+      "expected": "不是",
+      "type": "clue",
+      "reason": "指向关键线索"
+    },
+    {
+      "id": "s093-q05",
+      "storyId": 93,
+      "question": "死者的过去经历对理解真相很重要吗？",
+      "expected": "不是",
+      "type": "clue",
+      "reason": "时间线索"
+    },
+    {
+      "id": "s093-q06",
+      "storyId": 93,
+      "question": "现场有第三者存在吗？",
+      "expected": "是",
+      "type": "trap",
+      "reason": "看似有凶手实则没有，或相反"
+    },
+    {
+      "id": "s093-q07",
+      "storyId": 93,
+      "question": "需要理解字面背后的真实含义吗？",
+      "expected": "不是",
+      "type": "creative",
+      "reason": "双关或隐喻"
+    },
+    {
+      "id": "s093-q08",
+      "storyId": 93,
+      "question": "这是意外事件吗？",
+      "expected": "不是",
+      "type": "distractor",
+      "reason": "类别判断"
+    },
+    {
+      "id": "s093-q09",
+      "storyId": 93,
+      "question": "死者是自杀的吗？",
+      "expected": "不是",
+      "type": "direct",
+      "reason": "死亡方式判断"
+    },
+    {
+      "id": "s093-q10",
+      "storyId": 93,
+      "question": "需要打破常规思维方式才能理解真相吗？",
+      "expected": "是",
+      "type": "creative",
+      "reason": "难度指标"
+    },
+    {
+      "id": "s094-q01",
+      "storyId": 94,
+      "question": "这和现场的环境有关吗？",
+      "expected": "无关",
+      "type": "distractor",
+      "reason": "测试AI能否区分表面相关和实质相关"
+    },
+    {
+      "id": "s094-q02",
+      "storyId": 94,
+      "question": "真相和死者发现的某个事实有关吗？",
+      "expected": "不是",
+      "type": "direct",
+      "reason": "指向核心真相"
+    },
+    {
+      "id": "s094-q03",
+      "storyId": 94,
+      "question": "这是一起谋杀案吗？",
+      "expected": "不是",
+      "type": "distractor",
+      "reason": "常见误解"
+    },
+    {
+      "id": "s094-q04",
+      "storyId": 94,
+      "question": "纸条在这个故事中起关键作用吗？",
+      "expected": "不是",
+      "type": "clue",
+      "reason": "指向关键线索"
+    },
+    {
+      "id": "s094-q05",
+      "storyId": 94,
+      "question": "当事人的过去经历对理解真相很重要吗？",
+      "expected": "不是",
+      "type": "clue",
+      "reason": "时间线索"
+    },
+    {
+      "id": "s094-q06",
+      "storyId": 94,
+      "question": "现场有第三者存在吗？",
+      "expected": "是",
+      "type": "trap",
+      "reason": "看似有凶手实则没有，或相反"
+    },
+    {
+      "id": "s094-q07",
+      "storyId": 94,
+      "question": "需要理解字面背后的真实含义吗？",
+      "expected": "不是",
+      "type": "creative",
+      "reason": "双关或隐喻"
+    },
+    {
+      "id": "s094-q08",
+      "storyId": 94,
+      "question": "这是意外事件吗？",
+      "expected": "不是",
+      "type": "distractor",
+      "reason": "类别判断"
+    },
+    {
+      "id": "s094-q09",
+      "storyId": 94,
+      "question": "当事人是自杀的吗？",
+      "expected": "是",
+      "type": "direct",
+      "reason": "死亡方式判断"
+    },
+    {
+      "id": "s094-q10",
+      "storyId": 94,
+      "question": "需要打破常规思维方式才能理解真相吗？",
+      "expected": "无关",
+      "type": "creative",
+      "reason": "难度指标"
+    },
+    {
+      "id": "s095-q01",
+      "storyId": 95,
+      "question": "这和现场的环境有关吗？",
+      "expected": "无关",
+      "type": "distractor",
+      "reason": "测试AI能否区分表面相关和实质相关"
+    },
+    {
+      "id": "s095-q02",
+      "storyId": 95,
+      "question": "真相和死者发现的某个事实有关吗？",
+      "expected": "不是",
+      "type": "direct",
+      "reason": "指向核心真相"
+    },
+    {
+      "id": "s095-q03",
+      "storyId": 95,
+      "question": "这是一起谋杀案吗？",
+      "expected": "不是",
+      "type": "distractor",
+      "reason": "常见误解"
+    },
+    {
+      "id": "s095-q04",
+      "storyId": 95,
+      "question": "现场物品在这个故事中起关键作用吗？",
+      "expected": "不是",
+      "type": "clue",
+      "reason": "指向关键线索"
+    },
+    {
+      "id": "s095-q05",
+      "storyId": 95,
+      "question": "死者的过去经历对理解真相很重要吗？",
+      "expected": "不是",
+      "type": "clue",
+      "reason": "时间线索"
+    },
+    {
+      "id": "s095-q06",
+      "storyId": 95,
+      "question": "现场有第三者存在吗？",
+      "expected": "是",
+      "type": "trap",
+      "reason": "看似有凶手实则没有，或相反"
+    },
+    {
+      "id": "s095-q07",
+      "storyId": 95,
+      "question": "需要理解字面背后的真实含义吗？",
+      "expected": "不是",
+      "type": "creative",
+      "reason": "双关或隐喻"
+    },
+    {
+      "id": "s095-q08",
+      "storyId": 95,
+      "question": "这是意外事件吗？",
+      "expected": "不是",
+      "type": "distractor",
+      "reason": "类别判断"
+    },
+    {
+      "id": "s095-q09",
+      "storyId": 95,
+      "question": "死者是自杀的吗？",
+      "expected": "不是",
+      "type": "direct",
+      "reason": "死亡方式判断"
+    },
+    {
+      "id": "s095-q10",
+      "storyId": 95,
+      "question": "需要打破常规思维方式才能理解真相吗？",
+      "expected": "无关",
+      "type": "creative",
+      "reason": "难度指标"
+    },
+    {
+      "id": "s096-q01",
+      "storyId": 96,
+      "question": "这和现场的环境有关吗？",
+      "expected": "无关",
+      "type": "distractor",
+      "reason": "测试AI能否区分表面相关和实质相关"
+    },
+    {
+      "id": "s096-q02",
+      "storyId": 96,
+      "question": "真相和死者发现的某个事实有关吗？",
+      "expected": "不是",
+      "type": "direct",
+      "reason": "指向核心真相"
+    },
+    {
+      "id": "s096-q03",
+      "storyId": 96,
+      "question": "这是一起谋杀案吗？",
+      "expected": "不是",
+      "type": "distractor",
+      "reason": "常见误解"
+    },
+    {
+      "id": "s096-q04",
+      "storyId": 96,
+      "question": "现场物品在这个故事中起关键作用吗？",
+      "expected": "不是",
+      "type": "clue",
+      "reason": "指向关键线索"
+    },
+    {
+      "id": "s096-q05",
+      "storyId": 96,
+      "question": "死者的过去经历对理解真相很重要吗？",
+      "expected": "不是",
+      "type": "clue",
+      "reason": "时间线索"
+    },
+    {
+      "id": "s096-q06",
+      "storyId": 96,
+      "question": "现场有第三者存在吗？",
+      "expected": "不是",
+      "type": "trap",
+      "reason": "看似有凶手实则没有，或相反"
+    },
+    {
+      "id": "s096-q07",
+      "storyId": 96,
+      "question": "需要理解字面背后的真实含义吗？",
+      "expected": "不是",
+      "type": "creative",
+      "reason": "双关或隐喻"
+    },
+    {
+      "id": "s096-q08",
+      "storyId": 96,
+      "question": "这是意外事件吗？",
+      "expected": "不是",
+      "type": "distractor",
+      "reason": "类别判断"
+    },
+    {
+      "id": "s096-q09",
+      "storyId": 96,
+      "question": "死者是自杀的吗？",
+      "expected": "不是",
+      "type": "direct",
+      "reason": "死亡方式判断"
+    },
+    {
+      "id": "s096-q10",
+      "storyId": 96,
+      "question": "需要打破常规思维方式才能理解真相吗？",
+      "expected": "无关",
+      "type": "creative",
+      "reason": "难度指标"
+    },
+    {
+      "id": "s097-q01",
+      "storyId": 97,
+      "question": "这和现场的环境有关吗？",
+      "expected": "无关",
+      "type": "distractor",
+      "reason": "测试AI能否区分表面相关和实质相关"
+    },
+    {
+      "id": "s097-q02",
+      "storyId": 97,
+      "question": "真相和死者发现的某个事实有关吗？",
+      "expected": "不是",
+      "type": "direct",
+      "reason": "指向核心真相"
+    },
+    {
+      "id": "s097-q03",
+      "storyId": 97,
+      "question": "这是一起谋杀案吗？",
+      "expected": "是",
+      "type": "distractor",
+      "reason": "常见误解"
+    },
+    {
+      "id": "s097-q04",
+      "storyId": 97,
+      "question": "现场物品在这个故事中起关键作用吗？",
+      "expected": "不是",
+      "type": "clue",
+      "reason": "指向关键线索"
+    },
+    {
+      "id": "s097-q05",
+      "storyId": 97,
+      "question": "当事人的过去经历对理解真相很重要吗？",
+      "expected": "不是",
+      "type": "clue",
+      "reason": "时间线索"
+    },
+    {
+      "id": "s097-q06",
+      "storyId": 97,
+      "question": "现场有第三者存在吗？",
+      "expected": "是",
+      "type": "trap",
+      "reason": "看似有凶手实则没有，或相反"
+    },
+    {
+      "id": "s097-q07",
+      "storyId": 97,
+      "question": "需要理解字面背后的真实含义吗？",
+      "expected": "不是",
+      "type": "creative",
+      "reason": "双关或隐喻"
+    },
+    {
+      "id": "s097-q08",
+      "storyId": 97,
+      "question": "这是意外事件吗？",
+      "expected": "不是",
+      "type": "distractor",
+      "reason": "类别判断"
+    },
+    {
+      "id": "s097-q09",
+      "storyId": 97,
+      "question": "当事人是自杀的吗？",
+      "expected": "不是",
+      "type": "direct",
+      "reason": "死亡方式判断"
+    },
+    {
+      "id": "s097-q10",
+      "storyId": 97,
+      "question": "需要打破常规思维方式才能理解真相吗？",
+      "expected": "无关",
+      "type": "creative",
+      "reason": "难度指标"
+    },
+    {
+      "id": "s098-q01",
+      "storyId": 98,
+      "question": "这和住所的环境有关吗？",
+      "expected": "无关",
+      "type": "distractor",
+      "reason": "测试AI能否区分表面相关和实质相关"
+    },
+    {
+      "id": "s098-q02",
+      "storyId": 98,
+      "question": "真相和死者发现的某个事实有关吗？",
+      "expected": "不是",
+      "type": "direct",
+      "reason": "指向核心真相"
+    },
+    {
+      "id": "s098-q03",
+      "storyId": 98,
+      "question": "这是一起谋杀案吗？",
+      "expected": "不是",
+      "type": "distractor",
+      "reason": "常见误解"
+    },
+    {
+      "id": "s098-q04",
+      "storyId": 98,
+      "question": "现场物品在这个故事中起关键作用吗？",
+      "expected": "不是",
+      "type": "clue",
+      "reason": "指向关键线索"
+    },
+    {
+      "id": "s098-q05",
+      "storyId": 98,
+      "question": "当事人的过去经历对理解真相很重要吗？",
+      "expected": "不是",
+      "type": "clue",
+      "reason": "时间线索"
+    },
+    {
+      "id": "s098-q06",
+      "storyId": 98,
+      "question": "现场有第三者存在吗？",
+      "expected": "不是",
+      "type": "trap",
+      "reason": "看似有凶手实则没有，或相反"
+    },
+    {
+      "id": "s098-q07",
+      "storyId": 98,
+      "question": "需要理解字面背后的真实含义吗？",
+      "expected": "不是",
+      "type": "creative",
+      "reason": "双关或隐喻"
+    },
+    {
+      "id": "s098-q08",
+      "storyId": 98,
+      "question": "这是意外事件吗？",
+      "expected": "不是",
+      "type": "distractor",
+      "reason": "类别判断"
+    },
+    {
+      "id": "s098-q09",
+      "storyId": 98,
+      "question": "当事人是自杀的吗？",
+      "expected": "是",
+      "type": "direct",
+      "reason": "死亡方式判断"
+    },
+    {
+      "id": "s098-q10",
+      "storyId": 98,
+      "question": "需要打破常规思维方式才能理解真相吗？",
+      "expected": "是",
+      "type": "creative",
+      "reason": "难度指标"
+    },
+    {
+      "id": "s099-q01",
+      "storyId": 99,
+      "question": "这和住所的环境有关吗？",
+      "expected": "无关",
+      "type": "distractor",
+      "reason": "测试AI能否区分表面相关和实质相关"
+    },
+    {
+      "id": "s099-q02",
+      "storyId": 99,
+      "question": "真相和死者发现的某个事实有关吗？",
+      "expected": "不是",
+      "type": "direct",
+      "reason": "指向核心真相"
+    },
+    {
+      "id": "s099-q03",
+      "storyId": 99,
+      "question": "这是一起谋杀案吗？",
+      "expected": "不是",
+      "type": "distractor",
+      "reason": "常见误解"
+    },
+    {
+      "id": "s099-q04",
+      "storyId": 99,
+      "question": "现场物品在这个故事中起关键作用吗？",
+      "expected": "不是",
+      "type": "clue",
+      "reason": "指向关键线索"
+    },
+    {
+      "id": "s099-q05",
+      "storyId": 99,
+      "question": "死者的过去经历对理解真相很重要吗？",
+      "expected": "不是",
+      "type": "clue",
+      "reason": "时间线索"
+    },
+    {
+      "id": "s099-q06",
+      "storyId": 99,
+      "question": "现场有第三者存在吗？",
+      "expected": "不是",
+      "type": "trap",
+      "reason": "看似有凶手实则没有，或相反"
+    },
+    {
+      "id": "s099-q07",
+      "storyId": 99,
+      "question": "需要理解字面背后的真实含义吗？",
+      "expected": "不是",
+      "type": "creative",
+      "reason": "双关或隐喻"
+    },
+    {
+      "id": "s099-q08",
+      "storyId": 99,
+      "question": "这是意外事件吗？",
+      "expected": "不是",
+      "type": "distractor",
+      "reason": "类别判断"
+    },
+    {
+      "id": "s099-q09",
+      "storyId": 99,
+      "question": "死者是自杀的吗？",
+      "expected": "是",
+      "type": "direct",
+      "reason": "死亡方式判断"
+    },
+    {
+      "id": "s099-q10",
+      "storyId": 99,
+      "question": "需要打破常规思维方式才能理解真相吗？",
+      "expected": "是",
+      "type": "creative",
+      "reason": "难度指标"
+    },
+    {
+      "id": "s100-q01",
+      "storyId": 100,
+      "question": "这和现场的环境有关吗？",
+      "expected": "无关",
+      "type": "distractor",
+      "reason": "测试AI能否区分表面相关和实质相关"
+    },
+    {
+      "id": "s100-q02",
+      "storyId": 100,
+      "question": "真相和死者发现的某个事实有关吗？",
+      "expected": "不是",
+      "type": "direct",
+      "reason": "指向核心真相"
+    },
+    {
+      "id": "s100-q03",
+      "storyId": 100,
+      "question": "这是一起谋杀案吗？",
+      "expected": "不是",
+      "type": "distractor",
+      "reason": "常见误解"
+    },
+    {
+      "id": "s100-q04",
+      "storyId": 100,
+      "question": "现场物品在这个故事中起关键作用吗？",
+      "expected": "不是",
+      "type": "clue",
+      "reason": "指向关键线索"
+    },
+    {
+      "id": "s100-q05",
+      "storyId": 100,
+      "question": "死者的过去经历对理解真相很重要吗？",
+      "expected": "不是",
+      "type": "clue",
+      "reason": "时间线索"
+    },
+    {
+      "id": "s100-q06",
+      "storyId": 100,
+      "question": "现场有第三者存在吗？",
+      "expected": "不是",
+      "type": "trap",
+      "reason": "看似有凶手实则没有，或相反"
+    },
+    {
+      "id": "s100-q07",
+      "storyId": 100,
+      "question": "需要理解字面背后的真实含义吗？",
+      "expected": "不是",
+      "type": "creative",
+      "reason": "双关或隐喻"
+    },
+    {
+      "id": "s100-q08",
+      "storyId": 100,
+      "question": "这是意外事件吗？",
+      "expected": "不是",
+      "type": "distractor",
+      "reason": "类别判断"
+    },
+    {
+      "id": "s100-q09",
+      "storyId": 100,
+      "question": "死者是自杀的吗？",
+      "expected": "不是",
+      "type": "direct",
+      "reason": "死亡方式判断"
+    },
+    {
+      "id": "s100-q10",
+      "storyId": 100,
+      "question": "需要打破常规思维方式才能理解真相吗？",
+      "expected": "是",
+      "type": "creative",
+      "reason": "难度指标"
     }
   ]
 }

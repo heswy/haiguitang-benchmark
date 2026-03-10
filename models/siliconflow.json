@@ -73,6 +73,42 @@
       "costPer1KOutputTokens": 0.03,
       "maxTokens": 8192,
       "description": "Meta开源模型，英文能力强"
+    },
+    {
+      "id": "Pro/deepseek-ai/DeepSeek-V3.2",
+      "name": "DeepSeek-V3.2",
+      "type": "chat",
+      "costPer1KInputTokens": 0.02,
+      "costPer1KOutputTokens": 0.02,
+      "maxTokens": 8192,
+      "description": "DeepSeek V3.2，性能提升"
+    },
+    {
+      "id": "Pro/moonshotai/Kimi-K2.5",
+      "name": "Kimi-K2.5",
+      "type": "chat",
+      "costPer1KInputTokens": 0.025,
+      "costPer1KOutputTokens": 0.025,
+      "maxTokens": 8192,
+      "description": "月之暗面Kimi，长文本能力强"
+    },
+    {
+      "id": "Pro/deepseek-ai/DeepSeek-V3.1-Terminus",
+      "name": "DeepSeek-V3.1-Terminus",
+      "type": "chat",
+      "costPer1KInputTokens": 0.02,
+      "costPer1KOutputTokens": 0.02,
+      "maxTokens": 8192,
+      "description": "DeepSeek V3.1 Terminus版本"
+    },
+    {
+      "id": "Pro/MiniMaxAI/MiniMax-M2.5",
+      "name": "MiniMax-M2.5",
+      "type": "chat",
+      "costPer1KInputTokens": 0.025,
+      "costPer1KOutputTokens": 0.025,
+      "maxTokens": 8192,
+      "description": "MiniMax最新版，国产大模型"
     }
   ]
 }

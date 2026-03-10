@@ -227,7 +227,7 @@ ${testCase.answer}
       const response = await this.api.chat({
         model: model.id,
         messages: [
-          { role: 'system', content: '你是海龟汤游戏裁判，只能回答「正确」「错误」「接近」三个字之一。' },
+          { role: 'system', content: prompt.systemPrompt },
           { role: 'user', content: verifyPrompt }
         ],
         maxTokens: 10,
@@ -258,7 +258,7 @@ ${testCase.answer}
   }
 
   private calculateCost(model: ModelConfig, tokens: number): number {
-    const costPerToken = (model.costPer1KInputTokens || 0) / 1000;
+    const costPerToken = (model.costPer1KTokens || 0) / 1000;
     return tokens * costPerToken;
   }
 

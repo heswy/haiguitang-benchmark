@@ -65,7 +65,7 @@ export class Evaluator {
     
     // 按模型分组
     for (const r of results) {
-      const key = `${r.modelId}-${r.promptId}`;
+      const key = `${r.modelId}::${r.promptId}`;
       if (!modelGroups.has(key)) {
         modelGroups.set(key, { results: [], validations: [] });
       }
@@ -73,7 +73,7 @@ export class Evaluator {
     }
     
     for (const v of validations) {
-      const key = `${v.modelId}-${v.promptId}`;
+      const key = `${v.modelId}::${v.promptId}`;
       if (modelGroups.has(key)) {
         modelGroups.get(key)!.validations.push(v);
       }
@@ -82,7 +82,7 @@ export class Evaluator {
     const scores: ModelScore[] = [];
     
     for (const [key, data] of modelGroups) {
-      const [modelId, promptId] = key.split('-');
+      const [modelId, promptId] = key.split('::');
       const modelResults = data.results;
       const modelValidations = data.validations;
       
