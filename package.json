@@ -1,0 +1,27 @@
+{
+  "name": "haiguitang-benchmark",
+  "version": "1.0.0",
+  "description": "海龟汤 AI 模型评测系统",
+  "type": "module",
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/index.js",
+    "dev": "tsx src/index.ts",
+    "test": "npm run dev",
+    "report": "node dist/reporters/html-reporter.js",
+    "clean": "rm -rf dist results/*.json"
+  },
+  "dependencies": {
+    "dotenv": "^16.4.5",
+    "chalk": "^5.3.0",
+    "commander": "^12.0.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20.11.0",
+    "tsx": "^4.7.0",
+    "typescript": "^5.3.3"
+  },
+  "keywords": ["haiguitang", "benchmark", "ai", "evaluation"],
+  "author": "heswy",
+  "license": "MIT"
+}

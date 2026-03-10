@@ -1,0 +1,78 @@
+{
+  "provider": "siliconflow",
+  "baseUrl": "https://api.siliconflow.cn/v1/chat/completions",
+  "models": [
+    {
+      "id": "Pro/zai-org/GLM-4.7",
+      "name": "GLM-4.7",
+      "type": "chat",
+      "costPer1KInputTokens": 0.05,
+      "costPer1KOutputTokens": 0.05,
+      "maxTokens": 4096,
+      "description": "智谱AI旗舰模型，综合能力强劲"
+    },
+    {
+      "id": "Pro/Qwen/Qwen2.5-72B-Instruct",
+      "name": "Qwen2.5-72B",
+      "type": "chat",
+      "costPer1KInputTokens": 0.035,
+      "costPer1KOutputTokens": 0.035,
+      "maxTokens": 8192,
+      "description": "阿里通义千问，长文本能力强"
+    },
+    {
+      "id": "Pro/deepseek-ai/DeepSeek-V3",
+      "name": "DeepSeek-V3",
+      "type": "chat",
+      "costPer1KInputTokens": 0.02,
+      "costPer1KOutputTokens": 0.02,
+      "maxTokens": 8192,
+      "description": "DeepSeek最新版，性价比极高"
+    },
+    {
+      "id": "Pro/deepseek-ai/DeepSeek-R1",
+      "name": "DeepSeek-R1",
+      "type": "reasoning",
+      "costPer1KInputTokens": 0.04,
+      "costPer1KOutputTokens": 0.04,
+      "maxTokens": 8192,
+      "description": "DeepSeek推理模型，思维链展示"
+    },
+    {
+      "id": "deepseek-ai/DeepSeek-V2.5",
+      "name": "DeepSeek-V2.5",
+      "type": "chat",
+      "costPer1KInputTokens": 0.015,
+      "costPer1KOutputTokens": 0.015,
+      "maxTokens": 8192,
+      "description": "DeepSeek V2.5，经济实惠"
+    },
+    {
+      "id": "Qwen/Qwen2.5-7B-Instruct",
+      "name": "Qwen2.5-7B",
+      "type": "chat",
+      "costPer1KInputTokens": 0.005,
+      "costPer1KOutputTokens": 0.005,
+      "maxTokens": 4096,
+      "description": "轻量级模型，适合快速测试"
+    },
+    {
+      "id": "THUDM/glm-4-9b-chat",
+      "name": "GLM-4-9B",
+      "type": "chat",
+      "costPer1KInputTokens": 0.006,
+      "costPer1KOutputTokens": 0.006,
+      "maxTokens": 4096,
+      "description": "GLM轻量版"
+    },
+    {
+      "id": "meta-llama/Meta-Llama-3.1-70B-Instruct",
+      "name": "Llama-3.1-70B",
+      "type": "chat",
+      "costPer1KInputTokens": 0.03,
+      "costPer1KOutputTokens": 0.03,
+      "maxTokens": 8192,
+      "description": "Meta开源模型，英文能力强"
+    }
+  ]
+}

@@ -1,0 +1,206 @@
+{
+  "tests": [
+    {
+      "storyId": 1,
+      "truth": "男人曾和同伴在海上遇难，没有食物。同伴们骗他说这是海龟汤让他喝了，其实是用死去同伴的肉做的。他在餐厅喝到真正的海龟汤，发现味道完全不同，才明白当年喝的是人肉，崩溃自杀。",
+      "cases": [
+        {
+          "answer": "他以前吃人肉活命，现在发现是人肉自杀",
+          "expect": "correct",
+          "reason": "核心要素正确"
+        },
+        {
+          "answer": "男人吃了同伴的肉，以为是海龟汤",
+          "expect": "correct",
+          "reason": "表述不同但意思对"
+        },
+        {
+          "answer": "他自杀是因为内疚",
+          "expect": "close",
+          "reason": "只说自杀原因，没说核心事实"
+        },
+        {
+          "answer": "汤里有毒",
+          "expect": "wrong",
+          "reason": "完全错误"
+        },
+        {
+          "answer": "他对海龟过敏",
+          "expect": "wrong",
+          "reason": "无关联"
+        }
+      ]
+    },
+    {
+      "storyId": 2,
+      "truth": "运动员在训练时鼻窦破裂，大量出血染红泳池，随后溺亡。",
+      "cases": [
+        {
+          "answer": "他鼻窦破裂，出血过多，溺亡",
+          "expect": "correct",
+          "reason": "核心要素一致"
+        },
+        {
+          "answer": "运动员鼻窦破裂流血，然后淹死了",
+          "expect": "correct",
+          "reason": "同义词替换"
+        },
+        {
+          "answer": "他鼻子血管破裂，血流太多，淹死了",
+          "expect": "correct",
+          "reason": "表述不同但意思对"
+        },
+        {
+          "answer": "他溺亡了",
+          "expect": "close",
+          "reason": "只说死因"
+        },
+        {
+          "answer": "他流鼻血死的",
+          "expect": "close",
+          "reason": "只说出血"
+        },
+        {
+          "answer": "被人谋杀",
+          "expect": "wrong",
+          "reason": "完全错误"
+        },
+        {
+          "answer": "心脏病发作",
+          "expect": "wrong",
+          "reason": "死因错误"
+        }
+      ]
+    },
+    {
+      "storyId": 3,
+      "truth": "男子打嗝不止，想喝水止住。酒保用枪吓唬他，他被吓得打嗝停了，所以说了谢谢。",
+      "cases": [
+        {
+          "answer": "男子打嗝，被枪吓好了",
+          "expect": "correct",
+          "reason": "核心要素正确"
+        },
+        {
+          "answer": "他打嗝，枪是假枪，吓停了",
+          "expect": "correct",
+          "reason": "完整表述"
+        },
+        {
+          "answer": "他打嗝想喝水",
+          "expect": "close",
+          "reason": "只说了一部分"
+        },
+        {
+          "answer": "酒保想杀他",
+          "expect": "wrong",
+          "reason": "完全错误"
+        }
+      ]
+    },
+    {
+      "storyId": 6,
+      "truth": "凶手藏在床下杀了朋友。声音是凶手发出的，朋友已经死了，告诉她别看的其实是凶手。",
+      "cases": [
+        {
+          "answer": "凶手在床底下，女孩的朋友已经死了",
+          "expect": "correct",
+          "reason": "核心要素正确"
+        },
+        {
+          "answer": "床底下是杀人犯，他杀了朋友",
+          "expect": "correct",
+          "reason": "完整表述"
+        },
+        {
+          "answer": "朋友被床下的怪物杀了",
+          "expect": "close",
+          "reason": "怪物是凶手，但不准确"
+        },
+        {
+          "answer": "朋友和她开玩笑",
+          "expect": "wrong",
+          "reason": "完全错误"
+        }
+      ]
+    },
+    {
+      "storyId": 25,
+      "truth": "她习惯睡前把拖鞋一正一反放在床边。这次检查时她是倒着看的，看到鞋是正的，以为床底有人把鞋翻过来了。其实是她自己放反了。",
+      "cases": [
+        {
+          "answer": "她是倒着看拖鞋，搞错了",
+          "expect": "correct",
+          "reason": "核心原因正确"
+        },
+        {
+          "answer": "她把鞋放反了，看错了",
+          "expect": "correct",
+          "reason": "表述不同"
+        },
+        {
+          "answer": "她有强迫症，看错了鞋的方向",
+          "expect": "correct",
+          "reason": "核心正确"
+        },
+        {
+          "answer": "床底下真的有人",
+          "expect": "wrong",
+          "reason": "完全错误"
+        }
+      ]
+    },
+    {
+      "storyId": 29,
+      "truth": "她有严重的精神分裂症，镜子里的"自己"是另一个人格。那天副人格没有出来，她发现自己在镜子里"消失"了，精神崩溃。",
+      "cases": [
+        {
+          "answer": "她有精神分裂，镜子是另一个人格",
+          "expect": "correct",
+          "reason": "核心要素正确"
+        },
+        {
+          "answer": "她有双重人格，那天副人格没出现",
+          "expect": "correct",
+          "reason": "完整表述"
+        },
+        {
+          "answer": "她有精神病，看不到自己了",
+          "expect": "close",
+          "reason": "接近但不完整"
+        },
+        {
+          "answer": "镜子被人换了",
+          "expect": "wrong",
+          "reason": "完全错误"
+        }
+      ]
+    },
+    {
+      "storyId": 30,
+      "truth": "他演的是一具尸体，导演要求他全程不能动。他真的心脏病发作死在舞台上，观众以为这是超逼真的表演。",
+      "cases": [
+        {
+          "answer": "他演尸体，真死在台上，观众以为是表演",
+          "expect": "correct",
+          "reason": "核心要素正确"
+        },
+        {
+          "answer": "他扮演尸体，心脏病发作死了",
+          "expect": "correct",
+          "reason": "表述不同"
+        },
+        {
+          "answer": "他死在台上，观众以为在演戏",
+          "expect": "correct",
+          "reason": "核心正确"
+        },
+        {
+          "answer": "他被观众吓死了",
+          "expect": "wrong",
+          "reason": "完全错误"
+        }
+      ]
+    }
+  ]
+}

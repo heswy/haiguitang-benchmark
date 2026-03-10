@@ -1,0 +1,260 @@
+{
+  "questions": [
+    {
+      "id": "s01-q01",
+      "storyId": 1,
+      "question": "这个男人和餐厅有仇吗？",
+      "expected": "不是",
+      "type": "distractor",
+      "reason": "与餐厅无关"
+    },
+    {
+      "id": "s01-q02",
+      "storyId": 1,
+      "question": "海龟汤本身有毒吗？",
+      "expected": "不是",
+      "type": "distractor",
+      "reason": "汤是正常的"
+    },
+    {
+      "id": "s01-q03",
+      "storyId": 1,
+      "question": "这个男人曾经喝过类似的东西吗？",
+      "expected": "是",
+      "type": "clue",
+      "reason": "指向过去的经历"
+    },
+    {
+      "id": "s01-q04",
+      "storyId": 1,
+      "question": "他自杀是因为发现了什么真相吗？",
+      "expected": "是",
+      "type": "direct",
+      "reason": "核心动机"
+    },
+    {
+      "id": "s01-q05",
+      "storyId": 1,
+      "question": "真相和他以前喝的东西有关吗？",
+      "expected": "是",
+      "type": "clue",
+      "reason": "关联过去和现在"
+    },
+    {
+      "id": "s02-q01",
+      "storyId": 2,
+      "question": "运动员是被人谋杀的吗？",
+      "expected": "不是",
+      "type": "distractor",
+      "reason": "排除他杀"
+    },
+    {
+      "id": "s02-q02",
+      "storyId": 2,
+      "question": "他身上有外伤吗？",
+      "expected": "不是",
+      "type": "direct",
+      "reason": "谜面已说明无伤口"
+    },
+    {
+      "id": "s02-q03",
+      "storyId": 2,
+      "question": "出血和死亡有关吗？",
+      "expected": "是",
+      "type": "clue",
+      "reason": "关键线索"
+    },
+    {
+      "id": "s02-q04",
+      "storyId": 2,
+      "question": "他是溺水而死的吗？",
+      "expected": "是",
+      "type": "process",
+      "reason": "死因"
+    },
+    {
+      "id": "s02-q05",
+      "storyId": 2,
+      "question": "出血是身体内部问题导致的吗？",
+      "expected": "是",
+      "type": "clue",
+      "reason": "指向鼻窦破裂"
+    },
+    {
+      "id": "s03-q01",
+      "storyId": 3,
+      "question": "男子和酒保有仇吗？",
+      "expected": "不是",
+      "type": "distractor",
+      "reason": "素不相识"
+    },
+    {
+      "id": "s03-q02",
+      "storyId": 3,
+      "question": "男子是生病了吗？",
+      "expected": "是",
+      "type": "direct",
+      "reason": "打嗝是生理现象"
+    },
+    {
+      "id": "s03-q03",
+      "storyId": 3,
+      "question": "枪是真枪吗？",
+      "expected": "不是",
+      "type": "trap",
+      "reason": "应该是假枪或玩具枪"
+    },
+    {
+      "id": "s03-q04",
+      "storyId": 3,
+      "question": "枪帮助男子解决了他的问题吗？",
+      "expected": "是",
+      "type": "clue",
+      "reason": "打嗝被吓停了"
+    },
+    {
+      "id": "s03-q05",
+      "storyId": 3,
+      "question": "男子的病是打嗝吗？",
+      "expected": "是",
+      "type": "process",
+      "reason": "直接原因"
+    },
+    {
+      "id": "s04-q01",
+      "storyId": 4,
+      "question": "男人杀姐姐是因为恨她吗？",
+      "expected": "不是",
+      "type": "distractor",
+      "reason": "不是因为恨"
+    },
+    {
+      "id": "s04-q02",
+      "storyId": 4,
+      "question": "杀姐姐和葬礼有关吗？",
+      "expected": "是",
+      "type": "clue",
+      "reason": "关键关联"
+    },
+    {
+      "id": "s04-q03",
+      "storyId": 4,
+      "question": "他想在葬礼上见到那个女人吗？",
+      "expected": "是",
+      "type": "direct",
+      "reason": "核心动机"
+    },
+    {
+      "id": "s04-q04",
+      "storyId": 4,
+      "question": "那个女人和之前的葬礼有关吗？",
+      "expected": "是",
+      "type": "clue",
+      "reason": "在之前的葬礼见过"
+    },
+    {
+      "id": "s04-q05",
+      "storyId": 4,
+      "question": "男人的母亲已经去世了吗？",
+      "expected": "是",
+      "type": "process",
+      "reason": "背景信息"
+    },
+    {
+      "id": "s05-q01",
+      "storyId": 5,
+      "question": "他们是被谋杀的么？",
+      "expected": "不是",
+      "type": "distractor",
+      "reason": "排除他杀"
+    },
+    {
+      "id": "s05-q02",
+      "storyId": 5,
+      "question": "他们是自愿死亡的吗？",
+      "expected": "是",
+      "type": "direct",
+      "reason": "有人牺牲"
+    },
+    {
+      "id": "s05-q03",
+      "storyId": 5,
+      "question": "他们是乘坐热气球吗？",
+      "expected": "是",
+      "type": "clue",
+      "reason": "交通工具"
+    },
+    {
+      "id": "s05-q04",
+      "storyId": 5,
+      "question": "热气球出了故障吗？",
+      "expected": "是",
+      "type": "process",
+      "reason": "燃料耗尽"
+    },
+    {
+      "id": "s05-q05",
+      "storyId": 5,
+      "question": "有抽签决定谁跳下去吗？",
+      "expected": "是",
+      "type": "clue",
+      "reason": "关键机制"
+    },
+    {
+      "id": "s25-q01",
+      "storyId": 25,
+      "question": "床底下真的有人吗？",
+      "expected": "不是",
+      "type": "trap",
+      "reason": "是误会"
+    },
+    {
+      "id": "s25-q02",
+      "storyId": 25,
+      "question": "女孩有强迫症吗？",
+      "expected": "是",
+      "type": "direct",
+      "reason": "放鞋的习惯"
+    },
+    {
+      "id": "s25-q03",
+      "storyId": 25,
+      "question": "和拖鞋的摆放方式有关吗？",
+      "expected": "是",
+      "type": "clue",
+      "reason": "核心线索"
+    },
+    {
+      "id": "s25-q04",
+      "storyId": 25,
+      "question": "她是看错了吗？",
+      "expected": "是",
+      "type": "direct",
+      "reason": "视角问题"
+    },
+    {
+      "id": "s29-q01",
+      "storyId": 29,
+      "question": "女人有精神病吗？",
+      "expected": "是",
+      "type": "direct",
+      "reason": "精神分裂"
+    },
+    {
+      "id": "s29-q02",
+      "storyId": 29,
+      "question": "镜子里的人是另一个人吗？",
+      "expected": "是",
+      "type": "clue",
+      "reason": "副人格"
+    },
+    {
+      "id": "s29-q03",
+      "storyId": 29,
+      "question": "那天副人格没有出现吗？",
+      "expected": "是",
+      "type": "direct",
+      "reason": "核心原因"
+    }
+  ]
+}
