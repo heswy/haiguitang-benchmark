@@ -4,7 +4,7 @@ AI 模型海龟汤游戏能力评测系统
 
 > 🎮 本项目为 [海龟汤](https://www.magicheng.com) 游戏服务，用于评测各AI模型在海龟汤游戏中的表现
 > 
-> 📕 详情关注小红书：**魔法橙**
+> 📕 详情关注小红书：[**魔法橙**](https://www.xiaohongshu.com/user/profile/67c489b9000000000d008182)
 
 ---
 
@@ -229,7 +229,7 @@ npm run report -- results/benchmark-xxx.json
 ## 🔗 相关链接
 
 - 🎮 **海龟汤游戏**: https://www.magicheng.com
-- 📕 **小红书**: 魔法橙
+- 📕 **小红书**: [魔法橙](https://www.xiaohongshu.com/user/profile/67c489b9000000000d008182)
 - 🤖 **SiliconFlow**: https://cloud.siliconflow.cn/
 
 ---
